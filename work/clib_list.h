@@ -1,22 +1,30 @@
-#include <stdio.h>
+#ifndef __D_LINKED_LIST_H__
+#define __D_LINKED_LIST_H__
 
-typedef struct clib_node{
-	char[20] name;
-	char[20] header;
-	char[100] prototype;
+#define TRUE	1
+#define FALSE	0
+
+typedef struct clib_info {	
+	char[32] name;
+	char[32] header;
+	char[160] prototype;
 	char[200] description;
+}Info;
 
+typedef struct clib_node {
+	Info data;
 	struct clib_node* next;
-}node;
+}Node;
 
 typedef struct clib_list {
-	node head;
+	Node head;
 	int size;
-}list;
+}List;
 
-void push(list& li, char name[], char header[], char prototype[], char description[]);
-void pop(list& li);
-int search(list& li, char find_name[]);
-
-
+void init(List* plist);
+void push(List* plist, Info data);
+void remove(List* plist, char remove_name[]);
+Node search(List* plist, char find_name[]);
+int size(List* plist);
+#endif
 
