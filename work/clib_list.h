@@ -5,10 +5,10 @@
 #define FALSE   0
 
 typedef struct clib_info {
-	char name[32];
-	char header[32];
-	char prototype[160];
-	char description[200];
+	char name[320];
+	char header[320];
+	char prototype[1600];
+	char description[2000];
 }Info;
 
 typedef struct clib_node {
@@ -22,9 +22,10 @@ typedef struct clib_list {
 }List;
 
 void init(List* plist);
-void push(List* plist, char name[], char header[], char);
+void push(List* plist, Info data);
 int remove(List* plist, char remove_name[]);
-Info search(List* plist, char find_name[]);
+Info* search(List* plist, char find_name[]);
 int size(List* plist);
+void display(List* plist);
 
 #endif

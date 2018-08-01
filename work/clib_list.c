@@ -26,17 +26,17 @@ void push(List* plist, Info data) {
 
 int remove(List* plist, char remove_name[]) {
 	int ret = 0;
-	
+
 	Node* cur = plist->head;
 	if (cur == NULL) return ret;
 	if (strcmp(cur->data.name, remove_name) == 0) {
-			plist->head = cur->next;
-			free(cur);
-			plist->size--;
-			return 1;
+		plist->head = cur->next;
+		free(cur);
+		plist->size--;
+		return 1;
 	}
-	
-	while (cur->next ! = NULL) {
+
+	while (cur->next != NULL) {
 		if (strcmp(cur->next->data.name, remove_name) == 0) {
 			Node* temp = cur->next;
 			cur->next = cur->next->next;
@@ -49,26 +49,27 @@ int remove(List* plist, char remove_name[]) {
 	}
 
 
-	
+
 	return ret;
 }
 
-Info search(List* plist, char find_name[]) {
-	Info ret;
-	memset(&ret, 0, sizeof(ret));
+Info* search(List* plist, char find_name[]) {
+	Info* ret = NULL;
+
 	Node* cur = plist->head;
 	while (cur != NULL) {
-		if (strcmp(cur->next->data.name, find_name) == 0) {
-			strcpy(ret.name, cur->data.name);
-			strcpy(ret.header, cur->data.header);
-			strcpy(ret.prototype, cur->data.prototype);
-			strcpy(ret.description, cur->data.description);
+		if (strcmp(cur->data.name, find_name) == 0) {
+			ret = (Info*)malloc(sizeof(Info));
+			strcpy(ret->name, cur->data.name);
+			strcpy(ret->header, cur->data.header);
+			strcpy(ret->prototype, cur->data.prototype);
+			strcpy(ret->description, cur->data.description);
 
 			return ret;
 		}
 		cur = cur->next;
 	}
-	
+
 	return ret;
 }
 
@@ -76,9 +77,17 @@ int size(List* plist) {
 	return plist->size;
 }
 
-int main() {
-
-	return 0;
+void display(List* plist) {
+	Node* cur = plist->head;
+	while (cur != NULL) {
+		printf("ÇÔ¼ö¸í : %s\n", cur->data.name);
+		cur = cur->next;
+	}
 }
+
+
+
+
+
 
 
