@@ -57,9 +57,71 @@ int main() {
 	int find_name_size = 0;	//찾고자 하는 단어 사이즈
 	int count[1] = { 0 };	// 탭기능에서 연관단어 갯수
 
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,W XyyyyyyyW,   eee   eeeeeeeeeeeeeeeeeeeeeeW ,eeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeW, XyyyyyyyyyyW, DXK,u eeeeeeeeeeeeeeeee#     Geeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee9  XyyyyyyyyyyyyWu  5y ueeeeeeeeeeeee5   Ky5 Weeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee  Xyyyyyyyyyyyy55XX5yK eeeeeeeeeeu   Wy5yy  eeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee KW5yy55555yyWWKKWWWyK eeeeeeE   uW55yy55, eeeeeeeeeeeeeeeGee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 5uX5yu,uuuuKWWyyyyWW u9GeG,  uy55y5y5yyu eeeeeeeeeeeeeeee Ee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEW    , uuK5XXXXXXXDDDzz#zXK,    KDX5yyy5yy5K eeeeeeeeeeeeeeee   e\n");
+	printf("eeeeeeeeuyEeeeeeeeeeeeeeeeeeeeeX   ,KyXXDXXX55yy5XD##D5Wu   yK  ,yXy,u5X5yyy5K eeeeeeeeeeeeeeeeD , u\n");
+	printf("eeeeeeee9         W#eeeeeeeee   W55yyyyyyyyyyy5X#DK       WX9#z#GX uXX,u5555K eeeeeeeeeeeeeeeee KuWu\n");
+	printf("eeeeeeeeee  W55yWK,      ,y  uyyyyyyyyyyyyyy5X#5        eeeeeeeeuWez 5XXuuXW eeeeeeeeeeeeeeee# u55uX\n");
+	printf("eeeeeeeeeeeE uy5yyy55555y ,Wy5XXXX555yyyyyyXz5       eeeeeeeeeGeeeKE9 X5X5, eeeeeeeeeeeeeeeD  KyyK e\n");
+	printf("eeeeeeeeeeeee  K5yyyy5X5 Xyu ,WXXXz#9zX5y5XzK     EeeW      ueeGEGeee X5y5X #eeeeeeeeeeee   Kyyyy Ee\n");
+	printf("eeeeeeeeeeeeeeE  W5y55X y  ze#        X#X5W     eey       ,   eeEEEGe D5yy5W  eeeeeeeee zE Wyyyyu ee\n");
+	printf("eeeeeeeeeeeeeeeeu ,y5X  KeeeWWeeeeG5    ,y eeee9e    ueee  u,  eEEEee Xy5yy5yu eeeeeeee ee  WyyW eee\n");
+	printf("eeeeeeeeeeeeeeeeee, KW eeE 5eeeeG5W5Deyee ueeeEe  , eeeee, uu  eEGee yX5yyyy5y  ,uu     uee ,yy Weee\n");
+	printf("eeeeeeeeeeeeeeeeeeee  Gez eeee          e 9eEGe  ,u eeeG  ,,  ueeeE u55yyy5yW Deeeeeeey  Xee K, eeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeee ee eeez     GeD   e5DeEEe   ,          Geee  y55y55y5X 9eeEEEEEeee  eeG  eeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeee eeeeee  u eeeee , E  eeEee5          eeee  W5yKu,      eeEEEEEEEGez  ee 9eeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeee #eEEe# ,, eeeD    e, ,eeeeeeeeGGeeeeee   ,    uyXeeeeezeEEEEEEEEEee u zWeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeee eeGee          e9u55u 5eeeeeeeee#W     ,5EeeeeeeeGEEGGGEEEEEEEEEEe  zDeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeee  eeeee5   uEeee,y55y5yu           5GeeeeeeeEEEEEEEEEEEEEEEEEEEEEGe eeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeE   W#eeeee#K  Ky555y555yK    WeeeeeeeGEEEEEEEEEEEEEEEEEEEEEEEEEEezWeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeee            ,WyKu  y55yu  KzeeeeeGEEEEEEEEEEEEEEEEEEEEEGeeeEEEEEeee eeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeu  EeeeeeeeeeeeeeeeeD    KeeeeeGEEEEEEEEEEEEEEEEEEEEEEGeeeG9eeeeeee  eeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeee  GeeeeeGEEEEEEEEEEEEeeeKDeeeEEEEEEEEEEEEEEEEEEEEEEEEEeeeuu           eeeeeeeeeeeee\n");
+	printf("eKeeeeeeeeeeeeeX eeGEEEEEEEEEEEEEGeeeeeeeeeeEEEEEEEEEEEEEEEEEEEEEEEGeeeeKKeee u5Xyy5W eeeeeeeeeeeeee\n");
+	printf("   eeeeeeeeeee yeeEEEEEEEEEEEEEeeeeX,    XeeEEEEEEEEEEEEEEEEEEEEGeeeeW   eeeee  Wy5W eeeeeeeeeeeeeee\n");
+	printf("z   eeeeeeeeeDyeGEEEEEEEEEEEEeeey  KyXXX5, eeEEEEEEEEEEEEEEEEeeee9     ,K Xeeee5 KW Eeeeeeeeeeeeeeee\n");
+	printf("e    eeeeeeee eGEEEEEEEEEEEEee5 KXDXXXXXXXy eEEEEEEEEEEEEEeeeey  Keeeeez W  eeeee  9eeeeeeeeeeeeeeee\n");
+	printf("ee  u       e eEEEEEEEEEEEEee uXXXXXXXXXXXX eEEEEEEEEEGeeee5   eeeeeeeee5 Xu Eeeeee,eeeeeeeeeeeeeeee\n");
+	printf("eee  ,y5yy5 e eGEEEEEEEEEEee WXXXXXXXXXXXXy eEEEEEEGeeeKy, , Xeeeeeeeeeee D5W  eeeeKeeeeeeeeeeeeeeee\n");
+	printf("eeeee  uyyyuK99eEEEEEEEEEEeuKXXXXXXXXXXXXD EeEEEeeeeK  ee 5 Eeeeeeeeeeeee z55yK ,eeXeeeeeeeeeeeeeeee\n");
+	printf("eeeeeee  uyy e eeEEEEEEEEee XXXXXXXXXXXXXX eeeee#  ,eeee uK eeeeeeeeeeeee D5555yu   eeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeG  , Ee EeeEEEEEEe# DXXXXXXXXXXXD,EeeX  5eeeee  yX eeeeeeeeeeeeee X5555555Xu eeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeW  eeyKeeeGEEEe# DXXXXXXXXXX#W5eu EeeeeeX  u55X eeeeeeeeeeeeee D55XXDDXX5 eeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeee  D9   #eeeeeuzXXXXXXXDz#u ,KyW      ,W5555X eeeeeeeeeeeeeW #XD5u  uXD,Weeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeXeeeXKuu    zzzDzz#5, XDX555555DKXzXDXXXD eeeeeeeeeeeee    uWDzDD ,u eeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeu       uXXX55555XXDzu      uW eeeeeeeeeeeee ee    K,u   Xeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,ee zX55555XXDXu   yEEE#5,  Weeeeeeeeeee   ee9 XWEe#eeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey  X5555XDXK   yee5 Dee#eeD eeeeeeeeeee W  ee WyK eWeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee K5XXDWuuW Xee#zeeeee  eeyeeeeeeeeeee 5y eeD 55W  eeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeu W,     ee ee9W  eee  ee eeeeeeeeee yy eee 5y55 eeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey   DeEee  e     XeeE  e,eeeeeeeeee Wy Xee Xyy5W eeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee zeeee e5 ee#GeeEKeee eXeeeeeeeeeee u5 Dee 5yyy5 Weeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeWe  ee  ,KK  #eee eeeeeeeeeee# 5 eeX 5y5yyW eeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeu  eyEe9     y5eee ueeeeeeeeeeee W ee W5yyyyW eeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee E   K Keeeeeeeeeee9,  Eeeeeeeeeeeee  #eK yyyyy5  eeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee KKyyyWu  ,yD#DW    uy,Keeeeeeeeeeee ee  y5yyy5K eeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee WX5yyyyyWKu  ,uKWyyyyW eeeeeeeeeeee z uyyyy5Xy eeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee y X5yyyyyyyyyyyyyyyyyyu Keeeeeeeee WX5X5XXXD, #eeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee WXK ,yX5yyyyyyyyyyyyyyyyW  KGeeeez  uuWy5yK   eeeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 55XD5u ,555yyyyyyyyyyyyyyyK,      Ky5yWKuu  zeeeeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey 5yyy5XDy, KX55yyyyyyyyyyyyyyyyyyyyyyyy5W  ueeeeeeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee yyyy5yy55XDK  yX55yyyyyyyyyyyyyyyyyyK,   5eeeeeeeeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee Xyyyyyyyyy5XDXu  ,y55555555yyWKu     ,#eeeeeeeeeeeeeeeeeeeeeeeeee\n");
+	printf("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee Xyyyyyyyyy5yy5XDD5uuuu          KXeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n");
 	while (1) {
 		if (!prevState) {	//새로운 실행상태를 원할 경우
 			sel[0] = -1;
+			printf("-----------------------------------\n");
+			printf("1. 함수 검색\n");
+			printf("2. 함수 추가\n");
+			printf("3. 함수 삭제\n");
+			printf("4. 프로그램 종료\n");
+			printf("-----------------------------------\n");
 			printf("무엇을 실행할 것인가 ?");
 			scanf("%s", sel);
 		}	
@@ -73,7 +135,6 @@ int main() {
 				c = getchar();
 				//printf("입력한 값 : %d\n", c);
 				if (c == '\t') { // tab 탐색
-					printf("탭 인 !!\n");
 					find_name[find_name_size] = 0;
 
 					if (!lenCheck(push_name, sizeof(push_name)) || !wordCheck(push_name)) {
@@ -84,19 +145,16 @@ int main() {
 
 					count[0] = 0;
 					countWord(root, find_name, count);
-					printf("카운트 : %d\n", count[0]);
 					if (count[0] == 0) {	//아무 변화 없이 그대로
 						continue;
 					}
 					else if (count[0] == 1) {	//자동 완성
-						printf("자동완성\n");
 						strcpy(find_name, getRecommendOne(root, find_name));
 						find_name_size = strlen(find_name);
 						prevState = 1;
 						break;
 					}
 					else {	// 연관 단어 검색
-						printf("연관 단어 검색 \n");
 						strcpy(temp_name, find_name);
 						recommend(root, temp_name);
 						prevState = 1;
@@ -118,8 +176,10 @@ int main() {
 						printf("찾고자 하는 함수가 존재하지 않습니다.\n");
 					}
 					else {
-						printf("%10s %10s %15s %20s\n", "함수명", "헤더 파일", "원 형", "설 명");
-						printf("%10s %10s %15s %20s\n", success->name, success->header, success->prototype, success->description);
+						printf("함 수 명 : %s\n", success->name);
+						printf("헤더파일 : %s\n", success->header);
+						printf("원    형 : %s\n", success->prototype);
+						printf("설    명 : %s\n", success->description);
 					}
 					find_name_size = 0;
 					find_name[0] = 0;
@@ -241,7 +301,7 @@ int main() {
 			}
 			else
 			{
-				printf("없는 함수입니다.\n");
+				printf("%s는 없는 함수입니다.\n", del_name);
 				break;
 			}
 		}

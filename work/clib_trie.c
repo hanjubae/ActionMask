@@ -124,7 +124,7 @@ void countWord(trie_node* root, char* str, int* ret) {
 		else {
 			pos = 36;
 		}
-		if (!now->child[pos]) return;
+		if (!now->child[pos]) return 0;
 		now = now->child[pos];
 	}
 
@@ -172,7 +172,7 @@ char* getRecommendOne(trie_node* root, char* str) {
 		else {
 			pos = 36;
 		}
-		if (!now->child[pos]) return;
+		if (!now->child[pos]) return 0;
 		now = now->child[pos];
 	}
 
