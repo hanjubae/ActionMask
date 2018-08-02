@@ -24,7 +24,7 @@ void push(List* plist, Info data) {
 	plist->size++;
 }
 
-int remove(List* plist, char remove_name[]) {
+int rmv(List* plist, char remove_name[]) {
 	int ret = 0;
 
 	Node* cur = plist->head;

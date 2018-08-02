@@ -233,7 +233,7 @@ int main() {
 			success = search(&list, del_name);
 			if (success != NULL)
 			{
-				remove(&list, del_name);
+				rmv(&list, del_name);
 				trie_remove(root, del_name, strlen(del_name));
 				printf("%s을(를) 삭제하였습니다.\n", del_name);
 				// 파일 갱신 함수

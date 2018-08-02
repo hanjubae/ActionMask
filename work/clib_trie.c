@@ -148,7 +148,7 @@ void recommend(trie_node* root, char* str) {
 		else {
 			pos = 36;
 		}
-		if (!now->child[pos]) return;
+		if (!now->child[pos]) return 0;
 		now = now->child[pos];
 	}
 
