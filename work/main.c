@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <memory.h>
@@ -41,7 +41,7 @@ int main() {
 	}
 
 	int push_check = 0;
-	Info push_tmp = { '0', '0', '0', '0' }; // »ğÀÔ¿ë ÀÓ½ÃÀÚ·áÇü
+	Info push_tmp = { '0', '0', '0', '0' }; // ì‚½ì…ìš© ì„ì‹œìë£Œí˜•
 	char push_name[32] = { '0' };
 	char push_header[32] = { '0' };
 	char push_proto[160] = { '0' };
@@ -49,76 +49,76 @@ int main() {
 	char del_name[32] = { '0' };
 	char sel[1];
 	int prevState = 0;
-	char c; // ¹ŞÀ» ´Ü¾î¸¦ ´ã´Â º¯¼ö
-	Info* success;	// °Ë»ö ¼º°ø½Ã ´ãÀ» ±×¸©
-	char find_name[32];	// Ã£°íÀÚ ÇÏ´Â ´Ü¾î
+	char c; // ë°›ì„ ë‹¨ì–´ë¥¼ ë‹´ëŠ” ë³€ìˆ˜
+	Info* success;	// ê²€ìƒ‰ ì„±ê³µì‹œ ë‹´ì„ ê·¸ë¦‡
+	char find_name[32];	// ì°¾ê³ ì í•˜ëŠ” ë‹¨ì–´
 	char temp_name[32];
-	find_name[0] = 0;	// Ã£°íÀÚ ÇÏ´Â ´Ü¾î ÃÊ±âÈ­
-	int find_name_size = 0;	//Ã£°íÀÚ ÇÏ´Â ´Ü¾î »çÀÌÁî
-	int count[1] = { 0 };	// ÅÇ±â´É¿¡¼­ ¿¬°ü´Ü¾î °¹¼ö
+	find_name[0] = 0;	// ì°¾ê³ ì í•˜ëŠ” ë‹¨ì–´ ì´ˆê¸°í™”
+	int find_name_size = 0;	//ì°¾ê³ ì í•˜ëŠ” ë‹¨ì–´ ì‚¬ì´ì¦ˆ
+	int count[1] = { 0 };	// íƒ­ê¸°ëŠ¥ì—ì„œ ì—°ê´€ë‹¨ì–´ ê°¯ìˆ˜
 
 	while (1) {
-		if (!prevState) {	//»õ·Î¿î ½ÇÇà»óÅÂ¸¦ ¿øÇÒ °æ¿ì
+		if (!prevState) {	//ìƒˆë¡œìš´ ì‹¤í–‰ìƒíƒœë¥¼ ì›í•  ê²½ìš°
 			sel[0] = -1;
-			printf("¹«¾ùÀ» ½ÇÇàÇÒ °ÍÀÎ°¡ ?");
+			printf("ë¬´ì—‡ì„ ì‹¤í–‰í•  ê²ƒì¸ê°€ ?");
 			scanf("%s", sel);
 		}	
 	
 		switch (sel[0]) {
 		case '1': {
-			printf("Ã£°íÀÚ ÇÏ´Â ÇÔ¼ö¸í ? : %s", find_name);
+			printf("ì°¾ê³ ì í•˜ëŠ” í•¨ìˆ˜ëª… ? : %s", find_name);
 			// search
 			clear();
 			while (1) {
 				c = getchar();
-				//printf("ÀÔ·ÂÇÑ °ª : %d\n", c);
-				if (c == '\t') { // tab Å½»ö
-					printf("ÅÇ ÀÎ !!\n");
+				//printf("ì…ë ¥í•œ ê°’ : %d\n", c);
+				if (c == '\t') { // tab íƒìƒ‰
+					printf("íƒ­ ì¸ !!\n");
 					find_name[find_name_size] = 0;
 
 					if (!lenCheck(push_name, sizeof(push_name)) || !wordCheck(push_name)) {
-						printf("0~9»çÀÌÀÇ ¼ıÀÚ, ¾ğ´õ¹Ù(_), ¾ËÆÄºª ¼Ò¹®ÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+						printf("0~9ì‚¬ì´ì˜ ìˆ«ì, ì–¸ë”ë°”(_), ì•ŒíŒŒë²³ ì†Œë¬¸ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
 						find_name_size = 0;
 						find_name[0] = 0;
 					}
 
 					count[0] = 0;
 					countWord(root, find_name, count);
-					printf("Ä«¿îÆ® : %d\n", count[0]);
-					if (count[0] == 0) {	//¾Æ¹« º¯È­ ¾øÀÌ ±×´ë·Î
+					printf("ì¹´ìš´íŠ¸ : %d\n", count[0]);
+					if (count[0] == 0) {	//ì•„ë¬´ ë³€í™” ì—†ì´ ê·¸ëŒ€ë¡œ
 						continue;
 					}
-					else if (count[0] == 1) {	//ÀÚµ¿ ¿Ï¼º
-						printf("ÀÚµ¿¿Ï¼º\n");
+					else if (count[0] == 1) {	//ìë™ ì™„ì„±
+						printf("ìë™ì™„ì„±\n");
 						strcpy(find_name, getRecommendOne(root, find_name));
 						find_name_size = strlen(find_name);
 						prevState = 1;
 						break;
 					}
-					else {	// ¿¬°ü ´Ü¾î °Ë»ö
-						printf("¿¬°ü ´Ü¾î °Ë»ö \n");
+					else {	// ì—°ê´€ ë‹¨ì–´ ê²€ìƒ‰
+						printf("ì—°ê´€ ë‹¨ì–´ ê²€ìƒ‰ \n");
 						strcpy(temp_name, find_name);
 						recommend(root, temp_name);
 						prevState = 1;
 						break;
 					}
 				}
-				else if (c == '\n') {	//¿£ÅÍ ±âº» search
+				else if (c == '\n') {	//ì—”í„° ê¸°ë³¸ search
 					find_name[find_name_size] = '\0';
 					if (find_name_size == 0) break;
 
 					if (!lenCheck(push_name, sizeof(push_name)) || !wordCheck(push_name)) {
-						printf("0~9»çÀÌÀÇ ¼ıÀÚ, ¾ğ´õ¹Ù(_), ¾ËÆÄºª ¼Ò¹®ÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+						printf("0~9ì‚¬ì´ì˜ ìˆ«ì, ì–¸ë”ë°”(_), ì•ŒíŒŒë²³ ì†Œë¬¸ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
 						find_name_size = 0;
 						find_name[0] = 0;
 					}
 
 					success = search(&list, find_name);
 					if (success == NULL) {
-						printf("Ã£°íÀÚ ÇÏ´Â ÇÔ¼ö°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
+						printf("ì°¾ê³ ì í•˜ëŠ” í•¨ìˆ˜ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
 					}
 					else {
-						printf("%10s %10s %15s %20s\n", "ÇÔ¼ö¸í", "Çì´õ ÆÄÀÏ", "¿ø Çü", "¼³ ¸í");
+						printf("%10s %10s %15s %20s\n", "í•¨ìˆ˜ëª…", "í—¤ë” íŒŒì¼", "ì› í˜•", "ì„¤ ëª…");
 						printf("%10s %10s %15s %20s\n", success->name, success->header, success->prototype, success->description);
 					}
 					find_name_size = 0;
@@ -130,8 +130,8 @@ int main() {
 					find_name[find_name_size++] = c;
 					prevState = 0;
 				}
-				else { //Çü½Ä¿¡ ¸ÂÁö ¾Ê´Â ¹®ÀÚ
-					printf("¿µ¾î ¼Ò¹®ÀÚ, ¼ıÀÚ, _¸¸ ±âÀÔÇÏ¼¼¿ä!!\n");
+				else { //í˜•ì‹ì— ë§ì§€ ì•ŠëŠ” ë¬¸ì
+					printf("ì˜ì–´ ì†Œë¬¸ì, ìˆ«ì, _ë§Œ ê¸°ì…í•˜ì„¸ìš”!!\n");
 					find_name_size = 0;
 					find_name[0] = 0;
 					prevState = 1;
@@ -146,22 +146,22 @@ int main() {
 			// push
 			while (1)
 			{
-				printf("2. Ãß°¡ÇÏ°íÀÚ ÇÏ´Â ÇÔ¼ö¸í : ");
+				printf("2. ì¶”ê°€í•˜ê³ ì í•˜ëŠ” í•¨ìˆ˜ëª… : ");
 				clear();
 				scanf("%[^\n]s", push_name);
 				if (search(&list, push_name) != NULL)
 				{
-					printf("ÀÌ¹Ì Á¸ÀçÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù\n");
+					printf("ì´ë¯¸ ì¡´ì¬í•˜ëŠ” í•¨ìˆ˜ì…ë‹ˆë‹¤\n");
 					push_check = 0;
 					break;
 				}
 				if (lenCheck(push_name, sizeof(push_name)) == 0)
 				{
-					printf("%d±ÛÀÚ ÀÌ³»·Î ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n", sizeof(push_name));
+					printf("%dê¸€ì ì´ë‚´ë¡œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n", sizeof(push_name));
 				}
 				if (wordCheck(push_name) == 0)
 				{
-					printf("0~9»çÀÌÀÇ ¼ıÀÚ, ¾ğ´õ¹Ù(_), ¾ËÆÄºª ¼Ò¹®ÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+					printf("0~9ì‚¬ì´ì˜ ìˆ«ì, ì–¸ë”ë°”(_), ì•ŒíŒŒë²³ ì†Œë¬¸ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
 				}
 				if (lenCheck(push_name, sizeof(push_name)) && wordCheck(push_name)) {
 					strcpy(push_tmp.name, push_name);
@@ -172,12 +172,12 @@ int main() {
 
 			while (push_check)
 			{
-				printf("2-1.Çì´õ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+				printf("2-1.í—¤ë”ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 				clear();
 				scanf("%[^\n]s", push_header);
 				if (lenCheck(push_header, sizeof(push_header)) == 0)
 				{
-					printf("%d±ÛÀÚ ÀÌ³»·Î ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n", sizeof(push_header));
+					printf("%dê¸€ì ì´ë‚´ë¡œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n", sizeof(push_header));
 				}
 				else {
 					strcpy(push_tmp.header, push_header);
@@ -187,12 +187,12 @@ int main() {
 
 			while (push_check)
 			{
-				printf("2-2.¿øÇüÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+				printf("2-2.ì›í˜•ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 				clear();
 				scanf("%[^\n]s", push_proto);
 				if (lenCheck(push_proto, sizeof(push_proto)) == 0)
 				{
-					printf("%d±ÛÀÚ ÀÌ³»·Î ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n", sizeof(push_proto));
+					printf("%dê¸€ì ì´ë‚´ë¡œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n", sizeof(push_proto));
 				}
 				else {
 					strcpy(push_tmp.prototype, push_proto);
@@ -202,12 +202,12 @@ int main() {
 
 			while (push_check)
 			{
-				printf("2-3.¼³¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+				printf("2-3.ì„¤ëª…ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 				clear();
 				scanf("%[^\n]s", push_desc);
 				if (lenCheck(push_desc, sizeof(push_desc)) == 0)
 				{
-					printf("%d±ÛÀÚ ÀÌ³»·Î ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n", sizeof(push_desc));
+					printf("%dê¸€ì ì´ë‚´ë¡œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n", sizeof(push_desc));
 				}
 				else {
 					strcpy(push_tmp.description, push_desc);
@@ -218,15 +218,15 @@ int main() {
 			{
 				push(&list, push_tmp);
 				insert(root, push_tmp.name);
-				printf("%s¸¦ ¸®½ºÆ®¿¡ »ğÀÔÇß½À´Ï´Ù.\n", push_tmp.name);
-				// ÆÄÀÏ °»½Å ÇÔ¼ö
+				printf("%së¥¼ ë¦¬ìŠ¤íŠ¸ì— ì‚½ì…í–ˆìŠµë‹ˆë‹¤.\n", push_tmp.name);
+				// íŒŒì¼ ê°±ì‹  í•¨ìˆ˜
 			}
 			
 			break;
 		}
 		case '3': {
 			// remove
-			printf("3. »èÁ¦ÇÏ°íÀÚ ÇÏ´Â ÇÔ¼ö´Â? : ");
+			printf("3. ì‚­ì œí•˜ê³ ì í•˜ëŠ” í•¨ìˆ˜ëŠ”? : ");
 			clear();
 			scanf("%[^\n]s", del_name);
 			
@@ -235,24 +235,24 @@ int main() {
 			{
 				rmv(&list, del_name);
 				trie_remove(root, del_name, strlen(del_name));
-				printf("%sÀ»(¸¦) »èÁ¦ÇÏ¿´½À´Ï´Ù.\n", del_name);
-				// ÆÄÀÏ °»½Å ÇÔ¼ö
+				printf("%sì„(ë¥¼) ì‚­ì œí•˜ì˜€ìŠµë‹ˆë‹¤.\n", del_name);
+				// íŒŒì¼ ê°±ì‹  í•¨ìˆ˜
 				break;
 			}
 			else
 			{
-				printf("¾ø´Â ÇÔ¼öÀÔ´Ï´Ù.\n");
+				printf("ì—†ëŠ” í•¨ìˆ˜ì…ë‹ˆë‹¤.\n");
 				break;
 			}
 		}
 		case '4': {
 			// exit
-			printf("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.\n");
+			printf("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.\n");
 			exit(1);
 			break;
 		}
 		default: {
-			printf("1~4¸¸ ÀÔ·ÂÇÏ½Ã¿À !!!\n");
+			printf("1~4ë§Œ ì…ë ¥í•˜ì‹œì˜¤ !!!\n");
 			break;
 		}
 		}
