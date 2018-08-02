@@ -27,5 +27,6 @@ int remove(List* plist, char remove_name[]);
 Info* search(List* plist, char find_name[]);
 int size(List* plist);
 void display(List* plist);
-
+int wordCheck(char str[]);
+int lenCheck(char str[], int max);
 #endif

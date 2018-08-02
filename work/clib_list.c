@@ -85,6 +85,32 @@ void display(List* plist) {
 	}
 }
 
+int wordCheck(char str[])
+{
+	int check = 1;
+	int i;
+	for (i = 0; i < strlen(str); i++)
+	{
+		if (((int)str[i] >= 48 && (int)str[i] <= 57) || (int)str[i] == 95 || ((int)str[i] >= 97 && (int)str[i] <= 122));
+		else
+		{
+			check = 0;
+			break;
+		}
+	}
+	return check;
+}
+
+int lenCheck(char str[], int max)
+{
+	int len = strlen(str);
+	int check = 0;
+	if (len >= max)
+		check = 0;
+	else
+		check = 1;
+	return check;
+}
 
 
 

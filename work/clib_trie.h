@@ -5,15 +5,18 @@
 #define FALSE   0
 
 typedef struct node {
-	struct node* child[26];
+	struct node* child[37];
 	int word;
-}Node;
+}trie_node;
 
-node* newNode();
-void insert(Node* root, char* str);
-int search(Node* root, char* str);
-void showtree(node* now, char* str, int depth);
-int remove(Node* now, char* str, int i);
-
+trie_node* newNode();
+void insert(trie_node* root, char* str);
+int trie_search(trie_node* root, char* str);
+void showtree(trie_node* now, char* str, int depth);
+int trie_remove(trie_node* now, char* str, int i);
+void recommend(trie_node* root, char* str);
+void countWord(trie_node* root, char* str, int* ret);
+char* getRecommendOne(trie_node* root, char* str);
+void countTree(trie_node* now, int* ret);
 
 #endif
