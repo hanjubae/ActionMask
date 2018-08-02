@@ -1,417 +1,417 @@
-abort	stdlib.h, process.h	void abort(void)	ÇÁ·Î±×·¥À» Á¾·áÇÏµÇ ºñÁ¤»óÀûÀ¸·Î Á¾·áÇÑ´Ù.
-abs	math.h, stdlib.h	int abs(int x)	Á¤¼ö xÀÇ Àı´ë°ªÀ» °è»êÇÑ´Ù.
-absread	dos.h	int absread(int drive, int nsects, long lsect, void *buffer)	µğ½ºÅ©ÀÇ Æ¯Á¤ ¼½ÅÍ¸¦ ÀĞ´Â´Ù. ÇÑ¹ø¿¡ ÃÖ´ë 64K¸¦ ÃÊ°úÇÒ¼ö ¾ø´Ù.
-abswrite	dos.h	int absread(int drive, int nsects, long lsect, void *buffer)	µğ½ºÅ©ÀÇ Æ¯Á¤ ¼½ÅÍ¿¡ ±â·ÏÇÑ´Ù. ÇÑ¹ø¿¡ ÃÖ´ë 64K¸¦ ÃÊ°úÇÒ¼ö ¾ø´Ù.
-access	io.h	int access(const char (filename, int amode)	ÆÄÀÏÀÇ Á¸Àç¿©ºÎ¿Í ÀĞ°í ¾µ ¼ö ÀÖ´ÂÁö¿¡ ´ëÇØ Á¶»çÇÑ´Ù.
-acos	math.h	double acos(double x)	¾ÆÅ© ÄÚ»çÀÎ °ªÀ» °è»êÇÑ´Ù.
-allocmem	dos.h	int allocmem(unsigned size, unsigned *segp)	µµ½º Æã¼Ç ÄİÀÇ 48h¸¦ È£ÃâÇÏ¿© ¸Ş¸ğ¸®¸¦ ÇÒ´ç¹Ş´Â´Ù.
-arc	graphics.h	void far arc(int x, int y, int stangle, int endangle, int ratius)	¿øÈ£¸¦ ±×·ÁÁØ´Ù.
-arg	complex.h	double arg(complex x)	º¹¼Ò¼ö Æò¸é¿¡¼­ ÁÖ¾îÁø ¼öÀÇ °¢µµ¸¦ ¾Ë¾Æ³½´Ù.
-asctime	time.h	char *asctime(const struct tm *tblock)	tmÇü ±¸Á¶Ã¼¿¡ ÀúÀåµÇ¾î ÀÖ´Â ½Ã°£, ³¯Â¥¿¡ °üÇÑ Á¤º¸¸¦ ¹®ÀÚ¿­·Î ¹Ù²Û´Ù.
-asin	math.h	double asin(double x)	¾ÆÅ© »çÀÎ °ªÀ» °è»êÇÑ´Ù.
-assert	assert.h	void assert(int test)	ÀÎ¼ö·Î Àü´ŞµÇ´Â test°¡ 0ÀÌ¸é ÇÁ·Î±×·¥À» Á¾·áÇÑ´Ù.
-atan	math.h	double atan(double x)	¾ÆÅ© ÅºÁ¨Æ®°ªÀ» °è»êÇÑ´Ù.
-atan2	math.h	double atan2(double y, double x)	atan(y/x)¿Í µ¿ÀÏÇÑ ±â´ÉÀ» ¼öÇàÇÏ´Â ÇÔ¼öÀÌ´Ù. ´Ü x°¡ 0¿¡ °¡±î¿î °ªÀ»¶§ atanº¸´Ù Á¤È®ÇÏ´Ù.
-atexit	stdlib.h	int atexit(atexit_t func)	ÇÁ·Î±×·¥Àº main ÇÔ¼ö°¡ ³¡³ª°Å³ª exit ÇÔ¼ö¿¡ ÀÇÇØ °­Á¦·Î Á¾·áµÇ¸é »óÀ§ ÇÁ·Î¼¼¼­·Î º¹±ÍÇÑ´Ù.
-atof	math.h, stdlib.h	double atof(const char*s)	¹®ÀÚ¿­À» doubleÇü ºÎµ¿¼Ò¼öÁ¡À¸·Î ¹Ù²Û´Ù.
-atoi	stdlib.h	int atoi(const char*s)	¹®ÀÚ¿­À» Á¤¼ö·Î º¯È¯ÇÑ´Ù.
-atol	stdlib.h	int atol(const char*s)	¹®ÀÚ¿­À» longÇü Á¤¼ö·Î º¯È¯ÇÑ´Ù.
-bar	graphics.h	void far bar(int left, int right, int bottom)	ÁÂ»ó´Ü ÁÂÇ¥¿¡¼­ ¿ì»ó´ÜÀ» ´ë°¢¼±À¸·Î ÇÏ´Â Á÷»ç°¢ÇüÀ» ±×¸°´Ù.
-bar3d	graphics.h	void far bar3d(int left, int right, int bottom, int depth, int topflag)	3Â÷¿øÀÇ »ç°¢Çü ¹Ù¸¦ ±×¸°´Ù. ÁÂ»ó´Ü¿¡¼­ ¿ìÇÏ´ÜÀ» ´ë°¢¼±À¸·Î ÇÏ´Â Á÷»ç°¢Çü¸ğ¾ç
-bdos	dos.h	int bdos(int dosfun, unsigned dosdx, unsigned dosal)	µµ½º Æã¼Ç ÄİÀ» Á÷Àû È£ÃâÇÑ´Ù.
-bdosptr	dos.h	int bdosptr(int dosfun, void*argument, unsigned dosal)	µµ½º Æã¼Ç ÄİÀ» Á÷Àû È£ÃâÇÑ´Ù.
-bioscom	bios.h	int bioscom(int cmd, char abyte, int port)	RS232C Åë½ÅÀ» ¼öÇàÇÏ¸ç BIOS ÀÎÅÍ·´Æ® 0x14¹øÀ» »ç¿ëÇÑ´Ù.
-biosdisk	bios.h	int biosdisk(int cmd, int drive, int head, int track, int sector, int nsects, void *buffer)	Á÷Á¢ÀûÀ¸·Î µğ½ºÅ© ÀÔÃâ·Âµ¿ÀÛÀ» ÇÏ¸ç, BIOS ÀÎÅÍ·´Æ®ÀÇ 0x13¹øÀ» »ç¿ëÇÑ´Ù.
-biosequip	bios.h	int biosequip(void)	½Ã½ºÅÛ¿¡ ¼³Ä¡µÈ ÀåºñÀÇ °³¼ö ¹× Á¾·ù¸¦ ¾Ë¾Æ³½´Ù.
-bioskey	bios.h	int bioskey(int cmd)	BIOS ÀÎÅÍ·´Æ® 0x16À» »ç¿ëÇÏ¿© Å°º¸µå ÀÔÃâ·ÂÀ» ¼öÇàÇÑ´Ù.
-biosmemory	bios.h	int biosmemory(void)	BIOS ÀÎÅÍ·´Æ® 0x12¸¦ »ç¿ëÇÏ¿© ·¥ÀÇ Å©±â¸¦ Á¶»çÇÑ´Ù.
-biosprint	bios.h	int biosprint(int cmd, int abyte, int port)	ÇÁ¸°Æ® Ãâ·Â ÀÛ¾÷À» ÇàÇÏµÇ BIOS ÀÎÅÍ·´Æ®  0x17À» »ç¿ëÇÑ´Ù.
-biostime	bios.h	long biostime(int cmd, long nowtime)	BIOS ÀÎÅÍ·´Æ® 0x1a¸¦ È£ÃâÇÏ¿© Å¸ÀÌ¸Ó¸¦ ÀĞ°Å³ª ¼³Á¤ÇÑ´Ù.
-brk	alloc.h	int brk(void *addr)	ÀÌ ÇÔ¼ö¸¦ È£ÃâÇÑ ÇÁ·Î±×·¥ÀÇ heep Å©±â¸¦ ¹Ù²Û´Ù.
-bsearch	stdlib.h	void bsearch(const void *key, const void *base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	Ç×¸ñµéÀ» ´ã°í ÀÖ´Â Å×ÀÌºí(º¸Åë ¹è¿­)À» µÚÁ® Å°°ªÀ» Ã£¾Æ³»°í ±× ¹øÁö¸¦ ¸®ÅÏÇÑ´Ù.
-cabs	math.h	double cabs(struct complex z)	º¹¼Ò¼öÀÇ Àı´ë°ªÀ» ±¸ÇÑ´Ù.
-calloc	alloc.h, stdlib.h	void *calloc(size_t nitems, size_t size)	µ¿ÀûÀ¸·Î ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÑ´Ù. ÇÒ´çµÈ ¸Ş¸ğ¸®ÀÇ Å©±â´Â nitems* size ¹ÙÀÌÆ®¸¸Å­ÀÌ´Ù.
-ceil	math.h	double ceil(double x)	ÀÎ¼ö x¸¦ ¿Ã¸²ÇÑ´Ù. ÀÎ¼ö xÀÇ ¼öÁ÷¼±»ó¿¡ ¿ìÃøÀ¸·Î °¡Àå °¡±î¿î Á¤¼ö¸¦ Ã£¾Æ³»´Â ÇÔ¼öÀÌ´Ù.
-cgets	conio.h	char*cgets(char*str)	ÄÜ¼Ö·ÎºÎÅÍ ¹®ÀÚ¿­À» ÀÔ·Â¹Ş¾Æ ¹®ÀÚ ¹è¿­ str¿¡ ÀúÀåÇÑ´Ù.
-chdir	dir.h	int chdir(const char*path)	µğ·ºÅä¸®¸¦ º¯°æÇÑ´Ù. Path¿¡´Â º¯°æÇÒ µğ·ºÅä¸®¸íÀ» Àû¾îÁÖ°í µå¶óÀÌºê¸íµµ Æ÷ÇÔ°¡´ÉÇÏ´Ù.
-chmod	io.h	int chmod(const char*path, int amode)	ÆÄÀÏ ¾×¼¼½º ¸ğµå¸¦ º¯°æ½ÃÅ²´Ù.
-chsize	io.h	int chsize(int handle, long size)	ÇÚµéÀÌ ÁöÁ¤ÇÏ´Â ÆÄÀÏÀÇ Å©±â¸¦ size·Î Àç¼³Á¤ÇÑ´Ù.
-circle	graphics.h	void far circle(int x, int radius)	Áß½É(x, y)¿¡¼­ ¹İÁö¸§ÀÌ radiusÀÎ ¿øÀ» ±×¸°´Ù.
-cleardevice	graphics.h	void far cleardevice(void)	±×·¡ÇÈ È­¸éÀ» Áö¿î´Ù. È­¸é ÀüÃ¼¸¦ ¹è°æ»öÀ¸·Î µ¤À¸¸ç ÁöÁ¤»öÀÌ ¾øÀ» °æ¿ì ±âº»°ªÀº °ËÁ¤»öÀÌ´Ù.
-clearerr	stdio.h	void clearerr(FILE *stream)	FILE ±¸Á¶Ã¼ÀÇ flags ¸â¹ö Á¦4ºñÆ®¿Í Á¦5ºñÆ®¸¦ ¸®¼Â½ÃÅ²´Ù.
-clearviewport	graphics.h	void far clearviewport(void)	ÇöÀç ¼³Á¤µÈ ºäÆ÷Æ®¸¦ Áö¿î´Ù. ³»ºÎ¸¦ ¹è°æ»öÀ¸·Î Ã¤¿î´Ù.
-clock	time.h	clock_t cloch(void)	ÇÁ·Î±×·¥ÀÌ ½ÃÀÛµÈ ÈÄ °æ°úÇÑ clock tickÀ» ¸®ÅÏÇÑ´Ù.
-close	io.h	int close(int handle)	ÇÚµéÀÌ Áö½ÃÇÏ´Â ÆÄÀÏÀ» ´İ´Â´Ù.
-closegraph	graphics.h	void far closegraph(void)	±×·¡ÇÈ ½Ã½ºÅÛÀ» Á¾·áÇÏ°í ÅØ½ºÆ® È­¸éÀ¸·Î µ¹¾Æ¿Â´Ù.
-clreol	conio.h	void clreol(void)	ÇöÀç Ä¿¼­ À§Ä¡¿¡¼­ºÎÅÍ ±× ÁÙÀÇ ³¡±îÁö¸¦ »èÁ¦ÇÑ´Ù. »èÁ¦ ÈÄ Ä¿¼­ÀÌµ¿Àº ¾ø´Ù.
-clrscr	conio.h	void clrscr(void)	ÅØ½ºÆ® È­¸éÀ» Áö¿ì°í Ä¿¼­¸¦ ÁÂ»ó´ÜÀÇ À§Ä¡·Î ¿Å±ä´Ù. ±×·¡ÇÈ ¸ğµå¿¡¼± »ç¿ëÇÒ ¼ö ¾ø´Ù.
-complex	complex.h	complex complex(double real, double imag)	ÁÖ¾îÁø ½Ç¼ö¿Í Çã¼ö¸¦ ÀÌ¿ëÇÏ¿© º¹¼Ò¼ö¸¦ ¸¸µç´Ù.
-conj	complex.h	complex conj(complex x)	ÄÓ·¹ º¹¼Ò¼ö¸¦ ±¸ÇÑ´Ù.
-coreleft	alloc.h	unsigned long coreleft(void)	»ç¿ë °¡´ÉÇÑ ³²Àº ¸Ş¸ğ¸® ¿ë·®À» Á¶»çÇÑ´Ù. ¸Ş¸ğ¸® ¸ğµ¨¿¡ µû¶ó ÃøÁ¤°ªÀÌ ´Ş¶óÁø´Ù.
-cos	math.h	double cos(double x)	»ï°¢ ÇÔ¼ö cosÀ» °è»êÇÑ´Ù.
-cosh	math.h	double cosh(double x)	½Ö°î¼±  cosh ÇÔ¼ö°ªÀ» °è»êÇÑ´Ù.
-country	dos.h	struct country*country(int xcode, struct country *cp)	³¯Â¥, ½Ã°£ Ç¥Çö ¹æ¹ı, È­Æó ´ÜÀ§ µîÀÇ ±¹°¡¸¶´Ù ´Ù¸¥ Á¤º¸¸¦ country ±¸Á¶Ã¼¿¡ ¼¼Æ®ÇÑ´Ù.
-cprintf	conio.h	int cprintf(const char*format, ÀÎ¼ö¡¦)	»ç¿ë ¹æ¹ı, ¼­½ÄÀÇ Á¾·ù°¡ printf¿Í µ¿ÀÏÇÏ´Ù.
-cputs	conio.h	int cputs(const char *str)	¹®ÀÚ¿­À» È­¸éÀ¸·Î Ãâ·ÂÇÑ´Ù.
-creat	io.h, dos.h	int creat(const char*path, int amode)	»õ·Î¿î ÆÄÀÏÀ» ¸¸µç´Ù.
-creatnew	io.h	int creatnew(const char*path, int attrib)	»õ·Î ÆÄÀÏÀ» ¸¸µç´Ù. ´Ü »õ·Î ¸¸µé ÆÄÀÏÀÌ ÀÌ¹Ì Á¸ÀçÇÏ´Â °æ¿ì¿¡´Â ¿¡·¯°¡ µÇ¸ç ±×´ë·Î ¸®ÅÏÇÑ´Ù.
-creattemp	io.h	int creattemp(char*path, int attrib)	ÀÓ½Ã ÆÄÀÏÀ» ÁöÁ¤ÇÑ µğÅØÅä¸®¿¡ »ı¼ºÇÑ´Ù. ÆÄÀÏ ÀÌ¸§Àº °íÀ¯ÇÑ ÀÌ¸§À» °¡Áø´Ù.
-cscanf	conio.h	int cscanf(char*format, ÀÎ¼ö ¡¦)	ÄÜ¼Ö·ÎºÎÅÍ Á÷Á¢ ÀÔ·ÂÀ» ¹Ş´Â´Ù. scanf¿Í ºñ½ÁÇÏ³ª ´Ù¸¥Á¡Àº ÀÔ·ÂÀ» È­¸éÀ¸·ÎºÎÅÍ Á÷Á¢ ¹Ş¾ÆµéÀÎ´Ù.
-ctime	time.h	char*ctime(const time_t*time)	time°ªÀÌ °¡¸®Å°´Â ½Ã°£°ú ³¯Â¥¸¦ ¹®ÀÚ¿­·Î ¹Ù²Û´Ù.
-ctrlbrk	dos.h	void ctlbrk(int (*handle)(void))	Ctrl-Break¿¡ ´ëÇÑ handler ÇÔ¼ö, Ctrl-Break Å°°¡ ´­·¯Á³À» ¶§ÀÇ Ã³¸®¸¦ ÇÏ´Â ÇÔ¼ö¸¦ ¼³Á¤ÇÑ´Ù.
-delay	dos.h	void delay(unsiged miliseconds)	ÀÏÁ¤ ±â°£µ¿¾È ½Ã°£À» ²ö´Ù. °ÔÀÓµî¿¡¼­ ¼Óµµ¸¦ Áö¿¬½ÃÅ°±â À§ÇØ ÁÖ·Î »ç¿ëÇÑ´Ù.
-delline	conio.h	void delline(void)	ÇöÀç Ä¿¼­ À§Ä¡ÀÇ ÇÑ ÇàÀ» »èÁ¦ÇÑ´Ù. ÅØ½ºÆ® ¸ğµå¿¡¼­¸¸ »ç¿ë°¡´ÉÇÑ ÇÔ¼öÀÌ´Ù.
-detectgraph	graphics.h	void far datectgraph(int far*graphdriver, int far*graphmode)	ÇöÀç ½Ã½ºÅÛ¿¡ ÀåÂøµÇ¾î ÀÖ´Â ±×·¡ÇÈ µå¶óÀÌ¹ö¸¦ Ã£¾ÆÁÖ¸ç Á¦°øÇÏ´Â ÃÖ°íÀÇ °íÇØ»óµµ ¸ğµå¸¦ Ã£¾ÆÁØ´Ù.
-difftime	time.h	double difftime(time_t time2, time_t time1)	time1, time2°¡ °¡¸®Å°´Â ½Ã°£ÀÇ Â÷ÀÌ¸¦ ÃÊ ´ÜÀ§·Î °è»êÇÑ´Ù.
-disable	dos.h	void disable(void)	ÇÏµå¿ş¾î ÀÎÅÍ·´Æ®¸¦ ±İÁö½ÃÅ²´Ù.
-div	stdlib.h	div_t div(int number, int denom)	µÎ Á¤¼ö·Î ³ª´°¼ÀÀ» ÇÏ°í ±× ¸ò°ú ³ª¸ÓÁö¸¦ stdlib.h¿¡ Á¤ÀÇµÈ div_t ±¸Á¶Ã¼·Î ¸®ÅÏÇÑ´Ù.
-dosexterr	dos.h	int dosexterr(struct DOSERROR*eblkp)	µµ½º Æã¼Ç ÄİÀÌ ½ÇÆĞÇÑ ÈÄ¿¡ È®ÀåµÈ ¿¡·¯ Á¤º¸¸¦ ÀĞ¾î¿Í DOSERROR  ±¸Á¶Ã¼¿¡ ¼¼Æ®ÇÑ´Ù.
-dostounix	dos.h	long dostounix(struct date*d, struct time*t)	getdate ÇÔ¼ö¿Í gettime ÇÔ¼ö¿¡ ÀÇÇØ Á¶»çµÈ ³¯Â¥¿Í ½Ã°£ Çü½ÄÀ» À¯´Ğ½ºÇüÀ¸·Î ¹Ù²Û´Ù.
-drawpoly	graphics.h	void far drawploy(int numpoints, int far*polypoints)	´Ù°¢ÇüÀÇ ¿Ü°¢¼±À» ±×¸°´Ù.
-dup	io.h	int dup(int handle)	ÆÄÀÏ ÇÚµéÀ» º¹»çÇÏ¿© »õ·Î¿î ÆÄÀÏÇÚµéÀ» ¸¸µç´Ù.
-dup2	io.h	int dup2(int oldhandle, int newhandle)	oldhandleÀ» newhandle·Î º¹»çÇÑ´Ù.
-ecvt	stdlib.h	char*ecvt(double value, int ndig, int*dec, int*sign)	½Ç¼ö°ªÀ» ¹®ÀÚ¿­·Î ¹Ù²Û´Ù. º¯È¯µÈ ¹®ÀÚ¿­Àº Á¤Àû µ¥ÀÌÅÍ ¿µ¿ª¿¡ ÀúÀåµÇ¾îÁ® Æ÷ÀÎÅÍ¸¸ ¸®ÅÏµÈ´Ù.
-ellipse	graphics.h	void far ellipse(int x, int y, int stangle, int endangle, int xradius, int yradius)	¹İÁö¸§(x, y)¸¦ Áß½ÉÀ¸·Î ½ÃÀÛ°¢¿¡¼­ ³¡°¢±îÁö x,yÃà ¹İÁö¸§À» ÁöÁ¤ÇÏ¿© Å¸¿øÀ» ±×¸°´Ù.
-enable	dos.h	void enable(void)	ÇÏµå¿ş¾î ÀÎÅÍ·´Æ®¸¦ °¡´ÉÇÏ°Ô ÇÑ´Ù.
-eof	io.h	int eof(int handle)	ÇöÀç À§Ä¡°¡ ÆÄÀÏ ³¡ÀÌ¸é 1À» ¸®ÅÏÇÏ°í ÆÄÀÏ ³¡ÀÌ ¾Æ´Ï¸é 0À» ¸®ÅÏÇÑ´Ù.
-exec	process.h	int execl(char *path, char*arg0,¡¦,NULL)	exec.. ÇÔ¼ö´Â child ÇÁ·Î±×·¥À» ÀĞ¾î¿Í¼­ ½ÇÇà½ÃÅ²´Ù. ÇöÀç ÇÁ·Î±×·¥Àº Á¾·áµÈ´Ù.
-exp	math.h	double exp(double x):	ÀÌ ÇÔ¼ö·Î ³Ñ°ÜÁö´Â x°ª¿¡ µû¶ó¼­´Â overflow°¡ ¹ß»ıÇÒ ¼ö ÀÖ´Ù.
-fabs	math.h	double fabs(double x)	ºÎµ¿ ¼Ò¼öÁ¡ÀÇ Àı´ë°ªÀ» °è»êÇÑ´Ù.
-farcalloc	alloc.h	void far*farcalloc(unsigned nunits, unsigned long unitsz)	far heap¿¡¼­ µ¿Àû ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÑ´Ù. ÇÒ´çµÇ´Â ¸Ş¸ğ¸®ÀÇ ÃÑ ·®Àº nuints*unitsz ¹ÙÀÌÆ®ÀÌ´Ù.
-farcoreleft	alloc.h	unsigned long farcoreleft(void)	far heapÀÇ »ç¿ë °¡´ÉÇÑ ¸Ş¸ğ¸® ¿ë·®À» Á¶»çÇÑ´Ù.
-farfree	alloc.h	void farfree(void far*block)	faralloc, farrealloc, farcalloc µî¿¡ ÀÇÇØ ÇÒ´çµÈ far heapÀÇ ÇÒ´çÀ» ÇØÁ¦ÇÑ´Ù.
-farmalloc	alloc.h	void far*farrnalloc(unsigned long nbytes)	far heap¿¡¼­ µ¿Àû ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÑ´Ù.
-farrealloc	alloc.h	void *farrealloc(void far*oldblock, unsigned long nbytes)	ÀÌ¹Ì ÇÒ´çµÇ¾î ÀÖ´Â ¸Ş¸ğ¸®ÀÇ Å©±â¸¦ Ãà¼Ò½ÃÅ°°Å³ª È®Àå½ÃÅ²´Ù.
-fclose	stdio.h	int fclose(FILE *stream)	°³¹æµÈ ½ºÆ®¸²À» ´İ´Â´Ù. ¹öÆÛ°¡ Áö¿öÁø´Ù.
-fcloseall	stdio.h	int fcloseall(void)	¿­·ÁÁ® ÀÖ´Â ¸ğµç ½ºÆ®¸²À» Æó¼âÇÑ´Ù.
-fcvt	stdlib.h	char*fcvt(double value, int ndig, int*dec, int*sign)	½Ç¼ö°ªÀ» ¹®ÀÚ¿­·Î ¹Ù²Û´Ù. º¯È¯µÈ ¹®ÀÚ¿­Àº Á¤Àû µ¥ÀÌÅÍ ¿µ¿ª¿¡ ÀúÀåµÇ¾îÁ® Æ÷ÀÎÅÍ¸¸ ¸®ÅÏµÈ´Ù.
+ï»¿abort	stdlib.h, process.h	void abort(void)	í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•˜ë˜ ë¹„ì •ìƒì ìœ¼ë¡œ ì¢…ë£Œí•œë‹¤.
+abs	math.h, stdlib.h	int abs(int x)	ì •ìˆ˜ xì˜ ì ˆëŒ€ê°’ì„ ê³„ì‚°í•œë‹¤.
+absread	dos.h	int absread(int drive, int nsects, long lsect, void *buffer)	ë””ìŠ¤í¬ì˜ íŠ¹ì • ì„¹í„°ë¥¼ ì½ëŠ”ë‹¤. í•œë²ˆì— ìµœëŒ€ 64Kë¥¼ ì´ˆê³¼í• ìˆ˜ ì—†ë‹¤.
+abswrite	dos.h	int absread(int drive, int nsects, long lsect, void *buffer)	ë””ìŠ¤í¬ì˜ íŠ¹ì • ì„¹í„°ì— ê¸°ë¡í•œë‹¤. í•œë²ˆì— ìµœëŒ€ 64Kë¥¼ ì´ˆê³¼í• ìˆ˜ ì—†ë‹¤.
+access	io.h	int access(const char (filename, int amode)	íŒŒì¼ì˜ ì¡´ì¬ì—¬ë¶€ì™€ ì½ê³  ì“¸ ìˆ˜ ìˆëŠ”ì§€ì— ëŒ€í•´ ì¡°ì‚¬í•œë‹¤.
+acos	math.h	double acos(double x)	ì•„í¬ ì½”ì‚¬ì¸ ê°’ì„ ê³„ì‚°í•œë‹¤.
+allocmem	dos.h	int allocmem(unsigned size, unsigned *segp)	ë„ìŠ¤ í‘ì…˜ ì½œì˜ 48hë¥¼ í˜¸ì¶œí•˜ì—¬ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ë°›ëŠ”ë‹¤.
+arc	graphics.h	void far arc(int x, int y, int stangle, int endangle, int ratius)	ì›í˜¸ë¥¼ ê·¸ë ¤ì¤€ë‹¤.
+arg	complex.h	double arg(complex x)	ë³µì†Œìˆ˜ í‰ë©´ì—ì„œ ì£¼ì–´ì§„ ìˆ˜ì˜ ê°ë„ë¥¼ ì•Œì•„ë‚¸ë‹¤.
+asctime	time.h	char *asctime(const struct tm *tblock)	tmí˜• êµ¬ì¡°ì²´ì— ì €ì¥ë˜ì–´ ìˆëŠ” ì‹œê°„, ë‚ ì§œì— ê´€í•œ ì •ë³´ë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤.
+asin	math.h	double asin(double x)	ì•„í¬ ì‚¬ì¸ ê°’ì„ ê³„ì‚°í•œë‹¤.
+assert	assert.h	void assert(int test)	ì¸ìˆ˜ë¡œ ì „ë‹¬ë˜ëŠ” testê°€ 0ì´ë©´ í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•œë‹¤.
+atan	math.h	double atan(double x)	ì•„í¬ íƒ„ì  íŠ¸ê°’ì„ ê³„ì‚°í•œë‹¤.
+atan2	math.h	double atan2(double y, double x)	atan(y/x)ì™€ ë™ì¼í•œ ê¸°ëŠ¥ì„ ìˆ˜í–‰í•˜ëŠ” í•¨ìˆ˜ì´ë‹¤. ë‹¨ xê°€ 0ì— ê°€ê¹Œìš´ ê°’ì„ë•Œ atanë³´ë‹¤ ì •í™•í•˜ë‹¤.
+atexit	stdlib.h	int atexit(atexit_t func)	í”„ë¡œê·¸ë¨ì€ main í•¨ìˆ˜ê°€ ëë‚˜ê±°ë‚˜ exit í•¨ìˆ˜ì— ì˜í•´ ê°•ì œë¡œ ì¢…ë£Œë˜ë©´ ìƒìœ„ í”„ë¡œì„¸ì„œë¡œ ë³µê·€í•œë‹¤.
+atof	math.h, stdlib.h	double atof(const char*s)	ë¬¸ìì—´ì„ doubleí˜• ë¶€ë™ì†Œìˆ˜ì ìœ¼ë¡œ ë°”ê¾¼ë‹¤.
+atoi	stdlib.h	int atoi(const char*s)	ë¬¸ìì—´ì„ ì •ìˆ˜ë¡œ ë³€í™˜í•œë‹¤.
+atol	stdlib.h	int atol(const char*s)	ë¬¸ìì—´ì„ longí˜• ì •ìˆ˜ë¡œ ë³€í™˜í•œë‹¤.
+bar	graphics.h	void far bar(int left, int right, int bottom)	ì¢Œìƒë‹¨ ì¢Œí‘œì—ì„œ ìš°ìƒë‹¨ì„ ëŒ€ê°ì„ ìœ¼ë¡œ í•˜ëŠ” ì§ì‚¬ê°í˜•ì„ ê·¸ë¦°ë‹¤.
+bar3d	graphics.h	void far bar3d(int left, int right, int bottom, int depth, int topflag)	3ì°¨ì›ì˜ ì‚¬ê°í˜• ë°”ë¥¼ ê·¸ë¦°ë‹¤. ì¢Œìƒë‹¨ì—ì„œ ìš°í•˜ë‹¨ì„ ëŒ€ê°ì„ ìœ¼ë¡œ í•˜ëŠ” ì§ì‚¬ê°í˜•ëª¨ì–‘
+bdos	dos.h	int bdos(int dosfun, unsigned dosdx, unsigned dosal)	ë„ìŠ¤ í‘ì…˜ ì½œì„ ì§ì  í˜¸ì¶œí•œë‹¤.
+bdosptr	dos.h	int bdosptr(int dosfun, void*argument, unsigned dosal)	ë„ìŠ¤ í‘ì…˜ ì½œì„ ì§ì  í˜¸ì¶œí•œë‹¤.
+bioscom	bios.h	int bioscom(int cmd, char abyte, int port)	RS232C í†µì‹ ì„ ìˆ˜í–‰í•˜ë©° BIOS ì¸í„°ëŸ½íŠ¸ 0x14ë²ˆì„ ì‚¬ìš©í•œë‹¤.
+biosdisk	bios.h	int biosdisk(int cmd, int drive, int head, int track, int sector, int nsects, void *buffer)	ì§ì ‘ì ìœ¼ë¡œ ë””ìŠ¤í¬ ì…ì¶œë ¥ë™ì‘ì„ í•˜ë©°, BIOS ì¸í„°ëŸ½íŠ¸ì˜ 0x13ë²ˆì„ ì‚¬ìš©í•œë‹¤.
+biosequip	bios.h	int biosequip(void)	ì‹œìŠ¤í…œì— ì„¤ì¹˜ëœ ì¥ë¹„ì˜ ê°œìˆ˜ ë° ì¢…ë¥˜ë¥¼ ì•Œì•„ë‚¸ë‹¤.
+bioskey	bios.h	int bioskey(int cmd)	BIOS ì¸í„°ëŸ½íŠ¸ 0x16ì„ ì‚¬ìš©í•˜ì—¬ í‚¤ë³´ë“œ ì…ì¶œë ¥ì„ ìˆ˜í–‰í•œë‹¤.
+biosmemory	bios.h	int biosmemory(void)	BIOS ì¸í„°ëŸ½íŠ¸ 0x12ë¥¼ ì‚¬ìš©í•˜ì—¬ ë¨ì˜ í¬ê¸°ë¥¼ ì¡°ì‚¬í•œë‹¤.
+biosprint	bios.h	int biosprint(int cmd, int abyte, int port)	í”„ë¦°íŠ¸ ì¶œë ¥ ì‘ì—…ì„ í–‰í•˜ë˜ BIOS ì¸í„°ëŸ½íŠ¸  0x17ì„ ì‚¬ìš©í•œë‹¤.
+biostime	bios.h	long biostime(int cmd, long nowtime)	BIOS ì¸í„°ëŸ½íŠ¸ 0x1aë¥¼ í˜¸ì¶œí•˜ì—¬ íƒ€ì´ë¨¸ë¥¼ ì½ê±°ë‚˜ ì„¤ì •í•œë‹¤.
+brk	alloc.h	int brk(void *addr)	ì´ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•œ í”„ë¡œê·¸ë¨ì˜ heep í¬ê¸°ë¥¼ ë°”ê¾¼ë‹¤.
+bsearch	stdlib.h	void bsearch(const void *key, const void *base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	í•­ëª©ë“¤ì„ ë‹´ê³  ìˆëŠ” í…Œì´ë¸”(ë³´í†µ ë°°ì—´)ì„ ë’¤ì ¸ í‚¤ê°’ì„ ì°¾ì•„ë‚´ê³  ê·¸ ë²ˆì§€ë¥¼ ë¦¬í„´í•œë‹¤.
+cabs	math.h	double cabs(struct complex z)	ë³µì†Œìˆ˜ì˜ ì ˆëŒ€ê°’ì„ êµ¬í•œë‹¤.
+calloc	alloc.h, stdlib.h	void *calloc(size_t nitems, size_t size)	ë™ì ìœ¼ë¡œ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•œë‹¤. í• ë‹¹ëœ ë©”ëª¨ë¦¬ì˜ í¬ê¸°ëŠ” nitems* size ë°”ì´íŠ¸ë§Œí¼ì´ë‹¤.
+ceil	math.h	double ceil(double x)	ì¸ìˆ˜ xë¥¼ ì˜¬ë¦¼í•œë‹¤. ì¸ìˆ˜ xì˜ ìˆ˜ì§ì„ ìƒì— ìš°ì¸¡ìœ¼ë¡œ ê°€ì¥ ê°€ê¹Œìš´ ì •ìˆ˜ë¥¼ ì°¾ì•„ë‚´ëŠ” í•¨ìˆ˜ì´ë‹¤.
+cgets	conio.h	char*cgets(char*str)	ì½˜ì†”ë¡œë¶€í„° ë¬¸ìì—´ì„ ì…ë ¥ë°›ì•„ ë¬¸ì ë°°ì—´ strì— ì €ì¥í•œë‹¤.
+chdir	dir.h	int chdir(const char*path)	ë””ë ‰í† ë¦¬ë¥¼ ë³€ê²½í•œë‹¤. Pathì—ëŠ” ë³€ê²½í•  ë””ë ‰í† ë¦¬ëª…ì„ ì ì–´ì£¼ê³  ë“œë¼ì´ë¸Œëª…ë„ í¬í•¨ê°€ëŠ¥í•˜ë‹¤.
+chmod	io.h	int chmod(const char*path, int amode)	íŒŒì¼ ì•¡ì„¸ìŠ¤ ëª¨ë“œë¥¼ ë³€ê²½ì‹œí‚¨ë‹¤.
+chsize	io.h	int chsize(int handle, long size)	í•¸ë“¤ì´ ì§€ì •í•˜ëŠ” íŒŒì¼ì˜ í¬ê¸°ë¥¼ sizeë¡œ ì¬ì„¤ì •í•œë‹¤.
+circle	graphics.h	void far circle(int x, int radius)	ì¤‘ì‹¬(x, y)ì—ì„œ ë°˜ì§€ë¦„ì´ radiusì¸ ì›ì„ ê·¸ë¦°ë‹¤.
+cleardevice	graphics.h	void far cleardevice(void)	ê·¸ë˜í”½ í™”ë©´ì„ ì§€ìš´ë‹¤. í™”ë©´ ì „ì²´ë¥¼ ë°°ê²½ìƒ‰ìœ¼ë¡œ ë®ìœ¼ë©° ì§€ì •ìƒ‰ì´ ì—†ì„ ê²½ìš° ê¸°ë³¸ê°’ì€ ê²€ì •ìƒ‰ì´ë‹¤.
+clearerr	stdio.h	void clearerr(FILE *stream)	FILE êµ¬ì¡°ì²´ì˜ flags ë©¤ë²„ ì œ4ë¹„íŠ¸ì™€ ì œ5ë¹„íŠ¸ë¥¼ ë¦¬ì…‹ì‹œí‚¨ë‹¤.
+clearviewport	graphics.h	void far clearviewport(void)	í˜„ì¬ ì„¤ì •ëœ ë·°í¬íŠ¸ë¥¼ ì§€ìš´ë‹¤. ë‚´ë¶€ë¥¼ ë°°ê²½ìƒ‰ìœ¼ë¡œ ì±„ìš´ë‹¤.
+clock	time.h	clock_t cloch(void)	í”„ë¡œê·¸ë¨ì´ ì‹œì‘ëœ í›„ ê²½ê³¼í•œ clock tickì„ ë¦¬í„´í•œë‹¤.
+close	io.h	int close(int handle)	í•¸ë“¤ì´ ì§€ì‹œí•˜ëŠ” íŒŒì¼ì„ ë‹«ëŠ”ë‹¤.
+closegraph	graphics.h	void far closegraph(void)	ê·¸ë˜í”½ ì‹œìŠ¤í…œì„ ì¢…ë£Œí•˜ê³  í…ìŠ¤íŠ¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ì˜¨ë‹¤.
+clreol	conio.h	void clreol(void)	í˜„ì¬ ì»¤ì„œ ìœ„ì¹˜ì—ì„œë¶€í„° ê·¸ ì¤„ì˜ ëê¹Œì§€ë¥¼ ì‚­ì œí•œë‹¤. ì‚­ì œ í›„ ì»¤ì„œì´ë™ì€ ì—†ë‹¤.
+clrscr	conio.h	void clrscr(void)	í…ìŠ¤íŠ¸ í™”ë©´ì„ ì§€ìš°ê³  ì»¤ì„œë¥¼ ì¢Œìƒë‹¨ì˜ ìœ„ì¹˜ë¡œ ì˜®ê¸´ë‹¤. ê·¸ë˜í”½ ëª¨ë“œì—ì„  ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
+complex	complex.h	complex complex(double real, double imag)	ì£¼ì–´ì§„ ì‹¤ìˆ˜ì™€ í—ˆìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ë³µì†Œìˆ˜ë¥¼ ë§Œë“ ë‹¤.
+conj	complex.h	complex conj(complex x)	ì¼¤ë ˆ ë³µì†Œìˆ˜ë¥¼ êµ¬í•œë‹¤.
+coreleft	alloc.h	unsigned long coreleft(void)	ì‚¬ìš© ê°€ëŠ¥í•œ ë‚¨ì€ ë©”ëª¨ë¦¬ ìš©ëŸ‰ì„ ì¡°ì‚¬í•œë‹¤. ë©”ëª¨ë¦¬ ëª¨ë¸ì— ë”°ë¼ ì¸¡ì •ê°’ì´ ë‹¬ë¼ì§„ë‹¤.
+cos	math.h	double cos(double x)	ì‚¼ê° í•¨ìˆ˜ così„ ê³„ì‚°í•œë‹¤.
+cosh	math.h	double cosh(double x)	ìŒê³¡ì„   cosh í•¨ìˆ˜ê°’ì„ ê³„ì‚°í•œë‹¤.
+country	dos.h	struct country*country(int xcode, struct country *cp)	ë‚ ì§œ, ì‹œê°„ í‘œí˜„ ë°©ë²•, í™”í ë‹¨ìœ„ ë“±ì˜ êµ­ê°€ë§ˆë‹¤ ë‹¤ë¥¸ ì •ë³´ë¥¼ country êµ¬ì¡°ì²´ì— ì„¸íŠ¸í•œë‹¤.
+cprintf	conio.h	int cprintf(const char*format, ì¸ìˆ˜â€¦)	ì‚¬ìš© ë°©ë²•, ì„œì‹ì˜ ì¢…ë¥˜ê°€ printfì™€ ë™ì¼í•˜ë‹¤.
+cputs	conio.h	int cputs(const char *str)	ë¬¸ìì—´ì„ í™”ë©´ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+creat	io.h, dos.h	int creat(const char*path, int amode)	ìƒˆë¡œìš´ íŒŒì¼ì„ ë§Œë“ ë‹¤.
+creatnew	io.h	int creatnew(const char*path, int attrib)	ìƒˆë¡œ íŒŒì¼ì„ ë§Œë“ ë‹¤. ë‹¨ ìƒˆë¡œ ë§Œë“¤ íŒŒì¼ì´ ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ê²½ìš°ì—ëŠ” ì—ëŸ¬ê°€ ë˜ë©° ê·¸ëŒ€ë¡œ ë¦¬í„´í•œë‹¤.
+creattemp	io.h	int creattemp(char*path, int attrib)	ì„ì‹œ íŒŒì¼ì„ ì§€ì •í•œ ë””í…í† ë¦¬ì— ìƒì„±í•œë‹¤. íŒŒì¼ ì´ë¦„ì€ ê³ ìœ í•œ ì´ë¦„ì„ ê°€ì§„ë‹¤.
+cscanf	conio.h	int cscanf(char*format, ì¸ìˆ˜ â€¦)	ì½˜ì†”ë¡œë¶€í„° ì§ì ‘ ì…ë ¥ì„ ë°›ëŠ”ë‹¤. scanfì™€ ë¹„ìŠ·í•˜ë‚˜ ë‹¤ë¥¸ì ì€ ì…ë ¥ì„ í™”ë©´ìœ¼ë¡œë¶€í„° ì§ì ‘ ë°›ì•„ë“¤ì¸ë‹¤.
+ctime	time.h	char*ctime(const time_t*time)	timeê°’ì´ ê°€ë¦¬í‚¤ëŠ” ì‹œê°„ê³¼ ë‚ ì§œë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤.
+ctrlbrk	dos.h	void ctlbrk(int (*handle)(void))	Ctrl-Breakì— ëŒ€í•œ handler í•¨ìˆ˜, Ctrl-Break í‚¤ê°€ ëˆŒëŸ¬ì¡Œì„ ë•Œì˜ ì²˜ë¦¬ë¥¼ í•˜ëŠ” í•¨ìˆ˜ë¥¼ ì„¤ì •í•œë‹¤.
+delay	dos.h	void delay(unsiged miliseconds)	ì¼ì • ê¸°ê°„ë™ì•ˆ ì‹œê°„ì„ ëˆë‹¤. ê²Œì„ë“±ì—ì„œ ì†ë„ë¥¼ ì§€ì—°ì‹œí‚¤ê¸° ìœ„í•´ ì£¼ë¡œ ì‚¬ìš©í•œë‹¤.
+delline	conio.h	void delline(void)	í˜„ì¬ ì»¤ì„œ ìœ„ì¹˜ì˜ í•œ í–‰ì„ ì‚­ì œí•œë‹¤. í…ìŠ¤íŠ¸ ëª¨ë“œì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥í•œ í•¨ìˆ˜ì´ë‹¤.
+detectgraph	graphics.h	void far datectgraph(int far*graphdriver, int far*graphmode)	í˜„ì¬ ì‹œìŠ¤í…œì— ì¥ì°©ë˜ì–´ ìˆëŠ” ê·¸ë˜í”½ ë“œë¼ì´ë²„ë¥¼ ì°¾ì•„ì£¼ë©° ì œê³µí•˜ëŠ” ìµœê³ ì˜ ê³ í•´ìƒë„ ëª¨ë“œë¥¼ ì°¾ì•„ì¤€ë‹¤.
+difftime	time.h	double difftime(time_t time2, time_t time1)	time1, time2ê°€ ê°€ë¦¬í‚¤ëŠ” ì‹œê°„ì˜ ì°¨ì´ë¥¼ ì´ˆ ë‹¨ìœ„ë¡œ ê³„ì‚°í•œë‹¤.
+disable	dos.h	void disable(void)	í•˜ë“œì›¨ì–´ ì¸í„°ëŸ½íŠ¸ë¥¼ ê¸ˆì§€ì‹œí‚¨ë‹¤.
+div	stdlib.h	div_t div(int number, int denom)	ë‘ ì •ìˆ˜ë¡œ ë‚˜ëˆ—ì…ˆì„ í•˜ê³  ê·¸ ëª«ê³¼ ë‚˜ë¨¸ì§€ë¥¼ stdlib.hì— ì •ì˜ëœ div_t êµ¬ì¡°ì²´ë¡œ ë¦¬í„´í•œë‹¤.
+dosexterr	dos.h	int dosexterr(struct DOSERROR*eblkp)	ë„ìŠ¤ í‘ì…˜ ì½œì´ ì‹¤íŒ¨í•œ í›„ì— í™•ì¥ëœ ì—ëŸ¬ ì •ë³´ë¥¼ ì½ì–´ì™€ DOSERROR  êµ¬ì¡°ì²´ì— ì„¸íŠ¸í•œë‹¤.
+dostounix	dos.h	long dostounix(struct date*d, struct time*t)	getdate í•¨ìˆ˜ì™€ gettime í•¨ìˆ˜ì— ì˜í•´ ì¡°ì‚¬ëœ ë‚ ì§œì™€ ì‹œê°„ í˜•ì‹ì„ ìœ ë‹‰ìŠ¤í˜•ìœ¼ë¡œ ë°”ê¾¼ë‹¤.
+drawpoly	graphics.h	void far drawploy(int numpoints, int far*polypoints)	ë‹¤ê°í˜•ì˜ ì™¸ê°ì„ ì„ ê·¸ë¦°ë‹¤.
+dup	io.h	int dup(int handle)	íŒŒì¼ í•¸ë“¤ì„ ë³µì‚¬í•˜ì—¬ ìƒˆë¡œìš´ íŒŒì¼í•¸ë“¤ì„ ë§Œë“ ë‹¤.
+dup2	io.h	int dup2(int oldhandle, int newhandle)	oldhandleì„ newhandleë¡œ ë³µì‚¬í•œë‹¤.
+ecvt	stdlib.h	char*ecvt(double value, int ndig, int*dec, int*sign)	ì‹¤ìˆ˜ê°’ì„ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤. ë³€í™˜ëœ ë¬¸ìì—´ì€ ì •ì  ë°ì´í„° ì˜ì—­ì— ì €ì¥ë˜ì–´ì ¸ í¬ì¸í„°ë§Œ ë¦¬í„´ëœë‹¤.
+ellipse	graphics.h	void far ellipse(int x, int y, int stangle, int endangle, int xradius, int yradius)	ë°˜ì§€ë¦„(x, y)ë¥¼ ì¤‘ì‹¬ìœ¼ë¡œ ì‹œì‘ê°ì—ì„œ ëê°ê¹Œì§€ x,yì¶• ë°˜ì§€ë¦„ì„ ì§€ì •í•˜ì—¬ íƒ€ì›ì„ ê·¸ë¦°ë‹¤.
+enable	dos.h	void enable(void)	í•˜ë“œì›¨ì–´ ì¸í„°ëŸ½íŠ¸ë¥¼ ê°€ëŠ¥í•˜ê²Œ í•œë‹¤.
+eof	io.h	int eof(int handle)	í˜„ì¬ ìœ„ì¹˜ê°€ íŒŒì¼ ëì´ë©´ 1ì„ ë¦¬í„´í•˜ê³  íŒŒì¼ ëì´ ì•„ë‹ˆë©´ 0ì„ ë¦¬í„´í•œë‹¤.
+exec	process.h	int execl(char *path, char*arg0,â€¦,NULL)	exec.. í•¨ìˆ˜ëŠ” child í”„ë¡œê·¸ë¨ì„ ì½ì–´ì™€ì„œ ì‹¤í–‰ì‹œí‚¨ë‹¤. í˜„ì¬ í”„ë¡œê·¸ë¨ì€ ì¢…ë£Œëœë‹¤.
+exp	math.h	double exp(double x):	ì´ í•¨ìˆ˜ë¡œ ë„˜ê²¨ì§€ëŠ” xê°’ì— ë”°ë¼ì„œëŠ” overflowê°€ ë°œìƒí•  ìˆ˜ ìˆë‹¤.
+fabs	math.h	double fabs(double x)	ë¶€ë™ ì†Œìˆ˜ì ì˜ ì ˆëŒ€ê°’ì„ ê³„ì‚°í•œë‹¤.
+farcalloc	alloc.h	void far*farcalloc(unsigned nunits, unsigned long unitsz)	far heapì—ì„œ ë™ì  ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•œë‹¤. í• ë‹¹ë˜ëŠ” ë©”ëª¨ë¦¬ì˜ ì´ ëŸ‰ì€ nuints*unitsz ë°”ì´íŠ¸ì´ë‹¤.
+farcoreleft	alloc.h	unsigned long farcoreleft(void)	far heapì˜ ì‚¬ìš© ê°€ëŠ¥í•œ ë©”ëª¨ë¦¬ ìš©ëŸ‰ì„ ì¡°ì‚¬í•œë‹¤.
+farfree	alloc.h	void farfree(void far*block)	faralloc, farrealloc, farcalloc ë“±ì— ì˜í•´ í• ë‹¹ëœ far heapì˜ í• ë‹¹ì„ í•´ì œí•œë‹¤.
+farmalloc	alloc.h	void far*farrnalloc(unsigned long nbytes)	far heapì—ì„œ ë™ì  ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•œë‹¤.
+farrealloc	alloc.h	void *farrealloc(void far*oldblock, unsigned long nbytes)	ì´ë¯¸ í• ë‹¹ë˜ì–´ ìˆëŠ” ë©”ëª¨ë¦¬ì˜ í¬ê¸°ë¥¼ ì¶•ì†Œì‹œí‚¤ê±°ë‚˜ í™•ì¥ì‹œí‚¨ë‹¤.
+fclose	stdio.h	int fclose(FILE *stream)	ê°œë°©ëœ ìŠ¤íŠ¸ë¦¼ì„ ë‹«ëŠ”ë‹¤. ë²„í¼ê°€ ì§€ì›Œì§„ë‹¤.
+fcloseall	stdio.h	int fcloseall(void)	ì—´ë ¤ì ¸ ìˆëŠ” ëª¨ë“  ìŠ¤íŠ¸ë¦¼ì„ íì‡„í•œë‹¤.
+fcvt	stdlib.h	char*fcvt(double value, int ndig, int*dec, int*sign)	ì‹¤ìˆ˜ê°’ì„ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤. ë³€í™˜ëœ ë¬¸ìì—´ì€ ì •ì  ë°ì´í„° ì˜ì—­ì— ì €ì¥ë˜ì–´ì ¸ í¬ì¸í„°ë§Œ ë¦¬í„´ëœë‹¤.
 fdopen			
-feof	stdio.h	int feof(FILE*stream)	FILE ±¸Á¶Ã¼ÀÇ flags ¸â¹öÀÇ Á¦5ºñÆ®ÀÇ °ªÀ» °Ë»çÇÑ´Ù.
-ferror	stdio.h	int ferror(FILE*stream)	ÁÖ¾îÁø ½ºÆ®¸²¿¡¼­ ÀĞ±â, ¾²±â µ¿ÀÛ¿¡¼­ÀÇ ¿¡·¯°¡ ÀÖ¾ú´ÂÁö °Ë»çÇÑ´Ù.
-fflush	stdio.h	int fflush(FILE*stream)	½ºÆ®¸²¿¡ ÇÒ´çµÇ¾î ÀÖ´Â ¹öÆÛ¸¦ ºñ¿î´Ù. ÀÔ·Â, Ãâ·Â »óÈ²¿¡ µû¶ó ¹öÆÛ¸¦ ºñ¿ì´Â ÀÇ¹Ì°¡ ´Ù¸£´Ù.
-fgetc	stdio.h	int fgetc(FILE*stream)	½ºÆ®¸²À¸·ÎºÎÅÍ ÇÑ ¹®ÀÚ¸¦ ÀĞ¾î¿Â´Ù. ¹®ÀÚÇü º¯¼ö¿¡ ´ëÀÔÇÒ °æ¿ì ¿¡·¯ °ËÃâÀ» ÇÒ ¼ö ¾ø´Ù.
-fgetchar	stdio.h	int fgetchar(void)	Å°º¸µå·ÎºÎÅÍ ÇÑ ¹®ÀÚ¸¦ ÀÔ·Â¹Ş´Â´Ù. ´ÜÀÏ ¹®ÀÚ ÀÔ·Â¿¡ »ç¿ëÇÏ´Â °ÍÀº ÁÁÁö ¾Ê´Ù.
-fgetpos	stdio.h	int fgetpos(FILE*stream, fpos_t*pos)	½ºÆ®¸²ÀÇ ÇöÀç ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ Á¶»çÇØ posº¯¼ö¿¡ ÀúÀåÇÑ´Ù.
-fgets	stdio.h	char *fgets(char*s, int n, FILE*stream)	\n'¹®ÀÚ¸¦ ¸¸³¯ ¶§±îÁö ¹®ÀÚ¿­À» ÀĞ¾îµéÀÎ´Ù. ¹®ÀÚ¿­ µÚ¿¡ NULL¹®ÀÚ°¡ »ğÀÔµÈ´Ù.
-filelength	io.h	long filelength(int handle)	handleÀÌ ÁöÁ¤ÇÏ´Â ÆÄÀÏÀÇ ±æÀÌ¸¦ Á¶»çÇÑ´Ù.
-fileno	stdio.h	int flieno(FILE*stream)	½ºÆ®¸²ÀÇ ÆÄÀÏ ÇÚµéÀ» Á¶»çÇÑ´Ù.
-fillellipse	graphics.h	void far fillellipse(int x, int y, int xradius, int yradius)	Áß½É(x, y)¿¡¼­ xÃà yÃà ¹İÁö¸§À» °³º°ÀûÀ¸·Î ÁöÁ¤ÇØ Å¸¿øÀ» ±×¸®¸ç ³»ºÎ¸¦ Ã¤¿î´Ù.
-fillpoly	graphics.h	void far fillpoly(int numpoints, int far*polypoints)	drawpoly¿Í À¯»çÇÑ ÀÛ¿ëÀ» ÇÏ¸ç numpoints°¡ ÁöÁ¤ÇÏ´Â ¸¸Å­ÀÇ ´Ù°¢ÇüÀ» ±×¸°´Ù.
-findfirst	dir.h	int findfirst(const char*pathname, struct ftblk *ftblk, int attrib)	¿ÍÀÏµå Ä«µå·Î ÁÖ¾îÁø Á¶°ÇÀ» ¸¸Á·ÇÏ´Â Ã¹ ¹øÂ° ÆÄÀÏÀ» Ã£´Â´Ù.
-findnext	dir.h	int findnext(struct ftblk*ftblk)	findfirst°¡ ÃÖÃÊ °Ë»öÇÏ¿© ¼³Á¤ÇÑ ftblk ±¸Á¶Ã¼ÀÇ Á¤º¸¸¦ ÀÌ¿ëÇÏ¿© °Ë»öÀ» °è¼Ó ¼öÇàÇØ ³ª°£´Ù.
-floodfill	graphics.h	void far floodfill(int x, int y, int border)	´İÇôÁ® ÀÖ´Â ´Ù°¢ÇüÀÇ ³»ºÎ¸¦ Ã¤¿î´Ù.
-floor	math.h	double floor(double x)	ÀÎ¼ö x¸¦ ³»¸²ÇÑ´Ù. ÀÎ¼ö xÀÇ ¼öÁ÷¼±»ó¿¡ ÁÂÃøÀ¸·Î °¡Àå °¡±î¿î Á¤¼ö¸¦ Ã£¾Æ³»´Â ÇÔ¼öÀÌ´Ù.
-flushall	stdio.h	int flushall(void)	ÇöÀç °³¹æµÈ ¸ğµç ½ºÆ®¸²¿¡ ÇÒ´çµÇ¾î ÀÖ´Â ¹öÆÛ¸¦ ºñ¿î´Ù.
-fmod	math.h	double fmod(double x, double y)	½Ç¼ö x¸¦ ½Ç¼ö y·Î ³ª´« ³ª¸ÓÁö¸¦ ±¸ÇÑ´Ù.
-fnmerge	dir.h	void fnmerge(char *path, const char *drive, const char *dir, const char *name, const char *ext)	°æ·Î¸¦ ÀÌ·ç´Â °¢°¢ÀÇ ¿ä¼Ò¸¦ ÇÕÃÄ ÇÏ³ªÀÇ ¿ÏÀüÇÑ °æ·Î¸¦ ¸¸µç´Ù.
-fnsplit	dir.h	int fnsplit(const char *path, char *drive, char *dir, char *name, char *ext)	ÇÏ³ªÀÇ ¿ÏÀüÇÑ °æ·Î¸¦ °¢°¢ÀÇ ¿ä¼Ò·Î ºĞ¸®½ÃÅ²´Ù.
-fopen	stdio.h	FILE *fopen(const char *filename, const char *mode)	½ºÆ®¸²À» °³¹æÇÏ°í FILEÇü ±¸Á¶Ã¼¸¦ ¸¸µé¾î Á¤º¸¸¦ ±âÀÔÇÑ ÈÄ Æ÷ÀÎÅÍ¸¦ ¸®ÅÏÇÑ´Ù.
-FP_OFF	dos.h	unsigned FP_OFF(farpointer)	farpointer¿¡¼­ ¿ÀÇÁ¼Â °ª¸¸ ºĞ¸®ÇØ³½´Ù.
-fprintf	stdio.h	int fpointf(FILR *stream, const char *format, ...)	½ºÆ®¸²À¸·Î ¼­½ÄÈ­µÈ Ãâ·ÂÀ» ³»º¸³½´Ù. printf¿Í À¯»çÇÏ´Ù.
-FP_SEG	dos.h	unsigned FP_SEG(farpointer)	farpointer¿¡¼­ ¼¼±×¸àÆ® °ª¸¸ ºĞ¸®ÇØ³½´Ù.
-fputc	stdio.h	int fputc(int c, FILE *stream)	ÇÑ ¹®ÀÚ¸¦ Ãâ·ÂÇÑ´Ù.
-fputchar	stdio.h	int fputchar(int c)	¹®ÀÚ c¸¦ È­¸é¿¡ Ãâ·ÂÇÑ´Ù. fputc¿Í °°´Ù.
-fputs	stdio.h	int fputs(const char *s, FILE *stream)	¹®ÀÚ¿­À» ½ºÆ®¸²À¸·Î Ãâ·ÂÇÑ´Ù.
-fread	stdio.h	size_t fread(void *ptr, size_t size, size_t n, FILE *stream)	½ºÆ®¸²À¸·ÎºÎÅÍ ±æÀÌ°¡ sizeÀÎ µ¥ÀÌÅÍ n°³¸¦ ÁöÁ¤µÈ ¸Ş¸ğ¸®·Î ÀĞ¾îµéÀÎ´Ù.
-free	alloc.h, stdlib.h	void free(void*block)	malloc, calloc, realloc µî¿¡ ÀÇÇØ ÇÒ´çµÈ ¸Ş¸ğ¸®¸¦ ÇØÁ¦ÇÑ´Ù.
-freemem	dos.h	int freemem(unsigned segx)	alloc È£Ãâ·Î ÇÒ´çµÈ ¸Ş¸ğ¸® ºí·ÏÀ» ÇØÁ¦ÇÑ´Ù.
-freopen	stdio.h	FILE *freopen(const char *filename, const char *mode, FILE *stream)	°³¹æµÇ¾î ÀÖ´Â ½ºÆ®¸²À» filenameÀ¸·Î ´ëÃ¼ÇÑ´Ù.
-frexp	math.h	double frexp(double x, int *exponent)	»ó¿ë·Î±× log aÀÇ °¡¼ö°ªÀ» °è»êÇÑ´Ù.
-fscanf	stdio.h	int fscanf(FILE *stream, const char *format, ...)	½ºÆ®¸²À¸·ÎºÎÅÍ ¼­½ÄÈ­µÈ ÀÔ·ÂÀ» ÇàÇÑ´Ù. scanf¿Í À¯»çÇÏ´Ù.
-fseek	stdio.h	int fseek(FILE *stream, long int offset, int whence)	½ºÆ®¸²ÀÇ ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ »õ·Ó°Ô ¼³Á¤ÇÑ´Ù.
-fsetpos	stdio.h	int fsetpos(FILE *stream, const fpos_t *pos)	ÇöÀçÀÇ ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ »õ·Ó°Ô ¼³Á¤ÇÑ´Ù.
-fstat	sys/stat.h	int fstat(int handle, struct stat *statbuf)	¿ÀÇÂµÇ¾î ÀÖ´Â ÆÄÀÏÀÇ Á¤º¸¸¦ statbuf¿¡ ÀúÀåÇÑ´Ù.
-ftell	stdio.h	int ftell(FILE *stream)	½ºÆ®¸²ÀÇ ÇöÀç ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ Á¶»çÇÑ´Ù.
-ftime	sys/timeb.h	void ftime(struct timeb *buf)	ÇöÀç ½Ã°£À» timeb ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-fwrite	stdio.h	size_t fwrite(const void *ptr, size_t size, size_t n, FILE *stream)	½ºÆ®¸²À¸·Î Æ÷ÀÎÅÍ¿¡ µé¾îÀÖ´Â µ¥ÀÌÅÍ¸¦ size*n¹ÙÀÌÆ®¸¸Å­ Ãâ·ÂÇÑ´Ù.
-gcvt	stdio.h	char *gcvt(double value, int ndec, char *buf)	½Ç¼öÇü ¼öÄ¡¸¦ ndecÀÚ¸®¼ö±îÁö ¹®ÀÚ¿­·Î ¹Ù²ã buf¿¡ ÀúÀåÇÑ´Ù.
-geninterrupt	dos.h	void geninterrupt(int intr_num)	intr_numÀÌ Áö½ÃÇÏ´Â ¼ÒÇÁÆ®¿ş¾î ÀÎÅÍ·´Æ®¸¦ ½ÇÇà½ÃÅ²´Ù.
-getarccoords	graphics.h	void far getarccoords(struct arccoordstypr far *arccoords)	¸¶Áö¸· arc È£Ãâ¿¡ °üÇÑ Á¤º¸¸¦ arccoords°¡ °¡¸®Å°´Â ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-getaspectratio	graphics.h	void far getaspectratio(int far *xasp, int far *yasp)	¿øÀÇ Á¾È¾ºñ¸¦ Á¶»çÇÑ´Ù.
-getbkcolor	graphics.h	int far getbkcolor(void)	ÇöÀç ¹è°æ»öÀ» Á¶»çÇÑ´Ù.
-getc	stdio.h	int getc(FILE *stream)	½ºÆ®¸²¿¡¼­ ÇÑ ¹®ÀÚ¸¦ ÀĞ¾î¿Â µÚ ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ 1 Áõ°¡½ÃÅ²´Ù.
-getcbrk	dos.h	int getcbrk(void)	Ctrl-Break Ã¼Å© »óÅÂ¸¦ Á¶»çÇÑ´Ù.
-getch	conio.h	int getch(void)	Å°º¸µå¿¡¼­ ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹Ş´Â´Ù.
-getchar	stdio.h	int getchar(void)	Å°º¸µå¿¡¼­ ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹Ş´Â´Ù.
-getche	conio.h	int getche(void)	Å°º¸µå¿¡¼­ ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹Ş´Â´Ù.
-getcolor	graphics.h	int far getcolor(void)	ÇöÀç ¼³Á¤µÈ Àü°æ»öÀ» ¸®ÅÏÇÑ´Ù.
-getcurdir	dir.h	int getcurdir(int drive, char *directory)	ÁöÁ¤µÈ µå¶óÀÌºêÀÇ µğ·ºÅä¸®¸¦ Á¶»çÇØ ÀÎ¼ö dir°¡ ÁöÁ¤ÇÏ´Â ¸Ş¸ğ¸®¿¡ ÀúÀåÇÑ´Ù.
-getcwd	dir.h	char *getcwd(char *buf, int buflen)	ÇöÀç ÀÛ¾÷ÁßÀÎ µğ·ºÅä¸®¸¦ Á¶»çÇØ buf¿¡ ÀúÀåÇÑ´Ù.
-getdate	dos.h	void getdate(struct date *datep)	ÇöÀç ³¯Â¥¸¦ È®ÀÎÇÑ´Ù.
-getdefaultpalette	graphics.h	struct palettestype *far getdefaultpalette(void)	±×·¡ÇÈ ½Ã½ºÅÛÀ» ÃÊ±âÈ­ÇÒ ¶§ÀÇ ÆÈ·¹Æ® Å¸ÀÔ ±¸Á¶Ã¼¸¦ Ã£´Â´Ù.
-getdfree	dos.h	void getdfree(unsigned char drive, struct dfree *dtable)	µğ½ºÅ©ÀÇ °ø°£ Á¤º¸¸¦ Á¦°øÇØÁØ´Ù.
-getdisk	dir.h	int getdisk(void)	ÇöÀç µå¶óÀÌºêÀÇ ¹øÈ£¸¦ Á¶»çÇÑ´Ù.
-getdrivername	graphics.h	char far *getdrivername(void)	±×·¡ÇÈ ¸ğµå¸¦ ÃÊ±âÈ­ÇÒ ¶§ ¾î¶² BGI µå¶óÀÌ¹ö°¡ ·ÎµåµÇ¾ú´ÂÁö Á¶»çÇÑ´Ù.
-getdta	dos.h	char far *getdta(void)	µğ½ºÅ© Àü¼Û ÁÖ¼ÒÀÇ ÇöÀç ¼³Á¤ »óÅÂ¸¦ Á¶»çÇÑ´Ù.
-getenv	stdlib.h	char *getenv(const char *name)	È¯°æº¯¼ö¸¦ Á¶»çÇØ¼­ Á¶»çÇÑ ¹®ÀÚ¿­À» ¾ò´Â´Ù.
-getfat	dos.h	void getfat(unsigned char drive, struct fatinfo *dtable)	µå¶óÀÌºêÀÇ FATÁ¤º¸¸¦ °¡Á®¿Í dtable ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-getfatd	dos.h	void getfatd(struct fatinfo *dtable)	µå¶óÀÌºêÀÇ FATÁ¤º¸¸¦ °¡Á®¿Í dtable ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-getfillpattern	graphics.h	void far getfillpattern(char far *pattern)	»ç¿ëÀÚ Á¤ÀÇ Ã¤»ö ¹«´Ì¸¦ ÀĞ¾î¿Í ¸Ş¸ğ¸® ¿µ¿ª¿¡ º¹»çÇÑ´Ù.
-getfillsettings	graphics.h	void far getfillsettings(struct fillsettingstype far *fillinfo)	ÁöÁ¤µÈ Ã¤»ö ¹«´Ì¿Í »ö»óÀ» Á¶»çÇÑ´Ù.
-getftime	io.h	int getftime(int handle, struct ftime *ftimep)	ÆÄÀÏÀÇ ½Ã°£°ú ³¯Â¥¿¡ °üÇÑ Á¤º¸¸¦ Á¶»çÇÑ´Ù.
-getgraphmode	graphics.h	int far getgraphmodel(void)	ÇöÀç ¼±ÅÃµÈ ±×·¡ÇÈ ¸ğµå¸¦ Á¶»çÇÑ´Ù.
-getimage	graphics.h	void far getimage(int left, int top, int right, int bottom, void far *bitmap)	ÁöÁ¤µÈ ¿µ¿ªÀÇ ÀÌ¹ÌÁö¸¦ ÁöÁ¤µÈ ¸Ş¸ğ¸® ¹øÁö·Î º¹»çÇÑ´Ù.
-getlinesettings	graphics.h	void far getlinesettings(struct linesettingstype far *lineinfo)	ÁöÁ¤µÈ ¼±ÀÇ ¸ğ¾ç°ú ±½±â¸¦ Á¶»çÇÑ´Ù.
-getmaxcolor	graphics.h	int far getmaxcolor(void)	ÇöÀç »ç¿ëÇÒ ¼ö ÀÖ´Â »ö»óÀÇ ÃÖ°í ¹øÈ£¸¦ °è»êÇØÁØ´Ù.
-getmaxmode	graphics.h	int far getmaxmode(void)	ÇöÀç ±×·¡ÇÈ µå¶óÀÌ¹öÀÇ ÃÖ´ë ¸ğµå°ªÀ» Á¶»çÇÑ´Ù.
-getmaxx	graphics.h	int far getmaxx(void)	ÇöÀç ±×·¡ÇÈ µå¶óÀÌºê¿Í ¸ğµå¿¡¼­ ÃÖ´ë XÁÂÇ¥¸¦ ¾Ë¾Æ³½´Ù.
-getmaxy	graphics.h	int far getmaxy(void)	ÇöÀç ±×·¡ÇÈ µå¶óÀÌºê¿Í ¸ğµå¿¡¼­ ÃÖ´ë YÁÂÇ¥¸¦ ¾Ë¾Æ³½´Ù.
-getmodename	graphics.h	char *getmodename(int mode_number)	ÇöÀç ±×·¡ÇÈ ¸ğµåÀÇ ÀÌ¸§À» Á¶»çÇÑ´Ù.
-getmoderange	graphics.h	void far getmoderange(int graphdriver, int far *lomode, int far *himode)	±×·¡ÇÈ µå¶óÀÌ¹öÀÇ °¡Àå ³·Àº ¸ğµå¿Í °¡Àå ³ôÀº ¸ğµå¸¦ Á¶»çÇÑ´Ù.
-getpalette	graphics.h	void far getpalette(struct palettetype far *palette)	¼³Á¤µÈ ÆÈ·¹Æ®ÀÇ Å©±â¿Í »ö»ó Á¤º¸¸¦ Á¶»çÇØ ÆÈ·¹Æ® ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-getpalettesize	graphics.h	void far getpalettesize(void)	±×·¡ÇÈ µå¶óÀÌ¹ö¿Í ¸ğµå¿¡¼­ »ç¿ë °¡´ÉÇÑ ÆÈ·¹Æ®ÀÇ ÃÖ´ë °³¼ö¸¦ ¾Ë·ÁÁØ´Ù.
-getpass	conio.h	char *getpass(const char *prompt)	¹®ÀÚ¿­À» ÆĞ½º¿öµå Çü½ÄÀ¸·Î ÀÔ·Â¹Ş´Â´Ù.
-getpid	process.h	unsigned getpid(void)	°¢ ÇÁ·Î±×·¥ÀÇ ÇÁ·Î¼¼¼­ ID¸¦ Á¶»çÇÑ´Ù.
-getpixel	graphics.h	unsigned far getpixel(int x, int y)	Æ¯Á¤ ÁÂÇ¥ÀÇ »ö»óÀ» Á¶»çÇÑ´Ù.
-getpsp	dos.h	unsigned getpsp(void)	pspÀÇ ¼¼±×¸ÕÆ® ÁÖ¼Ò¸¦ Á¶»çÇÑ´Ù.
-gets	stdio.h	char *gets(char *s)	¹®ÀÚ¿­À» ÀÔ·Â¹Ş¾Æ s¿¡ ÀúÀåÇÑ´Ù.
-gettext	conio.h	int gettext(int left, int top, int right, int bottom, void *destin)	ÁöÁ¤ ¿µ¿ªÀÇ ¹®ÀÚµéÀ» ÁöÁ¤µÈ ¸Ş¸ğ¸® ¿µ¿ª¿¡ ÀúÀåÇÑ´Ù.
-gettextinfo	conio.h	void gettextinfo(struct text_info *r)	ÅØ½ºÆ® ¸ğµå¿¡ °üÇÑ Á¤º¸¸¦ ÀĞ¾î ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-gettextsettings	graphics.h	void far gettextsettings(struct textsettingstype far *texttypeinfo)	settextstyle µîÀÇ ÇÔ¼ö¿¡ ÀÇÇØ ¼³Á¤µÈ °ªÀ» ÀĞ¾î¿Â´Ù.
-gettime	dos.h	void gettime(struct time *timep)	½Ã°£À» ÀĞ¾î¿Í ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-getvect	dos.h	void interrupt(*getvect(int interruptno))()	ÁöÁ¤µÈ ÀÎÅÍ·´Æ®ÀÇ ½ÃÀÛ ¹øÁö¸¦ ¸®ÅÏÇÑ´Ù.
-getverify	dos.h	int getverify(void)	µµ½ºÀÇ verify flag »óÅÂ¸¦ Á¶»çÇÑ´Ù.
-getviewsettings	graphics.h	void far getviewsettings(struct viewporttype far *viewport)	¼³Á¤µÈ ºäÆ÷Æ®¿¡ ´ëÇÑ Á¤º¸¸¦ Á¶»çÇÑ´Ù.
-getw	stdio.h	int getw(FILE *stream)	½ºÆ®¸²À¸·ÎºÎÅÍ Á¤¼ö 2¹ÙÀÌÆ®¸¦ ÀĞ¾î¿Â´Ù.
-getx	graphics.h	int far getx(void)	ÇöÀç È­¸é ³»ÀÇ Çö À§Ä¡ÀÇ XÁÂÇ¥¸¦ ÀĞ¾î¿Â´Ù.
-gety	graphics.h	int far gety(void)	ÇöÀç È­¸é ³»ÀÇ Çö À§Ä¡ÀÇ YÁÂÇ¥¸¦ ÀĞ¾î¿Â´Ù.
-gmtime	time.h	struct tm *gmtime(const time _t *time)	time ÇÔ¼ö·Î ±¸ÇÑ ½Ã°£À» GMT Ç¥ÁØ ½Ã°¢À¸·Î º¯È¯ÇØÁØ´Ù.
-gotoxy	conio.h	void gotoxy(int x, int y)	Ä¿¼­ÀÇ À§Ä¡¸¦ (x, y)·Î ÀÌµ¿½ÃÅ²´Ù.
-graphdefaults	graphics.h	void far graphdefaults(void)	¸ğµç ±×·¡ÇÈ ¼¼ÆÃÀ» ÃÊ±âÈ­½ÃÅ²´Ù.
-grapherrormsg	graphics.h	char far *grapherrormsg(int errorcode)	¿¡·¯ ¸Ş½ÃÁö ¹®ÀÚ¿­ÀÇ Æ÷ÀÎÅÍ¸¦ ±¸ÇÑ´Ù.
-graphresult	graphics.h	int far graphresult(void)	¸¶Áö¸· ±×·¡ÇÈ µ¿ÀÛÀÌ ½ÇÆĞÇßÀ» ¶§ÀÇ ¿¡·¯°ªÀ» Á¶»çÇÑ´Ù.
-harderr	dos.h	void harderr(int(*handler)())	Ä¡¸íÀû ¿¡·¯ Ã³¸® ÇÔ¼ö¸¦ ÁöÁ¤ÇÑ´Ù.
-hardresume	dos.h	void hardresume(int axret)	µµ½º·Î 0~2ÀÇ °ªÀ» °¡Áö°í º¹±ÍÇÑ´Ù.
-hardretn	dos.h	void hardretn(int retn)	¿¡·¯¸¦ À¯¹ßÇÑ ÇÁ·Î±×·¥À¸·Î º¹±ÍÇÑ´Ù.
-heapcheck	alloc.h	int heapcheck(void)	ÈüÀ» °Ë»çÇÏ°í ³»ºÎ ¼Ó¼ºÀ» Á¡°ËÇÑ´Ù.
-heapcheckfree	alloc.h	int heapcheckfree(unsigned int fillvalue)	Èû¿¡ ³²¾Æ ÀÖ´Â ÀÚÀ¯ ¿µ¿ªÀÌ ÁÖ¾îÁø °ªÀ» °®°í ÀÖ´ÂÁö Á¶»çÇÑ´Ù.
-heapchecknode	alloc.h	int heapchecknode(void *node)	ÁÖ¾îÁø ¸Ş¸ğ¸® ºí·ÏÀ» Á¡°ËÇÏ¿© ÇöÀç »óÅÂ¸¦ °Ë»çÇÑ´Ù.
-heapfillfree	alloc.h	int heapfillfree(unsigned int fillvalue)	Èü¿¡ ³²¾Æ ÀÖ´Â »ç¿ë°¡´ÉÇÑ ÀÚÀ¯¿µ¿ªÀ» ÁÖ¾îÁø °ªÀ¸·Î Ã¤¿î´Ù.
-heapwalk	alloc.h	int heapwalk(struct heapinfo *hi)	Èü¿¡ ÇÒ´çµÈ ¸Ş¸ğ¸® ºí·ÏµéÀ» ¼øÈ¸ÇÏ¸ç »óÅÂ¸¦ Á¶»çÇÑ´Ù.
-highvideo	conio.h	void highvideo(void)	ÇöÀç ¹®ÀÚÀÇ ¼Ó¼ºÀ» °íÈÖµµ ¹®ÀÚ·Î ¼³Á¤ÇÑ´Ù.
-hypot	math.h	double hypot(double x, double y)	Á÷°¢ »ï°¢ÇüÀÇ ºøº¯À» °è»êÇÑ´Ù.
-imag	complex.h	double imag(double x)	º¹¼Ò¼öÀÇ Çã¼öºÎ¸¦ °è»êÇÑ´Ù.
-imagesize	graphics.h	void far imagesize(int left, int top, int right, int bottom)	ÀÌ¹ÌÁö¸¦ ÀúÀåÇÏ±â À§ÇØ ÇÊ¿äÇÑ ¸Ş¸ğ¸®ÀÇ Å©±â¸¦ ±¸ÇÑ´Ù.
-initgraph	graphics.h	void far initgraph(int far *graphdriver, int far *graphmode, char far *pathtoname)	±×·¡ÇÈ µå¶óÀÌ¹ö¸¦ ·ÎµåÇÏ°í ±×·¡ÇÈ ¸ğµå ¹× ¼³Á¤À» ÃÊ±âÈ­ÇÑ´Ù.
-inport	dos.h	int inport(int portid)	portid Æ÷Æ®¿¡¼­ 2¹ÙÀÌÆ®¸¦ ÀÔ·Â¹Ş´Â´Ù.
-inportb	dos.h	unsigned char inportb(int portid)	portid Æ÷Æ®¿¡¼­ 1¹ÙÀÌÆ®¸¦ ÀÔ·Â¹Ş´Â´Ù.
-insline	conio.h	void insline(void)	ÇöÀç Ä¿¼­ÀÇ À§Ä¡¿¡ °ø¹é ÇÑ ÁÙÀ» »ğÀÔÇÑ´Ù.
-installuserdriver	graphics.h	int far installuserdriver(char far *name, int huge(*detect)(void))	»õ·Î¿î BGI µå¶óÀÌ¹ö¸¦ ¼³Ä¡ÇÑ´Ù.
-installuserfont	graphics.h	int far installuserfont(char far *name)	BGI ½Ã½ºÅÛ¿¡ µé¾î ÀÖÁö ¾ÊÀº ÆùÆ®¸¦ ÀĞ¾î¿Í¼­ ¼³Ä¡ÇÑ´Ù.
-int86	dos.h	int int86(int intno, union REGS *inregs, union REGS *outregs)	ÀÎÅÍ·´Æ®¸¦ È£ÃâÇÑ´Ù.
-int86x	dos.h	int int86x*int intno, union REGS *inregs, union REGS *outregs, struct SREGS *segregs)	int86ÇÔ¼ö¿¡ ´õÇØ ¼¼±×¸ÕÆ® ·¹Áö½ºÅÍµµ Àü´ŞÇØÁØ´Ù.
-intdos	dos.h	int intdos(union REGS *inregs, union REGS *outregs)	0x21¹ø ÀÎÅÍ·´Æ®¸¦ È£ÃâÇÑ´Ù.
-intdosx	dos.h	int intdosx(union REGS *inregs, union REGS *outregs, struct SREGS *segregs)	0x21¹ø ÀÎÅÍ·´Æ®¸¦ È£ÃâÇÏµÇ ¼¼±×¸ÕÆ® ·¹Áö½ºÅÍ°ªÀ» ÀÎ¼ö·Î Àü´ŞÇÑ´Ù.
-intr	dos.h	void intr(int intno, struct REGPACK *preg)	¼ÒÇÁÆ®¿ş¾î ÀÎÅÍ·´Æ®¸¦ È£ÃâÇÑ´Ù.
-ioctl	io.h	int ioctl(int handle, int func[, void *argdx, int argcx])	µğ½ºÅ©, Á÷º´·Ä Æ÷Æ®¿¡ ´ëÇÑ Á÷Á¢ÀûÀÎ IO¼­ºñ½º¸¦ Á¦°øÇÑ´Ù.
-isalnum	ctype.h	int isalnum(int c)	c°¡ ¾ËÆÄºªÀÎÁö ¼ıÀÚÀÎÁö Á¶»çÇØÁØ´Ù.
-isalpha	ctype.h	int isalpha(int c)	c°¡ ¾ËÆÄºªÀÎÁö Á¶»çÇØÁØ´Ù.
-isascii	ctype.h	int isascii(int c)	c°¡ ¾Æ½ºÅ°¹®ÀÚÀÎÁö Á¶»çÇØÁØ´Ù.
-isatty	io.h	int isatty(int handle)	ÀÎ¼ö·Î ÁÖ¾îÁø ÇÚµéÀÌ ´ÙÀ½°ú °°Àº Á¾·ùÀÇ ¹®ÀÚ ÀÔÃâ·Â¿ë ÀåÄ¡¿Í ¿¬°áµÇ¾î ÀÖ´Â°¡¸¦ Á¶»çÇÑ´Ù.
-iscntrl	ctype.h	int iscntrl(int c)	ÀÌ ÇÔ¼ö´Â c°¡ Á¦¾î ¹®ÀÚÀÎ °æ¿ì¸¦ Á¶»çÇØ ÁØ´Ù. 
-isdigit	ctype.h	int isdigit(int c)	c°¡ ¼ıÀÚÀÎÁö Á¶»çÇØ ÁØ´Ù. Áï c°¡ 0~9 »çÀÌÀÇ ¹®ÀÚÀÌ¸é ÂüÀ» ¸®ÅÏÇÑ´Ù.
-isgraph	ctype.h	int isgraph(int c)	¹®ÀÚ c°¡ Ãâ·Â °¡´ÉÇÑ ¹®ÀÚÀÎ°¡¸¦ °Ë»çÇÑ´Ù.
-islower	ctype.h	int islower(int c)	¹®ÀÚ c°¡ ¼Ò¹®ÀÚÀÎÁö °Ë»çÇØÁØ´Ù.
-isprint	ctype.h	int isprint(int c)	c°¡ ÇÁ¸°Æ® °¡´ÉÇÑ ¹®ÀÚÀÎÁö Á¶»çÇØÁØ´Ù.
-ispunct	ctype.h	int ispunct(int c)	¹®ÀÚ c°¡ ±¸µÎÁ¡ÀÎÁö ÆÇº°ÇØ ÁØ´Ù.
-isspace	ctype.h	int isspace(int c)	¹®ÀÚ c°¡ °ø¹é ¹®ÀÚÀÎÁö¸¦ °Ë»çÇØ ÁØ´Ù.
-isupper	ctype.h	int isupper(int c)	¹®ÀÚ c°¡ ´ë¹®ÀÚÀÎÁö °Ë»çÇØ ÁØ´Ù.
-isxdigit	ctype.h	int isxdigit(int c)	¹®ÀÚ c°¡ 16Áø¼ö Ç¥Çö¿¡ »ç¿ëµÇ´Â ¹®ÀÚÀÎÁö Á¶»çÇØ ÁØ´Ù.
-itoa	stdlib.h	char* itoa(int value, char* string, int radix)	Á¤¼ö¸¦ ¹®ÀÚ¿­·Î ¹Ù²Û´Ù.
-kbhit	conio.h	int kbhit(void)	Å°º¸µå·ÎºÎÅÍ ÀÔ·ÂµÈ Å°°¡ ÀÖ´ÂÁö Á¶»çÇÑ´Ù.
-keep	dos.h	void keep(unsigned char status, unsigned size)	ÇÁ·Î±×·¥À» ¸Ş¸ğ¸®¿¡ ³²°ÜµĞ Ã¤ µµ½º·Î º¹±ÍÇÑ´Ù.
-labs	math.h	long int labs(long int x)	longÇü Á¤¼öÀÇ Àı´ë°ªÀ» °è»êÇÑ´Ù.
-ldexp	math.h	double ldexp(double x, int exp)	x*2exp¸¦ °è»êÇÑ´Ù. X*pow(2, exp)¿Í µ¿ÀÏÇÑ °á°ú¸¦ ³»´Â ÇÔ¼ö
-ldiv	stdlib h	ldiv_t ldiv(long int number, long int denom)	µÎ longÇü Á¤¼ö·Î ³ª´°¼ÀÀ» ÇÏ°í ±× ¸ò°ú ³ª¸ÓÁö¸¦ stdlib.h¿¡ Á¤ÀÇµÈ div_t ±¸Á¶Ã¼·Î ¸®ÅÏÇÑ´Ù.
-lfind	stdlib.h	void lfind(const void* key, const void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	¼±Çü Å½»öÀ» ¼öÇàÇÏ¿© Å×ÀÌºí¿¡¼­ Å°°ªÀ» Ã£¾Æ³½´Ù.
-line	graphics.h	void line(int x1, int y1, int x2, int y2)	(x1, y1) ÁÂÇ¥¿¡¼­ (x2, y2)±îÁö ¼±À» ±×¸°´Ù.
-linerel	graphics.h	void linerel(int dx, int dy)	ÇöÀç CP¿¡¼­ »ó´ëÀû ÁÂÇ¥°ªÀ¸·Î ÀÌµ¿ÇÑ´Ù.
-lineto	graphics.h	void lineto(int x, int y)	CP·ÎºÎÅÍ (x, y) À§Ä¡·Î ¼±À» ±ß´Â´Ù.
-localeconv	locale.h	struct* localeconv(void)	±¹°¡¸¶´Ù ´Ù¸¥ È­Æó±âÈ£³ª ³¯Â¥ Çü½ÄÀ» ÁöÁ¤ÇÏ´Â locale ±¸Á¶Ã¼¸¦ Á¶»çÇÑ´Ù.
-localtime	time.h	struct tm* localtime(const time_t* timer)	time ÇÔ¼ö¿¡ ÀÇÇØ ±¸ÇØÁø ½Ã°£À» tm ±¸Á¶Ã¼¿¡ ÀúÀåÇÏ¸ç ÀÌ¶§ ÀúÀåµÇ´Â ½Ã°£Àº Àû´çÈ÷ Á¶Á¤µÈ ½Ã°£.
-lock	io.h	int lock(int handle, long offset, long length)	µµ½º 3.xÀÇ ÆÄÀÏ °øÀ¯ ±â¹ı ÀÎÅÍÆäÀÌ½º¸¦ Á¦°øÇÑ´Ù.
-log	math.h	double log(double x)	xÀÇ ÀÚ¿¬·Î±×¸¦ °è»êÇÑ´Ù.
-log10	math.h	double log10(double x)	xÀÇ »ó¿ë·Î±×¸¦ °è»êÇÑ´Ù.
-longjmp	setmp.h	void longjmp(jmp_buf jmpb, int retval)	¸¶Áö¸·À¸·Î È£ÃâµÈ setjmp°¡ jmpb¿¡ ÀúÀåÇØ µĞ ÀÛ¾÷ »óÅÂ¸¦ º¹±¸½ÃÅ°¸ç setjmp°¡ retvalÀ» ¸®ÅÏÇÑ °÷À¸·Î µ¹¾Æ°£´Ù.
-lowvideo	conio.h	void lowvideo(void)	ÇöÀç ¹®ÀÚÀÇ ¼Ó¼ºÀ» ³·Àº ÈÖµµÀÇ ¹®ÀÚ ¼Ó¼ºÀ¸·Î ¼³Á¤ÇÑ´Ù.
-_lrotl	stdlib.h	unsigned long _lrotl(unsigned long val, int count)	value°ªÀ» ¿ŞÂÊÀ¸·Î count¸¸Å­ È¸Àü½ÃÅ²´Ù.
-_lrotr	stdlib.h	unsinged long _lrotr(unsigned long val, int count)	value °ªÀ» ¿À¸¥ÂÊÀ¸·Î count¸¸Å­ È¸Àü½ÃÅ²´Ù.
-lsearch	stdlib.h	void lsearch(const void* key, const void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	¼±Çü Å½»öÀ» ¼öÇàÇÏ¿© Å×ÀÌºí»ó¿¡ Å° Ç×¸ñÀÌ ÃÖÃÊ·Î ¹ß°ßµÈ ¹øÁö¸¦ ¸®ÅÏÇÏµÇ ¹ß°ßµÇÁö ¾ÊÀ» °æ¿ì Å° Ç×¸ñÀ» Å×ÀÌºí¿¡ Ã·°¡ÇÑ´Ù.
-lseek	io.h	long lseek(int handle, long offset, int fromwhere)	ÆÄÀÏ Æ÷ÀÎÅÍ(FP)¸¦ »õ·Ó°Ô ¼³Á¤ÇÑ´Ù.
-ltoa	stdlib.h	char* ltoa(long value, char* string, int radix)	longÇü Á¤¼ö¸¦ ¹®ÀÚ¿­·Î ¹Ù²Û´Ù.
-malloc	alloc.h, stdlib.h	void* malloc(size_t size)	µ¿ÀûÀ¸·Î ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÑ´Ù. ÀÌ¶§ ÇÒ´çµÇ´Â ¸Ş¸ğ¸®´Â heapÀÌ´Ù.
-_matherrl	math.h	int _matherrl(struct _exception* (e))	matherrÇÔ¼ö¿Í ±â´ÉÀÌ °°À¸¸ç Â÷ÀÌÁ¡Àº ÀÌ ÇÔ¼ö´Â long doubleÇüÀ» °è»êÇÏ°í ±¸Á¶Ã¼°¡ ´Ù¸¥ Á¡ÀÌ´Ù.
-matherr	math.h	int matherr(struct exception* e)	matherrÇÔ¼ö´Â ¼öÇĞ ¶óÀÌºê·¯¸® ÇÔ¼ö ½ÇÇà Áß ¿¡·¯°¡ ¹ß»ıÇßÀ» °æ¿ì È£ÃâµÇ´Â ÇÔ¼öÀÌ´Ù.
-max	stdlib.h	(type) max(a, b)	µÎ °ª Áß Å« °ªÀ» ¸®ÅÏÇÑ´Ù.
-memchr	stinrg.h, math.h	void* memchr(const void* s, int c,  size_t n)	s°¡ Æ÷ÀÎÆ®ÇÏ´Â ¸Ş¸ğ¸®ºÎÅÍ n¹ÙÀÌÆ® ³»ÀÇ ¸Ş¸ğ¸® ºí·Ï±îÁö¿¡¼­ ¹®ÀÚ c¸¦ Ã£´Â´Ù.
-memcmp	memory.h	int memcmp(const void* sl, const void* s2, size_t n)	µÎ °³ÀÇ ¸Ş¸ğ¸® ºí·ÏÀ» ºñ±³ÇÑ´Ù. ÀÌ¶§ ºñ±³µÇ´Â °ªµéÀº ºÎÈ£ ¾ø´Â °ªÀ¸·Î Ã³¸®µÈ´Ù.
-memcpy	memory.h	void* memcpy(void* deset, const void* src, size_t n)	¸Ş¸ğ¸®³¢¸® º¹»çÇÑ´Ù. Src¹øÁö¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ dest°¡ ÁöÁ¤ÇÏ´Â ¹øÁö·Î n¹ÙÀÌÆ®¸¸Å­ º¹»çÇÑ´Ù.
-memicmp	memory.h	int memicmp(const void* sl, const void* s2, size_t n)	µÎ °³ÀÇ ¸Ş¸ğ¸® ºí·ÏÀ» ºñ±³ÇÑ´Ù. ÀÌ¶§ ºñ±³µÇ´Â °ªµéÀº ºÎÈ£ ¾ø´Â °ªÀ¸·Î Ã³¸®µÈ´Ù.
-memmove	string.h, memory.h	void* memmove(void* dest, const void* src, size_t n)	¸Ş¸ğ¸®³¢¸® º¹»çÇÑ´Ù. Src¹øÁö¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ dest°¡ ÁöÁ¤ÇÏ´Â ¹øÁö·Î n¹ÙÀÌÆ®¸¸Å­ º¹»çÇÑ´Ù.
-memset	memory.h	void* memset(void* s, int c, size_t n)	s°¡ Æ÷ÀÎÆ®ÇÏ´Â ¸Ş¸ğ¸®¸¦ °ª c·Î n°³¸¦ Ã¤¿î´Ù.
-min	stdlib.h	(type) min(a,b)	µÎ °ª Áß ÀÛÀº °ªÀ» ¸®ÅÏÇÑ´Ù.
-mkdir	dir.h	int mkdir(const char* path)	»õ·Î¿î µğ·ºÅä¸®¸¦ ÀÎ¼ö·Î ÁÖ¾îÁø ÆĞ½º·Î »ı¼ºÇÑ´Ù. µµ½ºÀÇ md¸í·É¾î¿Í »ç¿ë¹ıÀÌ µ¿ÀÏÇÏ´Ù.
-MK_FP	dos.h	void* MK_FP(unsinged seg, unsigned ofs)	ÁÖ¾îÁø ¿ÀÇÁ¼Â°ú ¼¼±×¸ÕÆ®¸¦ »ç¿ëÇÏ¿© far Æ÷ÀÎÅÍ¸¦ »ı¼ºÇÑ´Ù.
-mktemp	dir.h	char* mktemp(char* template)	ÀÓ½Ã ÆÄÀÏ·Î »ç¿ëÇÒ ¼ö ÀÖ´Â ÆÄÀÏÀÇ ÀÌ¸§À» ¸¸µç´Ù.
-modf	math.h	double modf(double x, double* ipart)	½Ç¼ö x¸¦ ºĞÇØÇÏ¿© Á¤¼öºÎ¿Í ½Ç¼öºÎ·Î ³ª´«´Ù.
-movedata	memory.h	void movedata(unsinged srcseg, unsigned srcoff, unsinged dstseg, unsinged dstoff, size_t n)	movedata´Â src¿¡¼­ dest·Î n¹ÙÀÌÆ®¸¦ º¹»çÇÑ´Ù.
-moverel	graphics.h	void moverel(int x, int y)	ÇöÀç CP¿¡¼­ »ó´ëÀû ÁÂÇ¥°ªÀ¸·Î ÀÌµ¿ÇÑ´Ù.
-movetext	conio.h	int movetext(int left, int top, int right, int bottom, int destleft, int desttop)	È­¸é»óÀÇ ÁöÁ¤ÇÑ »ç°¢ ¿µ¿ª¿¡ ÀÖ´Â ¹®ÀÚµéÀ» ´Ù¸¥ ¿µ¿ªÀ» º¹»çÇÑ´Ù.
-moveto	graphics.h	void moveto(int x, int y)	ÇöÀç CP¸¦ (x, y) À§Ä¡·Î ÀÌµ¿ ½ÃÅ²´Ù. ¼±À» ±×¸®Áö ¾Ê°í ÀÌµ¿ÇÑ´Ù.
-movmem	memory.h	void movmem(void* src, void* dest, unsinged length)	src¿¡¼­ dest·Î length¸¸Å­ º¹»ç¸¦ ÇÑ´Ù.
-norm	complex.h	double norm(complex x)	º¹¼Ò¼öÀÇ Àı´ë°ªÀ» ±¸ÇÑ ÈÄ Á¦°öÇÑ °ªÀ» ±¸ÇÑ´Ù.
-normvideo	conio.h	void normvideo(void)	ÇöÀç ¹®ÀÚÀÇ ¼Ó¼ºÀ» ÇÁ·Î±×·¥ ½ÇÇà ÀÌÀüÀÇ ¹®ÀÚ¼Ó¼ºÀ¸·Î µÇµ¹¸°´Ù.
-nosound	dos.h	void nosound(void)	PC ½ºÇÇÄ¿ÀÇ ¼Ò¸®¸¦ ²ö´Ù.
-_open	io.h	int _open(const char* filename, int oflags)	ÇÚµéÇü ÆÄÀÏ ÀÔÃâ·ÂÀ» À§ÇØ ÆÄÀÏÀ» °³¹æÇÑ´Ù.
-open	io.h	open(const char* path, int access [, unsigned model])	path·Î ÁöÁ¤µÈ ÆÄÀÏÀ» ¿¬´Ù.
-outport	dos.h	void outport(int portid, int value)	portid Æ÷Æ®·Î 2¹ÙÀÌÆ®¸¦ Ãâ·ÂÇÑ´Ù.
-outportb	dos.h	void outport(int portid, unsigned char value)	portid Æ÷Æ®·Î 1¹ÙÀÌÆ®¸¦ Ãâ·ÂÇÑ´Ù.
-outtext	graphics.h	void outtext(char* textstring)	±×·¡ÇÈ ¸ğµå¿¡¼­ ¹®ÀÚ¿­À» Ãâ·ÂÇÒ ¶§ ¾²ÀÎ´Ù.
-outtextxy	graphics.h	void outtextxy(int x, int y, char* textstring)	±×·¡ÇÈ ¸ğµå¿¡¼­ ¹®ÀÚ¿­À» Ãâ·ÂÇÑ´Ù.
-parsfnm	dos.h	char* parsfnm(const char* cmdline, struct* fcb, int opt)	ÀÎ¼ö·Î ÁÖ¾îÁø cmdline¿¡ ÀÖ´Â ÆÄÀÏ ÀÌ¸§À» ºĞ¼®ÇÏ¿© FCB¿¡ µå¶óÀÌºê¸í, ÆÄÀÏ¸í, È®Àå¸íÀ» ±âÀÔÇÑ´Ù.
-peek	dos.h	int peek(unsigned segment, unsigned offset)	segment, offsetÀÌ ÁöÁ¤ÇÏ´Â ¹øÁöÀÇ °ªÀ» Á¶»çÇÑ´Ù.
-peekb	dos.h	int peekb(unsinged segment, unsinged offset)	segment, offsetÀÌ ÁöÁ¤ÇÏ´Â ¹øÁöÀÇ °ªÀ» Á¶»çÇÑ´Ù. ÀÌ¶§ Á¶»çµÇ´Â °ªÀº 8ºñÆ® Áï ¹®ÀÚ°ªÀÌ´Ù.
-perror	stdio.h	void perror(const char* s)	½Ã½ºÅÛ ¿¡·¯ ¸Ş½ÃÁö¸¦ stderrÀ¸·Î Ãâ·ÂÇÑ´Ù.
-pieslice	graphics.h	void pieslice(int x, int y, int stangle, int endangle, int radius)	Áß½É(x, y)¿¡¼­ ½ÃÀÛ°¢(stangle), ³¡°¢(endangle)À» ÁöÁ¤ÇÏ¿© ¹İÁö¸§ÀÇ ¿øÈ£¸¦ ±×¸®°í ¿øÈ£ÀÇ ¾ç³¡Á¡°ú Áß½ÉÀ» ¿¬°áÇØ ³»ºÎ¸¦ Ã¤»öÇÑ´Ù.
-poke	dos.h	void poke(unsinged segment, unsigned offset, int value)	segment, offsetÀÌ ÁöÁ¤ÇÏ´Â ¸Ş¸ğ¸® ¹øÁö¿¡ 16ºñÆ®ÀÇ Á¤¼ö°ªÀ» ±âÀÔÇØ ³Ö´Â´Ù.
-pokeb	dos.h	void pokeb(unsinged segment, unsigned offset, char value)	segment, offsetÀÌ ÁöÁ¤ÇÏ´Â ¸Ş¸ğ¸® ¹øÁö¿¡ 8ºñÆ®ÀÇ ¹®ÀÚ°ªÀ» ±âÀÔÇØ ³Ö´Â´Ù.
-polar	complex.h	complex polar(double mag, double angle)	ÁÖ¾îÁø Å©±â¿Í °¢µµ¸¦ °¡Áø º¹¼Ò¼ö¸¦ ¸¸µç´Ù.
-poly	math.h	double poly(double x, int degree, double coeffs[]	´ÙÇ×½ÄÀ» °è»êÇÑ´Ù.
-pow	math.h	double pow(double x, double y)	xÀÇ y½Â, Áï xyÀ» °è»êÇÑ´Ù.
-pow10	math.h	double pow10(int p)	10pÀ» ±¸ÇÑ´Ù.
-printf	stdio.h	int printf(const char* format, [argument, ¡¦])	stdout¿¡ Çü½ÄÈ­µÈ Ãâ·ÂÀ» ÇÑ´Ù.
-putc	stdio.h	int putc(int c, FILE* stream)	½ºÆ®¸²À¸·Î ¹®ÀÚ c¸¦ Ãâ·ÂÇÑ´Ù.
-putch	conio.h	int putch(int c)	È­¸é¿¡ ¹®ÀÚ c¸¦ Ãâ·ÂÇÑ´Ù.
-putchar	stdio.h	int putchar(int c)	È­¸é¿¡ ¹®ÀÚ c¸¦ Ãâ·ÂÇÑ´Ù.
-putenv	stdlib.h	int putenv(const char* path)	µµ½ºÀÇ È¯°æ º¯¼ö ¿µ¿ª¿¡ »õ·Î¿î È¯°æ º¯¼ö¸¦ Ã·°¡ÇÑ´Ù.
-putimage	graphics.h	void putimage(int left, int top, void* bitmap, int op)	È­¸é¿¡ ÀÌ¹ÌÁö¸¦ Ãâ·ÂÇÑ´Ù.
-putpixel	graphics.h	void putpixel(int x, int y, int color)	(x, y) ÁÂÇ¥¿¡ color»ö»óÀ¸·Î Á¡À» Âï´Â´Ù.
-puts	stdio.h	int puts(const char* s)	¹®ÀÚ¿­À» È­¸éÀ¸·Î Ãâ·ÂÇÑ´Ù.
-puttext	conio.h	int puttext(int left, int top, int right, int bottom, void* source)	source°¡ Æ÷ÀÎÆ®ÇÏ´Â ¸Ş¸ğ¸® ¿µ¿ª¿¡ ÀúÀåµÇ¾î ÀÖ´Â ¹®ÀÚµéÀ» Áö½ÃÇÏ´Â È­¸é»óÀÇ »ç°¢ ¿µ¿ª¿¡ Ãâ·ÂÇÑ´Ù.
-putw	stdio.h	int putw(int w, FILE* stream)	½ºÆ®¸²¿¡ Á¤¼ö w¸¦ Ãâ·ÂÇÑ´Ù.
-qsort	stdlib.h	void qsort(void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	¼¼ °³ÀÇ °ª Áß Áß¾Ó°ªÀ» Ã£´Â quick sort ¾Ù°Å¸®µëÀ» »ç¿ëÇÏ¿© Á¤·ÄÀ» ¼öÇàÇÑ´Ù.
-raise	signal.h	int raise(int sig)	ÇÁ·Î±×·¥À¸·Î ½ÅÈ£¸¦ °­Á¦ÀûÀ¸·Î º¸³½´Ù.
-rand	stdlib.h	int rand(void)	¿¹ÃøÇÒ ¼ö ¾ø´Â ÇÏ³ªÀÇ ¼ö¸¦ ¸¸µé¾î ³½´Ù.
-randbrd	dos.h	int randbrd(struct fcb* fcb, int rcnt)	FCB¸¦ »ç¿ëÇÏ¿© ÇöÀç µğ½ºÅ©ÀÇ DTA ¿µ¿ªÀ¸·Î record¸¦ ÀÎ¼ö rcnt°¡ ÁöÁ¤ÇÏ´Â °³¼ö¸¸Å­ ÀĞ¾îµéÀÎ´Ù.
-randbwr	dos.h	int randbwr(struct fcb* fcb, int rcnt)	FCB¸¦ »ç¿ëÇÏ¿© µğ½ºÅ© »ó¿¡ ÀÎ¼ö rcnt°¡ ÁöÁ¤ÇÏ´Â °³¼ö¸¸Å­ÀÇ record¸¦ ±â·ÏÇÑ´Ù.
-random	stdlib.h	int random(int num)	0~num-1»çÀÌÀÇ Á¤¼ö ³­¼ö¸¦ ¹ß»ı½ÃÅ²´Ù.
-randomize	stdlib.h, time.h	void randomize(void)	³­¼ö ¹ß»ı±âÀÇ ½ÃÀÛÁ¡À» ÃÊ±âÈ­½ÃÄÑ ÁØ´Ù.
-real	complex.h	double real(double x)	º¹¼Ò¼öÀÇ ½Ç¼öºÎ¸¸À» ±¸ÇÑ´Ù.
-realloc	alloc.h	void* realloc(void* block, size_t size)	ÀÌ¹Ì ÇÒ´çµÇ¾î ÀÖ´Â ¸Ş¸ğ¸®ÀÇ Å©±â¸¦ Ãà¼Ò½ÃÅ°°Å³ª È®Àå½ÃÅ²´Ù.
-rectangle	graphics.h	void rectangle(int left, int top, int right, int bottom)	»ç°¢ÇüÀ» ±×¸°´Ù.
-registerbgidriver	graphics.h	int registerbgidriver(void(*driver)(void))	BGIµå¶óÀÌ¹ö ÆÄÀÏÀ» ÀĞ¾î¿Í¼­ µî·Ï½ÃÅ²´Ù.
-registerbgifont	graphics.h	int registerbgifont(void(*font)(void))	BGI ÆùÆ®¸¦ ÀĞ¾î¿Í¼­ µî·Ï½ÃÅ²´Ù.
-remove	stdio.h	int remove(const char* filename)	ÆÄÀÏÀ» »èÁ¦ÇÑ´Ù.
-rename	stdio.h	int rename(const char* oldname, const char* newname)	ÆÄÀÏÀÇ ÀÌ¸§À» ¹Ù²Û´Ù.
-restorecrtmode	graphics.h	void restorecrtmode(void)	initgraph È£Ãâ ÀüÀÇ ºñµğ¿À ¸ğµå, Áï ÅØ½ºÆ® ¸ğµå·Î º¹±ÍÇÑ´Ù.
-rewind	stdio.h	void rewind(FILE* stream)	½ºÆ®¸²ÀÇ ÆÄÀÏ Æ÷ÀÎÅÍ(FP)¸¦ ÆÄÀÏÀÇ ½ÃÀÛÁ¡À¸·Î ¿Å±ä´Ù.
-rmdir	dir.h	int rmdir(const char* path)	path ÀÎ¼ö°¡ ÁöÁ¤ÇÏ´Â µğ·ºÅä¸®¸¦ Á¦°ÅÇÑ´Ù.
-sbrk	alloc.h	void* sbrk(int incr)	ÀÌ ÇÔ¼ö¸¦ È£ÃâÇÑ ÇÁ·Î±×·¥ÀÇ heapÅ©±â¸¦ ¹Ù²Û´Ù.
-scanf	stdio.h	int scanf(const char* format [, address ¡¦])	Çü½ÄÈ­µÈ ÀÔ·ÂÀ» Å°º¸µå·ÎºÎÅÍ ¹Ş´Â´Ù.
-searchpath	dir.h	char* searchpath(const char* file)	ÀÎ¼ö·Î ÁÖ¾îÁø fileÀÌ ÀÖ´Â µğ·ºÅä¸®¸¦ Á¶»çÇØÁØ´Ù.
-sector	graphics.h	void sector(int x, int y, int stangle, int endangle, int xradius, int yradius)	Áß½É(x, y)¿¡¼­ ½ÃÀÛ°¢(stangle), ³¡°¢(endangle)À» ÁöÁ¤ÇÏ¿© ¹İÁö¸§ÀÇ Å¸¿øÈ£¸¦ ±×¸°´Ù.
-segread	dos.h	void segread(struct SREGS* segp)	¼¼±×¸ÕÆ® ·¹Áö½ºÅÍÀÇ ÇöÀç°ªÀ» Á¶»çÇÏ¿© segp ±¸Á¶Ã¼¿¡ ÀúÀåÇÑ´Ù.
-setactivepage	graphics.h	void setactivepage(int page)	active page¸¦ ¼³Á¤ÇÑ´Ù.
-setallpalette	graphics.h	void setallpalette(struct palettetype *palette)	setallpalette´Â ÆÈ·¹Æ® Æ÷ÀÎÅÍ°¡ °¡¸®Å°´Â palettetypeÀÇ ±¸Á¶Ã¼¿¡ µé¾î ÀÖ´Â °ªÀ¸·Î ÇöÀç ÆÈ·¹Æ®¸¦ º¯°æÇÑ´Ù
-setaspectratio	graphics.h	void setaspectratio(int xasp, int yasp)	±×·¡ÇÈ ½Ã½ºÅÛÀÇ ¿øÁ¾È¾ºñ(aspect ratio)¸¦ ¸ÂÃß¾î ÁØ´Ù.
-setbkcolor	graphics.h	void setbkcolor(int color)	ÇöÀçÀÇ ¹è°æ»öÀ» color·Î ¼³Á¤ÇÑ´Ù. Color´Â ´ÙÀ½ Ç¥¿¡¼­¿Í °°Àº »ö»óÀ» ÀÇ¹ÌÇÑ´Ù.
-setblock	dos.h	int setblock(unsigned segx, unsigned newsize)	ÀÌÀü¿¡ ÇÒ´çµÈ ºí·ÏÀÇ Å©±â¸¦ º¯°æ½ÃÅ²´Ù.
-setbuf	stdio.h	void setbuf(FILE *stream, char *buf)	½ºÆ®¸²ÀÌ ¿ÀÇÂµÉ ¶§ ¹öÆÛ°¡ ÀÚµ¿À¸·Î 512¹ÙÀÌÆ® Å©±â·Î ÇÒ´çµÇ¸ç close ÇÒ ¶§ ÇÒ´çµÈ ¹öÆÛ´Â ÀÚµ¿À¸·Î ÇØÁ¦µÈ´Ù.
-setcbrk	dos.h	int setcbrk(int cbrkvalue)	Crtl-Break¿¡ ´ëÇÑ Ã¼Å© »óÅÂ¸¦ ¼³Á¤ÇÑ´Ù.
-setcolor	graphics.h	void setcolor(int color)	ÇöÀçÀÇ Àü°æ»öÀ» ÁöÁ¤ÇÑ´Ù. ÁöÁ¤ °¡´ÉÇÑ »ö»óÀÇ ¼ö´Â 0~getmaxcolor() »çÀÌÀÇ Á¤¼öÀÌ´Ù.
-_setcursortype	conio.h	void_setcursortype(int cur_t)	Ä¿¼­ÀÇ ¸ğ¾çÀ» ¹Ù²Û´Ù.
-setdate	dos.h	void setdate(struct date *datep)	datep ±¸Á¶Ã¼¸¦ ÂüÁ¶ÇØ ½Ã½ºÅÛÀÇ ³¯Â¥¸¦ ¼¼ÆÃÇÑ´Ù.
-setdisk	dir.h	int setdish(int drive)	µå¶óÀÌºê¸¦ º¯°æ½ÃÅ²´Ù.
-setdta	dos.h	void setdta(char *dta)	ÀÎ¼ö·Î ÁÖ¾îÁø dta·Î ÇöÀç µğ½ºÅ© Àü¼Û ÁÖ¼Ò¸¦ º¯°æ½ÃÅ²´Ù.
-setfillpattern	graphics.h	void setfillpattern(char *upattern, int color)	»ç¿ëÀÚ°¡ ÁöÁ¤ÇÑ ¹«´Ì¿Í »ö»óÀ¸·Î Ã¤¿ò ¹«´Ì¸¦ ¼³Á¤ÇÑ´Ù.
-setfillstyle	graphics.h	void setfillstyle(int parttern, int color)	Ã¤»ö ¹«´Ì¿Í »ö»óÀ» ÁöÁ¤ÇÑ´Ù.
-setftime	io.h	int setftime(int handle, struct ftime *ftimep)	¿ÀÇÂµÈ ÆÄÀÏÀÇ ½Ã°£°ú ³¯Â¥¸¦ ftimeÇü ±¸Á¶Ã¼°¡ °¡¸®Å°´Â ½Ã°£°ú ³¯Â¥·Î ¼³Á¤ÇÑ´Ù.
-setgraphbufsize	graphics.h	unsigned setgraphbufsize(unsigned bufsize)	initgraph°¡ ±×·¡ÇÈ ½Ã½ºÅÛÀ» ÃÊ±âÈ­ÇÒ¶§ ¾ó¸¶°£ÀÇ ¹öÆÛ¸¦ ÇÒ´çÇØ µÎ°í closegraph´Â ÀÌ ¹öÆÛ¸¦ ÇÒ´çÇØÁ¦ÇÑ´Ù.
-setgraphmode	graphics.h	void setgraphmode(int mode)	±×·¡ÇÈ ¸ğµå¸¦ ¼³Á¤ÇÑ´Ù.
-setjmp	setjmp.h	int setjmp(jmp_bufjmpb)	ºñÁö¿ªÀû jump¸¦ À§ÇÑ ÁØºñ¸¦ ÇÏ¸ç ÇöÀçÀÇ ¸ğµç ÀÛ¾÷ »óÅÂ¸¦ jmpb¿¡ ÀúÀåÇØ µĞ ÈÄ 0À» ¸®ÅÏÇÑ´Ù.
-setlinestyle	graphics.h	void setlinestyle(int linestyle, unsigned upattern, int thickness)	¼±ÀÇ ±½±â¿Í ¸ğ¾çÀ» ÁöÁ¤ÇÑ´Ù.
-setlocale	locale.h	char *setlocale(int category, char *locale)	±¹°¡¸¶´Ù ´Ù¸¥ È­Æó±âÈ£³ª ³¯Â¥ Çü½ÄÀ» ÁöÁ¤ÇÏ´Â locale ±¸Á¶Ã¼¸¦ ¼³Á¤ÇÑ´Ù.
-setmem	mem.h	void setmem(void *dest, unsigned length, char value)	dest¿¡¼­ ½ÃÀÛµÇ°í lengthÀÇ ±æÀÌ¸¦ °¡Áö´Â ¸Ş¸ğ¸®ÀÇ ÀÏÁ¤¿µ¿ªÀ» value °ªÀ¸·Î ¸ğµÎ Ã¤¿î´Ù.
-setmode	io.h	int setmode(int handle, int amode)	¿ÀÇÂµÈ ÆÄÀÏÀÇ ¾×¼¼½º ¸ğµå¸¦ ¼³Á¤ÇÑ´Ù.
-setpalette	graphics.h	void setpalette(int colornum, int color)	colornumÀÌ ÁöÁ¤ÇÏ´Â ÆÈ·¹Æ®ÀÇ »ö»óÀ» color·Î ¹Ù²Û´Ù.
-setrgbpalette	graphics.h	void setrgbpalette(int colornum, int red, int green, int blue)	IBM 8514µå¶óÀÌ¹ö¿Í VGA¿¡¼­ »ç¿ëÇÏ´Â ÆÈ·¹Æ® setting ÇÔ¼ö·Î RGB »ï¿ø»öÀÇ Á¶ÇÕÀ¸·Î »ö»óÀ» ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.
-settextjustify	graphics.h	void settextjustify(int horiz, int vert)	outtext, outtextxy µî¿¡¼­ Ãâ·ÂÇÏ´Â ¹®ÀÚ¿­ÀÇ ÁÂÇ¥ Á¤·Ä ¹æ½ÄÀ» ÁöÁ¤ÇÑ´Ù.
-settextstyle	graphics.h	void settextstyle(int font, int dirction, int charsize)	outtext, outtextxy ÇÔ¼ö¿¡¼­ ¹®ÀÚ¿­ Ãâ·Â¿¡ »ç¿ëÇÒ ÆùÆ®, Å©±â ¹× ¹æÇâÀ» ÁöÁ¤ÇÑ´Ù.
-settime	dos.h	void settime(struct time *timep)	timepÇü ±¸Á¶Ã¼¿¡ ÁöÁ¤µÇ¾î ÀÖ´Â ½Ã°£ Á¤º¸·Î ½Ã½ºÅÛÀÇ ½Ã°£À» ¼³Á¤ÇÑ´Ù.
-setusercharsize	graphics.h	void setusercharsized(int multx, int divx, int multy, int divy)	±ÛÀÚ Å©±â¸¦ »ç¿ëÀÚ ÀÓÀÇÀÇ Å©±â·Î ¸¸µç´Ù.
-setvbuf	stdio.h	int setvbuf(FILE *stream, char *buf, int type, size_t size)	½ºÆ®¸²ÀÌ ¿ÀÇÂµÉ ¶§ ¹öÆÛ´Â ÀÚµ¿À¸·Î 512¹ÙÀÌÆ®ÀÇ Å©±â·Î ÇÒ´çµÇ¾îÁö¸ç closeµÉ ¶§ ÇÒ´çµÈ ¹öÆÛ´Â ÀÚµ¿À¸·Î ÇØÁ¦µÈ´Ù.
-setvect	dos.h	void setvect(int interruptno, void interrupt(*isr))	interruptno°¡ ÁöÁ¤ÇÏ´Â ÀÎÅÍ·´Æ®ÀÇ ½ÃÀÛ ¹øÁö¸¦ µÎ ¹øÂ° ÀÎ¼ö isrÀÇ ¹øÁö·Î ¼³Á¤ÇÑ´Ù.
-setverify	dos.h	void setverify(int value)	µµ½ºÀÇ verify flag »óÅÂ¸¦ ¼³Á¤ÇÑ´Ù.
-setviewport	graphics.h	void setviewport(int left, int top, int right, int bottom, int clip)	»õ·Î¿î ºäÆ÷Æ®¸¦ ÁöÁ¤ÇÑ´Ù.
-setvisualpage	graphics.h	void setvisualpage(int page)	ºñÁÖ¾ó ÆäÀÌÁö¸¦ ¼³Á¤ÇÑ´Ù.
-setwritemode	graphics.h	void setwritemode(int mode)	±×·¡ÇÈ Ãâ·Â ÇÔ¼ö°¡ È­¸é¿¡ ÀÛµµ¸¦ ÇÏ´Â ¹æ¹ıÀ» ¼³Á¤ÇÑ´Ù.
-signal	signal.h	void (*signal(int sig, void (*func)(int sig [, int subcode])))(int)	signalÀÌ¶õ ¿¹¿Ü »óÈ²ÀÌ ¹ß»ıÇÏ°Å³ª raise ÇÔ¼ö°¡ È£ÃâµÉ ¶§ ÇÁ·Î±×·¥À¸·Î º¸³»Áö´Â ½ÅÈ£¸¦ ¸»ÇÑ´Ù.
-sin	math.h	double sin(double x)	»ï°¢ ÇÔ¼ö sinÀ» °è»êÇÑ´Ù.
-sinh	math.h	double sinh(double x)	½Ö°î¼± sinh ÇÔ¼ö°ªÀ» °è»êÇÑ´Ù.
-sleep	dos.h	void sleep(unsigned seconds)	second ÀÎ¼ö°¡ ÁöÁ¤ÇÏ´Â ¸¸Å­ ÃÊ´ÜÀ§·Î Áö¿¬ÀÌ µÇ¸ç Áö¿¬½Ã°£Àº ¾ÆÁÖ Á¤È®ÇÏ´Ù.
-sopen	io.h	int sopen(char *path, int access, int shflags, int mode)	path°¡ ÁöÁ¤ÇÏ´Â ÆÄÀÏÀ» ¿ÀÇÂÇÏ¸ç °øÀ¯ ÆÄÀÏÀ» ÀĞ°í ¾µ ÁØºñ¸¦ ÇÑ´Ù.
-sound	dos.h	void sound(unsigned frequency)	ÀÎ¼ö frequency·Î ÁÖ¾îÁø ÁÖÆÄ¼ö·Î pcÀÇ ½ºÇÇÄ¿¸¦ ÀÛµ¿½ÃÅ²´Ù.
-spawn	process.h	int spownl(int mode, char *path, char *arg0, ¡¦ , NULL)	¸ğ ÇÁ·Î±×·¥À» ³¡³»Áö ¾Ê°í child ÇÁ·Î±×·¥À» ½ÇÇà½ÃÅ²´Ù.
-sprintf	stdio.h	int sprintf(char *buffer, const char *format, [,argument,¡¦])	printf¹®°ú ¸¶Âù°¡Áö·Î Çü½ÄÈ­µÈ Ãâ·ÂÀ» ÇÑ´Ù.
-sqrt	math.h	double sqrt(double x)	xÀÇ ¾çÀÇ Á¦°ö±ÙÀ» °è»êÇÑ´Ù.
-srand	stdlib.h	void srand(unsigned seed)	³­¼ö ¹ß»ı±â´Â ¿¹ÃøÇÒ ¼ö ¾ø´Â ¼ö¸¦ ¹ß»ı½ÃÅ°±â´Â ÇÏ³ª Ç×»ó ¹ß»ıµÇ´Â ¼ö°¡ ÀÏÁ¤ÇÏ´Ù.
-sscanf	stdio.h	int sscanf(const char *buffer, const char *format, [,address¡¦])	scanfÀÇ ±â´É°ú À¯»çÇÏµÇ ÀÔ·ÂÀ» stdin·ÎºÎÅÍ Á÷Á¢ ¹ŞÁö ¾Ê°í ¹®ÀÚ¿­¿¡¼­ ¹Ş´Â´Ù.
-stat	sys\stat.h	int stat (char *path, struct stat, *statbuf)	path°¡ ÁöÁ¤ÇÏ´Â ÆÄÀÏ¿¡ °üÇÑ Á¤º¸¸¦ Á¶»çÇÏ¿© statbuf¿¡ ÀúÀåÇÑ´Ù.
-stime	time.h	int stime(time_t *tp)	½Ã½ºÅÛÀÇ ½Ã°£°ú ³¯Â¥¸¦ ÇÑ²¨¹ø¿¡ ¹Ù²Ù¾î ÁØ´Ù.
-stpcpy	string.h	char *stpcpy(char *dest, const char *src)	¹®ÀÚ¿­ src¸¦ ¹®ÀÚ¹è¿­ dest·Î º¹»çÇÑ´Ù.
-strcat	string.h	char *strcat(char *dest, const char *src)	¹®ÀÚ¿­³¢¸® ¿¬°áÇÑ´Ù.
-strchr	string.h	char *strchar(const *s, int c)	¹®ÀÚ ¹è¿­ s³»¿¡ ¹®ÀÚ c°¡ ÀÖ´ÂÁö °Ë»çÇÏ°í ÀÖÀ» °æ¿ì ¹®ÀÚ c°¡ ÀÖ´Â ¹øÁö¸¦ ¸®ÅÏÇÑ´Ù.
-strcmp	string.h	int strcmp(const char *s1 , const char *s2)	µÎ °³ÀÇ ¹®ÀÚ¿­À» ´ë¼Ò ºñ±³ÇÑ´Ù.
-strcmpi	string.h	int strcmpi(const char *s1, const char *s2)	µÎ °³ÀÇ ¹®ÀÚ¿­À» ´ë¼Ò ºñ±³ÇÑ´Ù. Strcmpi´Â ´ë¹®ÀÚ¿Í ¼Ò¹®ÀÚ¸¦ ±¸ºĞÇÏÁö ¾Ê´Â´Ù.
-strcoll	string.h	int strcoll(char *s1, char *s2)	setlocale ÇÔ¼ö¿¡ ÀÇÇØ ÁöÁ¤µÈ ºñ±³¹æ½Ä¿¡ µû¶ó µÎ°³ÀÇ ¹®ÀÚ¿­À» ºñ±³ ÇÑ´Ù.
-strcpy	string.h	char *strcpy(char *dest, const char *src)	¹®ÀÚ¿­ src¸¦ ¹®ÀÚ ¹è¿­ dest·Î º¹»çÇÑ´Ù.
-strcspn	string.h	size_t strcspn(const char *s1, const char *s2)	¹®ÀÚ¿­ s1 Áß¿¡ ¹®ÀÚ¿­ s2¿¡ µé¾î ÀÖÁö ¾ÊÀº ¹®ÀÚµéÀÌ ¿¬¼ÓÇØ ÀÖ´Â ±æÀÌ¸¦ ±¸ÇÑ´Ù.
-strdup	string.h	char *strdup(const char*s)	»õ·Î¿î ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÏ°í ¹®ÀÚ¿­ s¸¦ º¹»çÇÑ ÈÄ ±× Æ÷ÀÎÅÍ¸¦ ¸®ÅÏÇÑ´Ù.
-strerror	stdio.h	char *strerror(int errnum)	errnum¿¡ ÇØ´çÇÏ´Â ¿¡·¯ ¸Ş½ÃÁö ¹®ÀÚ¿­À» ¸¸µç´Ù.
-stricmp	string.h	int stricmp(const char *s1, const char *s2)	µÎ °³ÀÇ ¹®ÀÚ¿­À» ´ë¼Ò ºñ±³ÇÑ´Ù.
-strlen	string.h	size_t strlen(const char*s)	¹®ÀÚ¿­ sÀÇ ±æÀÌ¸¦ °è»êÇÑ´Ù.
-strlwr	string.h	char *strlwr(char*s)	¹®ÀÚ¿­ s³»¿¡ ´ë¹®ÀÚ (A~Z)¸¦ ¼Ò¹®ÀÚ (a~z)·Î º¯°æÇÑ´Ù.
-strncat	string.h	char *strncat(char *dest, const char*src, size_t maxlen)	¹®ÀÚ¿­³¢¸® ÁöÁ¤ÇÑ ±æÀÌ¸¸Å­ µ¡ºÙÀÎ´Ù.
-strncmp	string.h	int strncmpi(const char *s1, const char*s2, size_t maxlen)	µÎ °³ÀÇ ¹®ÀÚ¿­À» ´ë¼Ò ºñ±³ÇÑ´Ù.
-strncmpi	string.h	int strncmpi(const char *s1, const char *s2, size_t maxlen)	µÎ °³ÀÇ ¹®ÀÚ
-strncpy	string.h	char *strncpy(char*dest, char*src, size_t maxlen)	¹®ÀÚ¿­À» Á¤ÇØÁø ±æÀÌ¸¸Å­ º¹»çÇÑ´Ù.
-strnicmp	string.h	int strnicmp(const char*s1, const char*s2, size_t maxlen)	µÎ °³ÀÇ ¹®ÀÚ¿­À» ´ë¼Ò ºñ±³ÇÑ´Ù.
-strset	string.h	char*strset(char *s, int ch)	¹®ÀÚ¿­À» Æ¯Á¤ ¹®ÀÚ·Î Ã¤¿î´Ù.
-strpbrk	string.h	char *strpbrk(const char*s1, const char*s2)	¹®ÀÚ¿­ s1³»¿¡ ¹®ÀÚ¿­ s2¿¡ ÀÖ´Â ¹®ÀÚ ÁßÀÇ ÇÏ³ª¶óµµ ÀÖ´ÂÁö °Ë»çÇÏ°í ÀÖÀ» °æ¿ì ±× Æ÷ÀÎÅÍ¸¦ ¸®ÅÏÇÑ´Ù.
-strrchr	string.h	char *strrchr(const char*s, int c)	¹®ÀÚ ¹è¿­ s³»¿¡ ¹®ÀÚ c°¡ ÀÖ´ÂÁö °Ë»çÇÏ°í ÀÖÀ» °æ¿ì ¹®ÀÚ c°¡ ÀÖ´Â ¹øÁö¸¦ ¸®ÅÏÇÑ´Ù.
-strrev	string.h	char *strrev(char *s)	¹®ÀÚ¿­ÀÇ ¼ø¼­¸¦ ¹Ù²Û´Ù.
-strspn	string.h	size_t strspn(const char *s1, const *s2)	¹®ÀÚ¿­ s1 Áß¿¡¼­ ¹®ÀÚ¿­ s2¿¡ ÀÖ´Â ¹®ÀÚµéÀÌ ¿¬¼ÓÇØ ÀÖ´Â ±æÀÌ¸¦ ±¸ÇÑ´Ù.
-strstr	string.h	char *strstr(const char *s1, const char *s2)	¹®ÀÚ¿­ s1 ³»¿¡¼­ ¹®ÀÚ¿­ s2°¡ Æ÷ÇÔµÇ¾î ÀÖ´ÂÁö °Ë»çÇÏ°í ¸¸¾à ÀÖ´Ù¸é ºÎºĞ ¹®ÀÚ¿­(substring)ÀÇ Æ÷ÀÎÅÍ¸¦ ¸®ÅÏÇÑ´Ù.
-strtod	stdlib.h	double strtod(const char *s, char ** endptr)	¹®ÀÚ¿­À» doubleÇü ºÎµ¿ ¼Ò¼öÁ¡À¸·Î ¹Ù²Û´Ù.
-strtok	string.h	char *strtok(char *s1, char *s2)	¹®ÀÚ¿­¿¡¼­ tokenÀ» Ã£¾Æ³½´Ù.
-strtol	stdlib.h	longstrtol(const char *s, char **endptr, int radix)	¹®ÀÚ¿­À» longÇü Á¤¼ö·Î º¯È¯ÇÑ´Ù.
-strtoul	string.h	unsigned long strtoul(const char *s, char **endptr, int radix)	¹®ÀÚ¿­À» ºÎÈ£¾ø´Â long Çü Á¤¼ö·Î ¹Ù²Û´Ù.
-strupr	string.h	char *strupr(char*s)	¹®ÀÚ¿­ s³»ÀÇ ¼Ò¹®ÀÚ (a~z)¸¦ ´ë¹®ÀÚ (A~Z)·Î º¯°æÇÑ´Ù.
-swab	stdlib.h	void swab (char *from, char *to, int nbytes)	µÎ °³ÀÇ string³¢¸® º¹»ç¸¦ ÇÏµÇ ÀÌ¶§ from ¿¡ ÀÖ´Â ¹®ÀÚ¿­ÀÇ »ó, ÇÏÀ§ ¹ÙÀÌÆ®¸¦ ¼­·Î ±³Ã¼ÇÏ¿© to ¹®ÀÚ¿­·Î º¹»çÇÑ´Ù.
-system	process.h	int system(const char *command)	µµ½ºÀÇ ÇÁ·ÒÇÁÆ®»ó¿¡¼­ ½ÇÇàÇÒ ¼ö ÀÖ´Â µµ½º ¸í·É(dir, copy µîÀÇ ³»ºÎ ¸í·É), batch ÆÄÀÏ, ±×¿Ü ½ÇÇà ÆÄÀÏµéÀº µµ½º ¸í·É ÇØ¼®±â¸¦ ÀĞ¾î ¿Í¼­ ½ÇÇà½ÃÅ²´Ù.
-tan	math.h	double tan (double x)	»ï°¢ÇÔ¼ö tangent¸¦ °è»êÇÑ´Ù.
-tanh	math.h	double tanh(double x)	½Ö°î¼± tanh ÇÔ¼ö°ªÀ» °è»êÇÑ´Ù.
-tell	io.h	long tell(int handle)	ÇöÀç ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ Á¶»çÇÑ´Ù.
-textattr	conio.h	void textattr(int newattr)	Ãâ·ÂÇÑ ¹®ÀÚÀÇ ¼Ó¼ºÀ» ¼³Á¤ÇÑ´Ù.
-textbackground	conio.h	void textbackground(int newcolor)	¹®ÀÚÀÇ ¹è°æ»öÀ» ÁöÁ¤ÇÑ´Ù.
-textcolor	conio.h	void textcolor(int newcolor)	ÅØ½ºÆ® ¸ğµå¿¡ Àü°æ»ı, Áï ¹®ÀÚÀÇ »ı»óÀ» º¯°æ½ÃÅ²´Ù.
-textheight	graphics.h	int textheight(char *textstring)	¹®ÀÚ¿­ÀÇ ³ôÀÌ¸¦ ±¸ÇÑ´Ù.
-textmode	conio.h	void textmode(int newmode)	ÅØ½ºÆ® ¸ğµå¸¦ ´Ù¸¥ ¸ğµå·Î ¹Ù²Û´Ù.
-textwidth	graphics.h	int textwidth(char far *string)	string ÀÇ ³ĞÀÌ¸¦ ÇÈ¼¿ ´ÜÀ§·Î °è»êÇÑ´Ù.
-time	time.h	time_t time(time_t *timer)	ÇöÀç ½Ã°£À» Á¶»çÇÑ´Ù.
-tmpfile	stdio.h	FILE *tmpfile(void)	ÀÓ½Ã ÆÄÀÏ·Î »ç¿ëµÉ ÆÄÀÏÀ» ¸¸µå´Âµ¥ ÀÓ½Ã ÆÄÀÏÀÇ ¼º°İ»ó ÀÌÁø ÆÄÀÏ ¸ğµå¿Í ¾²±â ¸ğµå·Î ÆÄÀÏÀ» ¸¸µç´Ù.
-tmpnam	stdio.h	char *tmpnam(char *sptr)	ÀÓ½Ã ÆÄÀÏ·Î »ç¿ëÇÒ ¼ö ÀÖ´Â ÆÄÀÏ ÀÌ¸§À» ¸¸µç´Ù.
-toascii	ctype.h	int toascii(int c)	cÀÇ Á¦7ºñÆ®¸¦ 0À¸·Î ¸¸µé¾î ¾Æ½ºÅ° ¹®ÀÚ·Î ¹Ù²Ù¾î ÁØ´Ù.
-tolower	ctype.h	int tolower(int ch)	¹®ÀÚ ch°¡ A~Z»çÀÌÀÇ ¹®ÀÚÀÏ °æ¿ì ¼Ò¹®ÀÚ a~z·Î ¹Ù²Ù¾î ÁØ´Ù.
-toupper	ctype.h	int toupper(int ch)	¹®ÀÚ ch°¡ a~z»çÀÌÀÇ ¹®ÀÚÀÏ °æ¿ì ´ë¹®ÀÚ A~Z·Î ¹Ù²Ù¾î ÁØ´Ù.
-tzset	time.h	void tzset(void)	È¯°æ º¯¼ö TZ¿¡ ±â·ÏµÇ¾î ÀÖ´Â Àü¿ª º¯¼ö timezone, daylight, tzname À» »õ·Î¿î °ªÀ¸·Î ¼³Á¤ÇÑ´Ù.
-ultoa	stdlib.h	char *ultoa(unsigned long value, char *string, int radix)	ºÎÈ£¾ø´Â longÇü Á¤¼ö¸¦ ¹®ÀÚ¿­·Î ¹Ù²Û´Ù.
-ungetc	stdio.h	int ungetc(int c, FILE *stream)	¹®ÀÚ c¸¦ ÀÔ·Â ½ºÆ®¸²À¸·Î ´Ù½Ã pushÇÑ´Ù.
-ungetch	conio.h	int ungetch(int ch)	¹®ÀÚ ch¸¦ Å°º¸µå ¹öÆÛ·Î pushÇÑ´Ù.
-unixtodos	dos.h	void unixtodos(long time, struct date *d, struct dostime *t)	À¯´Ğ½ºÇüÀÇ ³¯Â¥, ½Ã°£À» µµ½ºÇüÀ¸·Î ¹Ù²Ù¾î µÎ ±¸Á¶Ã¼¿¡ ¼¼Æ®ÇÑ´Ù.
-unlink	io.h	int unlink(const char* filename)	ÆÄÀÏÀ» »èÁ¦ÇÑ´Ù.
-unlock	io.h	int unlock(int handle, long offset, long length)	lock ÇÔ¼ö¿¡ ÀÇÇØ ¼³Á¤µÈ lockÀ» Á¦°ÅÇÑ´Ù.
-wherex	conio.h	int wherex(void)	Ä¿¼­ÀÇ ¼öÆòÀ§Ä¡¸¦ Á¶»çÇÑ´Ù.
-wherey	conio.h	int wherey(void)	Ä¿¼­ÀÇ ¼öÁ÷ À§Ä¡¸¦ Á¶»çÇÑ´Ù.
-window	conio.h	void window(int left, int top, int right, int bottom)	ÅØ½ºÆ® ¸ğµåÀÇ À©µµ¿ì ¿µ¿ªÀ» Á¤ÀÇÇÑ´Ù.
-write	io.h	int write(int handle, void *buf, unsigned len)	buf¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ handle ÀÌ ÁöÁ¤ÇÏ´Â ÆÄÀÏ·Î Ãâ·ÂÇÑ´Ù.
+feof	stdio.h	int feof(FILE*stream)	FILE êµ¬ì¡°ì²´ì˜ flags ë©¤ë²„ì˜ ì œ5ë¹„íŠ¸ì˜ ê°’ì„ ê²€ì‚¬í•œë‹¤.
+ferror	stdio.h	int ferror(FILE*stream)	ì£¼ì–´ì§„ ìŠ¤íŠ¸ë¦¼ì—ì„œ ì½ê¸°, ì“°ê¸° ë™ì‘ì—ì„œì˜ ì—ëŸ¬ê°€ ìˆì—ˆëŠ”ì§€ ê²€ì‚¬í•œë‹¤.
+fflush	stdio.h	int fflush(FILE*stream)	ìŠ¤íŠ¸ë¦¼ì— í• ë‹¹ë˜ì–´ ìˆëŠ” ë²„í¼ë¥¼ ë¹„ìš´ë‹¤. ì…ë ¥, ì¶œë ¥ ìƒí™©ì— ë”°ë¼ ë²„í¼ë¥¼ ë¹„ìš°ëŠ” ì˜ë¯¸ê°€ ë‹¤ë¥´ë‹¤.
+fgetc	stdio.h	int fgetc(FILE*stream)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œë¶€í„° í•œ ë¬¸ìë¥¼ ì½ì–´ì˜¨ë‹¤. ë¬¸ìí˜• ë³€ìˆ˜ì— ëŒ€ì…í•  ê²½ìš° ì—ëŸ¬ ê²€ì¶œì„ í•  ìˆ˜ ì—†ë‹¤.
+fgetchar	stdio.h	int fgetchar(void)	í‚¤ë³´ë“œë¡œë¶€í„° í•œ ë¬¸ìë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤. ë‹¨ì¼ ë¬¸ì ì…ë ¥ì— ì‚¬ìš©í•˜ëŠ” ê²ƒì€ ì¢‹ì§€ ì•Šë‹¤.
+fgetpos	stdio.h	int fgetpos(FILE*stream, fpos_t*pos)	ìŠ¤íŠ¸ë¦¼ì˜ í˜„ì¬ íŒŒì¼ í¬ì¸í„°ë¥¼ ì¡°ì‚¬í•´ posë³€ìˆ˜ì— ì €ì¥í•œë‹¤.
+fgets	stdio.h	char *fgets(char*s, int n, FILE*stream)	\n'ë¬¸ìë¥¼ ë§Œë‚  ë•Œê¹Œì§€ ë¬¸ìì—´ì„ ì½ì–´ë“¤ì¸ë‹¤. ë¬¸ìì—´ ë’¤ì— NULLë¬¸ìê°€ ì‚½ì…ëœë‹¤.
+filelength	io.h	long filelength(int handle)	handleì´ ì§€ì •í•˜ëŠ” íŒŒì¼ì˜ ê¸¸ì´ë¥¼ ì¡°ì‚¬í•œë‹¤.
+fileno	stdio.h	int flieno(FILE*stream)	ìŠ¤íŠ¸ë¦¼ì˜ íŒŒì¼ í•¸ë“¤ì„ ì¡°ì‚¬í•œë‹¤.
+fillellipse	graphics.h	void far fillellipse(int x, int y, int xradius, int yradius)	ì¤‘ì‹¬(x, y)ì—ì„œ xì¶• yì¶• ë°˜ì§€ë¦„ì„ ê°œë³„ì ìœ¼ë¡œ ì§€ì •í•´ íƒ€ì›ì„ ê·¸ë¦¬ë©° ë‚´ë¶€ë¥¼ ì±„ìš´ë‹¤.
+fillpoly	graphics.h	void far fillpoly(int numpoints, int far*polypoints)	drawpolyì™€ ìœ ì‚¬í•œ ì‘ìš©ì„ í•˜ë©° numpointsê°€ ì§€ì •í•˜ëŠ” ë§Œí¼ì˜ ë‹¤ê°í˜•ì„ ê·¸ë¦°ë‹¤.
+findfirst	dir.h	int findfirst(const char*pathname, struct ftblk *ftblk, int attrib)	ì™€ì¼ë“œ ì¹´ë“œë¡œ ì£¼ì–´ì§„ ì¡°ê±´ì„ ë§Œì¡±í•˜ëŠ” ì²« ë²ˆì§¸ íŒŒì¼ì„ ì°¾ëŠ”ë‹¤.
+findnext	dir.h	int findnext(struct ftblk*ftblk)	findfirstê°€ ìµœì´ˆ ê²€ìƒ‰í•˜ì—¬ ì„¤ì •í•œ ftblk êµ¬ì¡°ì²´ì˜ ì •ë³´ë¥¼ ì´ìš©í•˜ì—¬ ê²€ìƒ‰ì„ ê³„ì† ìˆ˜í–‰í•´ ë‚˜ê°„ë‹¤.
+floodfill	graphics.h	void far floodfill(int x, int y, int border)	ë‹«í˜€ì ¸ ìˆëŠ” ë‹¤ê°í˜•ì˜ ë‚´ë¶€ë¥¼ ì±„ìš´ë‹¤.
+floor	math.h	double floor(double x)	ì¸ìˆ˜ xë¥¼ ë‚´ë¦¼í•œë‹¤. ì¸ìˆ˜ xì˜ ìˆ˜ì§ì„ ìƒì— ì¢Œì¸¡ìœ¼ë¡œ ê°€ì¥ ê°€ê¹Œìš´ ì •ìˆ˜ë¥¼ ì°¾ì•„ë‚´ëŠ” í•¨ìˆ˜ì´ë‹¤.
+flushall	stdio.h	int flushall(void)	í˜„ì¬ ê°œë°©ëœ ëª¨ë“  ìŠ¤íŠ¸ë¦¼ì— í• ë‹¹ë˜ì–´ ìˆëŠ” ë²„í¼ë¥¼ ë¹„ìš´ë‹¤.
+fmod	math.h	double fmod(double x, double y)	ì‹¤ìˆ˜ xë¥¼ ì‹¤ìˆ˜ yë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ë¥¼ êµ¬í•œë‹¤.
+fnmerge	dir.h	void fnmerge(char *path, const char *drive, const char *dir, const char *name, const char *ext)	ê²½ë¡œë¥¼ ì´ë£¨ëŠ” ê°ê°ì˜ ìš”ì†Œë¥¼ í•©ì³ í•˜ë‚˜ì˜ ì™„ì „í•œ ê²½ë¡œë¥¼ ë§Œë“ ë‹¤.
+fnsplit	dir.h	int fnsplit(const char *path, char *drive, char *dir, char *name, char *ext)	í•˜ë‚˜ì˜ ì™„ì „í•œ ê²½ë¡œë¥¼ ê°ê°ì˜ ìš”ì†Œë¡œ ë¶„ë¦¬ì‹œí‚¨ë‹¤.
+fopen	stdio.h	FILE *fopen(const char *filename, const char *mode)	ìŠ¤íŠ¸ë¦¼ì„ ê°œë°©í•˜ê³  FILEí˜• êµ¬ì¡°ì²´ë¥¼ ë§Œë“¤ì–´ ì •ë³´ë¥¼ ê¸°ì…í•œ í›„ í¬ì¸í„°ë¥¼ ë¦¬í„´í•œë‹¤.
+FP_OFF	dos.h	unsigned FP_OFF(farpointer)	farpointerì—ì„œ ì˜¤í”„ì…‹ ê°’ë§Œ ë¶„ë¦¬í•´ë‚¸ë‹¤.
+fprintf	stdio.h	int fpointf(FILR *stream, const char *format, ...)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ì„œì‹í™”ëœ ì¶œë ¥ì„ ë‚´ë³´ë‚¸ë‹¤. printfì™€ ìœ ì‚¬í•˜ë‹¤.
+FP_SEG	dos.h	unsigned FP_SEG(farpointer)	farpointerì—ì„œ ì„¸ê·¸ë©˜íŠ¸ ê°’ë§Œ ë¶„ë¦¬í•´ë‚¸ë‹¤.
+fputc	stdio.h	int fputc(int c, FILE *stream)	í•œ ë¬¸ìë¥¼ ì¶œë ¥í•œë‹¤.
+fputchar	stdio.h	int fputchar(int c)	ë¬¸ì cë¥¼ í™”ë©´ì— ì¶œë ¥í•œë‹¤. fputcì™€ ê°™ë‹¤.
+fputs	stdio.h	int fputs(const char *s, FILE *stream)	ë¬¸ìì—´ì„ ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+fread	stdio.h	size_t fread(void *ptr, size_t size, size_t n, FILE *stream)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œë¶€í„° ê¸¸ì´ê°€ sizeì¸ ë°ì´í„° nê°œë¥¼ ì§€ì •ëœ ë©”ëª¨ë¦¬ë¡œ ì½ì–´ë“¤ì¸ë‹¤.
+free	alloc.h, stdlib.h	void free(void*block)	malloc, calloc, realloc ë“±ì— ì˜í•´ í• ë‹¹ëœ ë©”ëª¨ë¦¬ë¥¼ í•´ì œí•œë‹¤.
+freemem	dos.h	int freemem(unsigned segx)	alloc í˜¸ì¶œë¡œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ í•´ì œí•œë‹¤.
+freopen	stdio.h	FILE *freopen(const char *filename, const char *mode, FILE *stream)	ê°œë°©ë˜ì–´ ìˆëŠ” ìŠ¤íŠ¸ë¦¼ì„ filenameìœ¼ë¡œ ëŒ€ì²´í•œë‹¤.
+frexp	math.h	double frexp(double x, int *exponent)	ìƒìš©ë¡œê·¸ log aì˜ ê°€ìˆ˜ê°’ì„ ê³„ì‚°í•œë‹¤.
+fscanf	stdio.h	int fscanf(FILE *stream, const char *format, ...)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œë¶€í„° ì„œì‹í™”ëœ ì…ë ¥ì„ í–‰í•œë‹¤. scanfì™€ ìœ ì‚¬í•˜ë‹¤.
+fseek	stdio.h	int fseek(FILE *stream, long int offset, int whence)	ìŠ¤íŠ¸ë¦¼ì˜ íŒŒì¼ í¬ì¸í„°ë¥¼ ìƒˆë¡­ê²Œ ì„¤ì •í•œë‹¤.
+fsetpos	stdio.h	int fsetpos(FILE *stream, const fpos_t *pos)	í˜„ì¬ì˜ íŒŒì¼ í¬ì¸í„°ë¥¼ ìƒˆë¡­ê²Œ ì„¤ì •í•œë‹¤.
+fstat	sys/stat.h	int fstat(int handle, struct stat *statbuf)	ì˜¤í”ˆë˜ì–´ ìˆëŠ” íŒŒì¼ì˜ ì •ë³´ë¥¼ statbufì— ì €ì¥í•œë‹¤.
+ftell	stdio.h	int ftell(FILE *stream)	ìŠ¤íŠ¸ë¦¼ì˜ í˜„ì¬ íŒŒì¼ í¬ì¸í„°ë¥¼ ì¡°ì‚¬í•œë‹¤.
+ftime	sys/timeb.h	void ftime(struct timeb *buf)	í˜„ì¬ ì‹œê°„ì„ timeb êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+fwrite	stdio.h	size_t fwrite(const void *ptr, size_t size, size_t n, FILE *stream)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ í¬ì¸í„°ì— ë“¤ì–´ìˆëŠ” ë°ì´í„°ë¥¼ size*në°”ì´íŠ¸ë§Œí¼ ì¶œë ¥í•œë‹¤.
+gcvt	stdio.h	char *gcvt(double value, int ndec, char *buf)	ì‹¤ìˆ˜í˜• ìˆ˜ì¹˜ë¥¼ ndecìë¦¬ìˆ˜ê¹Œì§€ ë¬¸ìì—´ë¡œ ë°”ê¿” bufì— ì €ì¥í•œë‹¤.
+geninterrupt	dos.h	void geninterrupt(int intr_num)	intr_numì´ ì§€ì‹œí•˜ëŠ” ì†Œí”„íŠ¸ì›¨ì–´ ì¸í„°ëŸ½íŠ¸ë¥¼ ì‹¤í–‰ì‹œí‚¨ë‹¤.
+getarccoords	graphics.h	void far getarccoords(struct arccoordstypr far *arccoords)	ë§ˆì§€ë§‰ arc í˜¸ì¶œì— ê´€í•œ ì •ë³´ë¥¼ arccoordsê°€ ê°€ë¦¬í‚¤ëŠ” êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+getaspectratio	graphics.h	void far getaspectratio(int far *xasp, int far *yasp)	ì›ì˜ ì¢…íš¡ë¹„ë¥¼ ì¡°ì‚¬í•œë‹¤.
+getbkcolor	graphics.h	int far getbkcolor(void)	í˜„ì¬ ë°°ê²½ìƒ‰ì„ ì¡°ì‚¬í•œë‹¤.
+getc	stdio.h	int getc(FILE *stream)	ìŠ¤íŠ¸ë¦¼ì—ì„œ í•œ ë¬¸ìë¥¼ ì½ì–´ì˜¨ ë’¤ íŒŒì¼ í¬ì¸í„°ë¥¼ 1 ì¦ê°€ì‹œí‚¨ë‹¤.
+getcbrk	dos.h	int getcbrk(void)	Ctrl-Break ì²´í¬ ìƒíƒœë¥¼ ì¡°ì‚¬í•œë‹¤.
+getch	conio.h	int getch(void)	í‚¤ë³´ë“œì—ì„œ ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
+getchar	stdio.h	int getchar(void)	í‚¤ë³´ë“œì—ì„œ ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
+getche	conio.h	int getche(void)	í‚¤ë³´ë“œì—ì„œ ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
+getcolor	graphics.h	int far getcolor(void)	í˜„ì¬ ì„¤ì •ëœ ì „ê²½ìƒ‰ì„ ë¦¬í„´í•œë‹¤.
+getcurdir	dir.h	int getcurdir(int drive, char *directory)	ì§€ì •ëœ ë“œë¼ì´ë¸Œì˜ ë””ë ‰í† ë¦¬ë¥¼ ì¡°ì‚¬í•´ ì¸ìˆ˜ dirê°€ ì§€ì •í•˜ëŠ” ë©”ëª¨ë¦¬ì— ì €ì¥í•œë‹¤.
+getcwd	dir.h	char *getcwd(char *buf, int buflen)	í˜„ì¬ ì‘ì—…ì¤‘ì¸ ë””ë ‰í† ë¦¬ë¥¼ ì¡°ì‚¬í•´ bufì— ì €ì¥í•œë‹¤.
+getdate	dos.h	void getdate(struct date *datep)	í˜„ì¬ ë‚ ì§œë¥¼ í™•ì¸í•œë‹¤.
+getdefaultpalette	graphics.h	struct palettestype *far getdefaultpalette(void)	ê·¸ë˜í”½ ì‹œìŠ¤í…œì„ ì´ˆê¸°í™”í•  ë•Œì˜ íŒ”ë ˆíŠ¸ íƒ€ì… êµ¬ì¡°ì²´ë¥¼ ì°¾ëŠ”ë‹¤.
+getdfree	dos.h	void getdfree(unsigned char drive, struct dfree *dtable)	ë””ìŠ¤í¬ì˜ ê³µê°„ ì •ë³´ë¥¼ ì œê³µí•´ì¤€ë‹¤.
+getdisk	dir.h	int getdisk(void)	í˜„ì¬ ë“œë¼ì´ë¸Œì˜ ë²ˆí˜¸ë¥¼ ì¡°ì‚¬í•œë‹¤.
+getdrivername	graphics.h	char far *getdrivername(void)	ê·¸ë˜í”½ ëª¨ë“œë¥¼ ì´ˆê¸°í™”í•  ë•Œ ì–´ë–¤ BGI ë“œë¼ì´ë²„ê°€ ë¡œë“œë˜ì—ˆëŠ”ì§€ ì¡°ì‚¬í•œë‹¤.
+getdta	dos.h	char far *getdta(void)	ë””ìŠ¤í¬ ì „ì†¡ ì£¼ì†Œì˜ í˜„ì¬ ì„¤ì • ìƒíƒœë¥¼ ì¡°ì‚¬í•œë‹¤.
+getenv	stdlib.h	char *getenv(const char *name)	í™˜ê²½ë³€ìˆ˜ë¥¼ ì¡°ì‚¬í•´ì„œ ì¡°ì‚¬í•œ ë¬¸ìì—´ì„ ì–»ëŠ”ë‹¤.
+getfat	dos.h	void getfat(unsigned char drive, struct fatinfo *dtable)	ë“œë¼ì´ë¸Œì˜ FATì •ë³´ë¥¼ ê°€ì ¸ì™€ dtable êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+getfatd	dos.h	void getfatd(struct fatinfo *dtable)	ë“œë¼ì´ë¸Œì˜ FATì •ë³´ë¥¼ ê°€ì ¸ì™€ dtable êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+getfillpattern	graphics.h	void far getfillpattern(char far *pattern)	ì‚¬ìš©ì ì •ì˜ ì±„ìƒ‰ ë¬´ëŠ¬ë¥¼ ì½ì–´ì™€ ë©”ëª¨ë¦¬ ì˜ì—­ì— ë³µì‚¬í•œë‹¤.
+getfillsettings	graphics.h	void far getfillsettings(struct fillsettingstype far *fillinfo)	ì§€ì •ëœ ì±„ìƒ‰ ë¬´ëŠ¬ì™€ ìƒ‰ìƒì„ ì¡°ì‚¬í•œë‹¤.
+getftime	io.h	int getftime(int handle, struct ftime *ftimep)	íŒŒì¼ì˜ ì‹œê°„ê³¼ ë‚ ì§œì— ê´€í•œ ì •ë³´ë¥¼ ì¡°ì‚¬í•œë‹¤.
+getgraphmode	graphics.h	int far getgraphmodel(void)	í˜„ì¬ ì„ íƒëœ ê·¸ë˜í”½ ëª¨ë“œë¥¼ ì¡°ì‚¬í•œë‹¤.
+getimage	graphics.h	void far getimage(int left, int top, int right, int bottom, void far *bitmap)	ì§€ì •ëœ ì˜ì—­ì˜ ì´ë¯¸ì§€ë¥¼ ì§€ì •ëœ ë©”ëª¨ë¦¬ ë²ˆì§€ë¡œ ë³µì‚¬í•œë‹¤.
+getlinesettings	graphics.h	void far getlinesettings(struct linesettingstype far *lineinfo)	ì§€ì •ëœ ì„ ì˜ ëª¨ì–‘ê³¼ êµµê¸°ë¥¼ ì¡°ì‚¬í•œë‹¤.
+getmaxcolor	graphics.h	int far getmaxcolor(void)	í˜„ì¬ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ìƒ‰ìƒì˜ ìµœê³  ë²ˆí˜¸ë¥¼ ê³„ì‚°í•´ì¤€ë‹¤.
+getmaxmode	graphics.h	int far getmaxmode(void)	í˜„ì¬ ê·¸ë˜í”½ ë“œë¼ì´ë²„ì˜ ìµœëŒ€ ëª¨ë“œê°’ì„ ì¡°ì‚¬í•œë‹¤.
+getmaxx	graphics.h	int far getmaxx(void)	í˜„ì¬ ê·¸ë˜í”½ ë“œë¼ì´ë¸Œì™€ ëª¨ë“œì—ì„œ ìµœëŒ€ Xì¢Œí‘œë¥¼ ì•Œì•„ë‚¸ë‹¤.
+getmaxy	graphics.h	int far getmaxy(void)	í˜„ì¬ ê·¸ë˜í”½ ë“œë¼ì´ë¸Œì™€ ëª¨ë“œì—ì„œ ìµœëŒ€ Yì¢Œí‘œë¥¼ ì•Œì•„ë‚¸ë‹¤.
+getmodename	graphics.h	char *getmodename(int mode_number)	í˜„ì¬ ê·¸ë˜í”½ ëª¨ë“œì˜ ì´ë¦„ì„ ì¡°ì‚¬í•œë‹¤.
+getmoderange	graphics.h	void far getmoderange(int graphdriver, int far *lomode, int far *himode)	ê·¸ë˜í”½ ë“œë¼ì´ë²„ì˜ ê°€ì¥ ë‚®ì€ ëª¨ë“œì™€ ê°€ì¥ ë†’ì€ ëª¨ë“œë¥¼ ì¡°ì‚¬í•œë‹¤.
+getpalette	graphics.h	void far getpalette(struct palettetype far *palette)	ì„¤ì •ëœ íŒ”ë ˆíŠ¸ì˜ í¬ê¸°ì™€ ìƒ‰ìƒ ì •ë³´ë¥¼ ì¡°ì‚¬í•´ íŒ”ë ˆíŠ¸ êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+getpalettesize	graphics.h	void far getpalettesize(void)	ê·¸ë˜í”½ ë“œë¼ì´ë²„ì™€ ëª¨ë“œì—ì„œ ì‚¬ìš© ê°€ëŠ¥í•œ íŒ”ë ˆíŠ¸ì˜ ìµœëŒ€ ê°œìˆ˜ë¥¼ ì•Œë ¤ì¤€ë‹¤.
+getpass	conio.h	char *getpass(const char *prompt)	ë¬¸ìì—´ì„ íŒ¨ìŠ¤ì›Œë“œ í˜•ì‹ìœ¼ë¡œ ì…ë ¥ë°›ëŠ”ë‹¤.
+getpid	process.h	unsigned getpid(void)	ê° í”„ë¡œê·¸ë¨ì˜ í”„ë¡œì„¸ì„œ IDë¥¼ ì¡°ì‚¬í•œë‹¤.
+getpixel	graphics.h	unsigned far getpixel(int x, int y)	íŠ¹ì • ì¢Œí‘œì˜ ìƒ‰ìƒì„ ì¡°ì‚¬í•œë‹¤.
+getpsp	dos.h	unsigned getpsp(void)	pspì˜ ì„¸ê·¸ë¨¼íŠ¸ ì£¼ì†Œë¥¼ ì¡°ì‚¬í•œë‹¤.
+gets	stdio.h	char *gets(char *s)	ë¬¸ìì—´ì„ ì…ë ¥ë°›ì•„ sì— ì €ì¥í•œë‹¤.
+gettext	conio.h	int gettext(int left, int top, int right, int bottom, void *destin)	ì§€ì • ì˜ì—­ì˜ ë¬¸ìë“¤ì„ ì§€ì •ëœ ë©”ëª¨ë¦¬ ì˜ì—­ì— ì €ì¥í•œë‹¤.
+gettextinfo	conio.h	void gettextinfo(struct text_info *r)	í…ìŠ¤íŠ¸ ëª¨ë“œì— ê´€í•œ ì •ë³´ë¥¼ ì½ì–´ êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+gettextsettings	graphics.h	void far gettextsettings(struct textsettingstype far *texttypeinfo)	settextstyle ë“±ì˜ í•¨ìˆ˜ì— ì˜í•´ ì„¤ì •ëœ ê°’ì„ ì½ì–´ì˜¨ë‹¤.
+gettime	dos.h	void gettime(struct time *timep)	ì‹œê°„ì„ ì½ì–´ì™€ êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+getvect	dos.h	void interrupt(*getvect(int interruptno))()	ì§€ì •ëœ ì¸í„°ëŸ½íŠ¸ì˜ ì‹œì‘ ë²ˆì§€ë¥¼ ë¦¬í„´í•œë‹¤.
+getverify	dos.h	int getverify(void)	ë„ìŠ¤ì˜ verify flag ìƒíƒœë¥¼ ì¡°ì‚¬í•œë‹¤.
+getviewsettings	graphics.h	void far getviewsettings(struct viewporttype far *viewport)	ì„¤ì •ëœ ë·°í¬íŠ¸ì— ëŒ€í•œ ì •ë³´ë¥¼ ì¡°ì‚¬í•œë‹¤.
+getw	stdio.h	int getw(FILE *stream)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œë¶€í„° ì •ìˆ˜ 2ë°”ì´íŠ¸ë¥¼ ì½ì–´ì˜¨ë‹¤.
+getx	graphics.h	int far getx(void)	í˜„ì¬ í™”ë©´ ë‚´ì˜ í˜„ ìœ„ì¹˜ì˜ Xì¢Œí‘œë¥¼ ì½ì–´ì˜¨ë‹¤.
+gety	graphics.h	int far gety(void)	í˜„ì¬ í™”ë©´ ë‚´ì˜ í˜„ ìœ„ì¹˜ì˜ Yì¢Œí‘œë¥¼ ì½ì–´ì˜¨ë‹¤.
+gmtime	time.h	struct tm *gmtime(const time _t *time)	time í•¨ìˆ˜ë¡œ êµ¬í•œ ì‹œê°„ì„ GMT í‘œì¤€ ì‹œê°ìœ¼ë¡œ ë³€í™˜í•´ì¤€ë‹¤.
+gotoxy	conio.h	void gotoxy(int x, int y)	ì»¤ì„œì˜ ìœ„ì¹˜ë¥¼ (x, y)ë¡œ ì´ë™ì‹œí‚¨ë‹¤.
+graphdefaults	graphics.h	void far graphdefaults(void)	ëª¨ë“  ê·¸ë˜í”½ ì„¸íŒ…ì„ ì´ˆê¸°í™”ì‹œí‚¨ë‹¤.
+grapherrormsg	graphics.h	char far *grapherrormsg(int errorcode)	ì—ëŸ¬ ë©”ì‹œì§€ ë¬¸ìì—´ì˜ í¬ì¸í„°ë¥¼ êµ¬í•œë‹¤.
+graphresult	graphics.h	int far graphresult(void)	ë§ˆì§€ë§‰ ê·¸ë˜í”½ ë™ì‘ì´ ì‹¤íŒ¨í–ˆì„ ë•Œì˜ ì—ëŸ¬ê°’ì„ ì¡°ì‚¬í•œë‹¤.
+harderr	dos.h	void harderr(int(*handler)())	ì¹˜ëª…ì  ì—ëŸ¬ ì²˜ë¦¬ í•¨ìˆ˜ë¥¼ ì§€ì •í•œë‹¤.
+hardresume	dos.h	void hardresume(int axret)	ë„ìŠ¤ë¡œ 0~2ì˜ ê°’ì„ ê°€ì§€ê³  ë³µê·€í•œë‹¤.
+hardretn	dos.h	void hardretn(int retn)	ì—ëŸ¬ë¥¼ ìœ ë°œí•œ í”„ë¡œê·¸ë¨ìœ¼ë¡œ ë³µê·€í•œë‹¤.
+heapcheck	alloc.h	int heapcheck(void)	í™ì„ ê²€ì‚¬í•˜ê³  ë‚´ë¶€ ì†ì„±ì„ ì ê²€í•œë‹¤.
+heapcheckfree	alloc.h	int heapcheckfree(unsigned int fillvalue)	í˜ì— ë‚¨ì•„ ìˆëŠ” ììœ  ì˜ì—­ì´ ì£¼ì–´ì§„ ê°’ì„ ê°–ê³  ìˆëŠ”ì§€ ì¡°ì‚¬í•œë‹¤.
+heapchecknode	alloc.h	int heapchecknode(void *node)	ì£¼ì–´ì§„ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ì ê²€í•˜ì—¬ í˜„ì¬ ìƒíƒœë¥¼ ê²€ì‚¬í•œë‹¤.
+heapfillfree	alloc.h	int heapfillfree(unsigned int fillvalue)	í™ì— ë‚¨ì•„ ìˆëŠ” ì‚¬ìš©ê°€ëŠ¥í•œ ììœ ì˜ì—­ì„ ì£¼ì–´ì§„ ê°’ìœ¼ë¡œ ì±„ìš´ë‹¤.
+heapwalk	alloc.h	int heapwalk(struct heapinfo *hi)	í™ì— í• ë‹¹ëœ ë©”ëª¨ë¦¬ ë¸”ë¡ë“¤ì„ ìˆœíšŒí•˜ë©° ìƒíƒœë¥¼ ì¡°ì‚¬í•œë‹¤.
+highvideo	conio.h	void highvideo(void)	í˜„ì¬ ë¬¸ìì˜ ì†ì„±ì„ ê³ íœ˜ë„ ë¬¸ìë¡œ ì„¤ì •í•œë‹¤.
+hypot	math.h	double hypot(double x, double y)	ì§ê° ì‚¼ê°í˜•ì˜ ë¹—ë³€ì„ ê³„ì‚°í•œë‹¤.
+imag	complex.h	double imag(double x)	ë³µì†Œìˆ˜ì˜ í—ˆìˆ˜ë¶€ë¥¼ ê³„ì‚°í•œë‹¤.
+imagesize	graphics.h	void far imagesize(int left, int top, int right, int bottom)	ì´ë¯¸ì§€ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•´ í•„ìš”í•œ ë©”ëª¨ë¦¬ì˜ í¬ê¸°ë¥¼ êµ¬í•œë‹¤.
+initgraph	graphics.h	void far initgraph(int far *graphdriver, int far *graphmode, char far *pathtoname)	ê·¸ë˜í”½ ë“œë¼ì´ë²„ë¥¼ ë¡œë“œí•˜ê³  ê·¸ë˜í”½ ëª¨ë“œ ë° ì„¤ì •ì„ ì´ˆê¸°í™”í•œë‹¤.
+inport	dos.h	int inport(int portid)	portid í¬íŠ¸ì—ì„œ 2ë°”ì´íŠ¸ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
+inportb	dos.h	unsigned char inportb(int portid)	portid í¬íŠ¸ì—ì„œ 1ë°”ì´íŠ¸ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
+insline	conio.h	void insline(void)	í˜„ì¬ ì»¤ì„œì˜ ìœ„ì¹˜ì— ê³µë°± í•œ ì¤„ì„ ì‚½ì…í•œë‹¤.
+installuserdriver	graphics.h	int far installuserdriver(char far *name, int huge(*detect)(void))	ìƒˆë¡œìš´ BGI ë“œë¼ì´ë²„ë¥¼ ì„¤ì¹˜í•œë‹¤.
+installuserfont	graphics.h	int far installuserfont(char far *name)	BGI ì‹œìŠ¤í…œì— ë“¤ì–´ ìˆì§€ ì•Šì€ í°íŠ¸ë¥¼ ì½ì–´ì™€ì„œ ì„¤ì¹˜í•œë‹¤.
+int86	dos.h	int int86(int intno, union REGS *inregs, union REGS *outregs)	ì¸í„°ëŸ½íŠ¸ë¥¼ í˜¸ì¶œí•œë‹¤.
+int86x	dos.h	int int86x*int intno, union REGS *inregs, union REGS *outregs, struct SREGS *segregs)	int86í•¨ìˆ˜ì— ë”í•´ ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ë„ ì „ë‹¬í•´ì¤€ë‹¤.
+intdos	dos.h	int intdos(union REGS *inregs, union REGS *outregs)	0x21ë²ˆ ì¸í„°ëŸ½íŠ¸ë¥¼ í˜¸ì¶œí•œë‹¤.
+intdosx	dos.h	int intdosx(union REGS *inregs, union REGS *outregs, struct SREGS *segregs)	0x21ë²ˆ ì¸í„°ëŸ½íŠ¸ë¥¼ í˜¸ì¶œí•˜ë˜ ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ê°’ì„ ì¸ìˆ˜ë¡œ ì „ë‹¬í•œë‹¤.
+intr	dos.h	void intr(int intno, struct REGPACK *preg)	ì†Œí”„íŠ¸ì›¨ì–´ ì¸í„°ëŸ½íŠ¸ë¥¼ í˜¸ì¶œí•œë‹¤.
+ioctl	io.h	int ioctl(int handle, int func[, void *argdx, int argcx])	ë””ìŠ¤í¬, ì§ë³‘ë ¬ í¬íŠ¸ì— ëŒ€í•œ ì§ì ‘ì ì¸ IOì„œë¹„ìŠ¤ë¥¼ ì œê³µí•œë‹¤.
+isalnum	ctype.h	int isalnum(int c)	cê°€ ì•ŒíŒŒë²³ì¸ì§€ ìˆ«ìì¸ì§€ ì¡°ì‚¬í•´ì¤€ë‹¤.
+isalpha	ctype.h	int isalpha(int c)	cê°€ ì•ŒíŒŒë²³ì¸ì§€ ì¡°ì‚¬í•´ì¤€ë‹¤.
+isascii	ctype.h	int isascii(int c)	cê°€ ì•„ìŠ¤í‚¤ë¬¸ìì¸ì§€ ì¡°ì‚¬í•´ì¤€ë‹¤.
+isatty	io.h	int isatty(int handle)	ì¸ìˆ˜ë¡œ ì£¼ì–´ì§„ í•¸ë“¤ì´ ë‹¤ìŒê³¼ ê°™ì€ ì¢…ë¥˜ì˜ ë¬¸ì ì…ì¶œë ¥ìš© ì¥ì¹˜ì™€ ì—°ê²°ë˜ì–´ ìˆëŠ”ê°€ë¥¼ ì¡°ì‚¬í•œë‹¤.
+iscntrl	ctype.h	int iscntrl(int c)	ì´ í•¨ìˆ˜ëŠ” cê°€ ì œì–´ ë¬¸ìì¸ ê²½ìš°ë¥¼ ì¡°ì‚¬í•´ ì¤€ë‹¤. 
+isdigit	ctype.h	int isdigit(int c)	cê°€ ìˆ«ìì¸ì§€ ì¡°ì‚¬í•´ ì¤€ë‹¤. ì¦‰ cê°€ 0~9 ì‚¬ì´ì˜ ë¬¸ìì´ë©´ ì°¸ì„ ë¦¬í„´í•œë‹¤.
+isgraph	ctype.h	int isgraph(int c)	ë¬¸ì cê°€ ì¶œë ¥ ê°€ëŠ¥í•œ ë¬¸ìì¸ê°€ë¥¼ ê²€ì‚¬í•œë‹¤.
+islower	ctype.h	int islower(int c)	ë¬¸ì cê°€ ì†Œë¬¸ìì¸ì§€ ê²€ì‚¬í•´ì¤€ë‹¤.
+isprint	ctype.h	int isprint(int c)	cê°€ í”„ë¦°íŠ¸ ê°€ëŠ¥í•œ ë¬¸ìì¸ì§€ ì¡°ì‚¬í•´ì¤€ë‹¤.
+ispunct	ctype.h	int ispunct(int c)	ë¬¸ì cê°€ êµ¬ë‘ì ì¸ì§€ íŒë³„í•´ ì¤€ë‹¤.
+isspace	ctype.h	int isspace(int c)	ë¬¸ì cê°€ ê³µë°± ë¬¸ìì¸ì§€ë¥¼ ê²€ì‚¬í•´ ì¤€ë‹¤.
+isupper	ctype.h	int isupper(int c)	ë¬¸ì cê°€ ëŒ€ë¬¸ìì¸ì§€ ê²€ì‚¬í•´ ì¤€ë‹¤.
+isxdigit	ctype.h	int isxdigit(int c)	ë¬¸ì cê°€ 16ì§„ìˆ˜ í‘œí˜„ì— ì‚¬ìš©ë˜ëŠ” ë¬¸ìì¸ì§€ ì¡°ì‚¬í•´ ì¤€ë‹¤.
+itoa	stdlib.h	char* itoa(int value, char* string, int radix)	ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤.
+kbhit	conio.h	int kbhit(void)	í‚¤ë³´ë“œë¡œë¶€í„° ì…ë ¥ëœ í‚¤ê°€ ìˆëŠ”ì§€ ì¡°ì‚¬í•œë‹¤.
+keep	dos.h	void keep(unsigned char status, unsigned size)	í”„ë¡œê·¸ë¨ì„ ë©”ëª¨ë¦¬ì— ë‚¨ê²¨ë‘” ì±„ ë„ìŠ¤ë¡œ ë³µê·€í•œë‹¤.
+labs	math.h	long int labs(long int x)	longí˜• ì •ìˆ˜ì˜ ì ˆëŒ€ê°’ì„ ê³„ì‚°í•œë‹¤.
+ldexp	math.h	double ldexp(double x, int exp)	x*2expë¥¼ ê³„ì‚°í•œë‹¤. X*pow(2, exp)ì™€ ë™ì¼í•œ ê²°ê³¼ë¥¼ ë‚´ëŠ” í•¨ìˆ˜
+ldiv	stdlib h	ldiv_t ldiv(long int number, long int denom)	ë‘ longí˜• ì •ìˆ˜ë¡œ ë‚˜ëˆ—ì…ˆì„ í•˜ê³  ê·¸ ëª«ê³¼ ë‚˜ë¨¸ì§€ë¥¼ stdlib.hì— ì •ì˜ëœ div_t êµ¬ì¡°ì²´ë¡œ ë¦¬í„´í•œë‹¤.
+lfind	stdlib.h	void lfind(const void* key, const void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	ì„ í˜• íƒìƒ‰ì„ ìˆ˜í–‰í•˜ì—¬ í…Œì´ë¸”ì—ì„œ í‚¤ê°’ì„ ì°¾ì•„ë‚¸ë‹¤.
+line	graphics.h	void line(int x1, int y1, int x2, int y2)	(x1, y1) ì¢Œí‘œì—ì„œ (x2, y2)ê¹Œì§€ ì„ ì„ ê·¸ë¦°ë‹¤.
+linerel	graphics.h	void linerel(int dx, int dy)	í˜„ì¬ CPì—ì„œ ìƒëŒ€ì  ì¢Œí‘œê°’ìœ¼ë¡œ ì´ë™í•œë‹¤.
+lineto	graphics.h	void lineto(int x, int y)	CPë¡œë¶€í„° (x, y) ìœ„ì¹˜ë¡œ ì„ ì„ ê¸‹ëŠ”ë‹¤.
+localeconv	locale.h	struct* localeconv(void)	êµ­ê°€ë§ˆë‹¤ ë‹¤ë¥¸ í™”íê¸°í˜¸ë‚˜ ë‚ ì§œ í˜•ì‹ì„ ì§€ì •í•˜ëŠ” locale êµ¬ì¡°ì²´ë¥¼ ì¡°ì‚¬í•œë‹¤.
+localtime	time.h	struct tm* localtime(const time_t* timer)	time í•¨ìˆ˜ì— ì˜í•´ êµ¬í•´ì§„ ì‹œê°„ì„ tm êµ¬ì¡°ì²´ì— ì €ì¥í•˜ë©° ì´ë•Œ ì €ì¥ë˜ëŠ” ì‹œê°„ì€ ì ë‹¹íˆ ì¡°ì •ëœ ì‹œê°„.
+lock	io.h	int lock(int handle, long offset, long length)	ë„ìŠ¤ 3.xì˜ íŒŒì¼ ê³µìœ  ê¸°ë²• ì¸í„°í˜ì´ìŠ¤ë¥¼ ì œê³µí•œë‹¤.
+log	math.h	double log(double x)	xì˜ ìì—°ë¡œê·¸ë¥¼ ê³„ì‚°í•œë‹¤.
+log10	math.h	double log10(double x)	xì˜ ìƒìš©ë¡œê·¸ë¥¼ ê³„ì‚°í•œë‹¤.
+longjmp	setmp.h	void longjmp(jmp_buf jmpb, int retval)	ë§ˆì§€ë§‰ìœ¼ë¡œ í˜¸ì¶œëœ setjmpê°€ jmpbì— ì €ì¥í•´ ë‘” ì‘ì—… ìƒíƒœë¥¼ ë³µêµ¬ì‹œí‚¤ë©° setjmpê°€ retvalì„ ë¦¬í„´í•œ ê³³ìœ¼ë¡œ ëŒì•„ê°„ë‹¤.
+lowvideo	conio.h	void lowvideo(void)	í˜„ì¬ ë¬¸ìì˜ ì†ì„±ì„ ë‚®ì€ íœ˜ë„ì˜ ë¬¸ì ì†ì„±ìœ¼ë¡œ ì„¤ì •í•œë‹¤.
+_lrotl	stdlib.h	unsigned long _lrotl(unsigned long val, int count)	valueê°’ì„ ì™¼ìª½ìœ¼ë¡œ countë§Œí¼ íšŒì „ì‹œí‚¨ë‹¤.
+_lrotr	stdlib.h	unsinged long _lrotr(unsigned long val, int count)	value ê°’ì„ ì˜¤ë¥¸ìª½ìœ¼ë¡œ countë§Œí¼ íšŒì „ì‹œí‚¨ë‹¤.
+lsearch	stdlib.h	void lsearch(const void* key, const void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	ì„ í˜• íƒìƒ‰ì„ ìˆ˜í–‰í•˜ì—¬ í…Œì´ë¸”ìƒì— í‚¤ í•­ëª©ì´ ìµœì´ˆë¡œ ë°œê²¬ëœ ë²ˆì§€ë¥¼ ë¦¬í„´í•˜ë˜ ë°œê²¬ë˜ì§€ ì•Šì„ ê²½ìš° í‚¤ í•­ëª©ì„ í…Œì´ë¸”ì— ì²¨ê°€í•œë‹¤.
+lseek	io.h	long lseek(int handle, long offset, int fromwhere)	íŒŒì¼ í¬ì¸í„°(FP)ë¥¼ ìƒˆë¡­ê²Œ ì„¤ì •í•œë‹¤.
+ltoa	stdlib.h	char* ltoa(long value, char* string, int radix)	longí˜• ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤.
+malloc	alloc.h, stdlib.h	void* malloc(size_t size)	ë™ì ìœ¼ë¡œ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•œë‹¤. ì´ë•Œ í• ë‹¹ë˜ëŠ” ë©”ëª¨ë¦¬ëŠ” heapì´ë‹¤.
+_matherrl	math.h	int _matherrl(struct _exception* (e))	matherrí•¨ìˆ˜ì™€ ê¸°ëŠ¥ì´ ê°™ìœ¼ë©° ì°¨ì´ì ì€ ì´ í•¨ìˆ˜ëŠ” long doubleí˜•ì„ ê³„ì‚°í•˜ê³  êµ¬ì¡°ì²´ê°€ ë‹¤ë¥¸ ì ì´ë‹¤.
+matherr	math.h	int matherr(struct exception* e)	matherrí•¨ìˆ˜ëŠ” ìˆ˜í•™ ë¼ì´ë¸ŒëŸ¬ë¦¬ í•¨ìˆ˜ ì‹¤í–‰ ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí–ˆì„ ê²½ìš° í˜¸ì¶œë˜ëŠ” í•¨ìˆ˜ì´ë‹¤.
+max	stdlib.h	(type) max(a, b)	ë‘ ê°’ ì¤‘ í° ê°’ì„ ë¦¬í„´í•œë‹¤.
+memchr	stinrg.h, math.h	void* memchr(const void* s, int c,  size_t n)	sê°€ í¬ì¸íŠ¸í•˜ëŠ” ë©”ëª¨ë¦¬ë¶€í„° në°”ì´íŠ¸ ë‚´ì˜ ë©”ëª¨ë¦¬ ë¸”ë¡ê¹Œì§€ì—ì„œ ë¬¸ì cë¥¼ ì°¾ëŠ”ë‹¤.
+memcmp	memory.h	int memcmp(const void* sl, const void* s2, size_t n)	ë‘ ê°œì˜ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ë¹„êµí•œë‹¤. ì´ë•Œ ë¹„êµë˜ëŠ” ê°’ë“¤ì€ ë¶€í˜¸ ì—†ëŠ” ê°’ìœ¼ë¡œ ì²˜ë¦¬ëœë‹¤.
+memcpy	memory.h	void* memcpy(void* deset, const void* src, size_t n)	ë©”ëª¨ë¦¬ë¼ë¦¬ ë³µì‚¬í•œë‹¤. Srcë²ˆì§€ì— ìˆëŠ” ë°ì´í„°ë¥¼ destê°€ ì§€ì •í•˜ëŠ” ë²ˆì§€ë¡œ në°”ì´íŠ¸ë§Œí¼ ë³µì‚¬í•œë‹¤.
+memicmp	memory.h	int memicmp(const void* sl, const void* s2, size_t n)	ë‘ ê°œì˜ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ë¹„êµí•œë‹¤. ì´ë•Œ ë¹„êµë˜ëŠ” ê°’ë“¤ì€ ë¶€í˜¸ ì—†ëŠ” ê°’ìœ¼ë¡œ ì²˜ë¦¬ëœë‹¤.
+memmove	string.h, memory.h	void* memmove(void* dest, const void* src, size_t n)	ë©”ëª¨ë¦¬ë¼ë¦¬ ë³µì‚¬í•œë‹¤. Srcë²ˆì§€ì— ìˆëŠ” ë°ì´í„°ë¥¼ destê°€ ì§€ì •í•˜ëŠ” ë²ˆì§€ë¡œ në°”ì´íŠ¸ë§Œí¼ ë³µì‚¬í•œë‹¤.
+memset	memory.h	void* memset(void* s, int c, size_t n)	sê°€ í¬ì¸íŠ¸í•˜ëŠ” ë©”ëª¨ë¦¬ë¥¼ ê°’ cë¡œ nê°œë¥¼ ì±„ìš´ë‹¤.
+min	stdlib.h	(type) min(a,b)	ë‘ ê°’ ì¤‘ ì‘ì€ ê°’ì„ ë¦¬í„´í•œë‹¤.
+mkdir	dir.h	int mkdir(const char* path)	ìƒˆë¡œìš´ ë””ë ‰í† ë¦¬ë¥¼ ì¸ìˆ˜ë¡œ ì£¼ì–´ì§„ íŒ¨ìŠ¤ë¡œ ìƒì„±í•œë‹¤. ë„ìŠ¤ì˜ mdëª…ë ¹ì–´ì™€ ì‚¬ìš©ë²•ì´ ë™ì¼í•˜ë‹¤.
+MK_FP	dos.h	void* MK_FP(unsinged seg, unsigned ofs)	ì£¼ì–´ì§„ ì˜¤í”„ì…‹ê³¼ ì„¸ê·¸ë¨¼íŠ¸ë¥¼ ì‚¬ìš©í•˜ì—¬ far í¬ì¸í„°ë¥¼ ìƒì„±í•œë‹¤.
+mktemp	dir.h	char* mktemp(char* template)	ì„ì‹œ íŒŒì¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” íŒŒì¼ì˜ ì´ë¦„ì„ ë§Œë“ ë‹¤.
+modf	math.h	double modf(double x, double* ipart)	ì‹¤ìˆ˜ xë¥¼ ë¶„í•´í•˜ì—¬ ì •ìˆ˜ë¶€ì™€ ì‹¤ìˆ˜ë¶€ë¡œ ë‚˜ëˆˆë‹¤.
+movedata	memory.h	void movedata(unsinged srcseg, unsigned srcoff, unsinged dstseg, unsinged dstoff, size_t n)	movedataëŠ” srcì—ì„œ destë¡œ në°”ì´íŠ¸ë¥¼ ë³µì‚¬í•œë‹¤.
+moverel	graphics.h	void moverel(int x, int y)	í˜„ì¬ CPì—ì„œ ìƒëŒ€ì  ì¢Œí‘œê°’ìœ¼ë¡œ ì´ë™í•œë‹¤.
+movetext	conio.h	int movetext(int left, int top, int right, int bottom, int destleft, int desttop)	í™”ë©´ìƒì˜ ì§€ì •í•œ ì‚¬ê° ì˜ì—­ì— ìˆëŠ” ë¬¸ìë“¤ì„ ë‹¤ë¥¸ ì˜ì—­ì„ ë³µì‚¬í•œë‹¤.
+moveto	graphics.h	void moveto(int x, int y)	í˜„ì¬ CPë¥¼ (x, y) ìœ„ì¹˜ë¡œ ì´ë™ ì‹œí‚¨ë‹¤. ì„ ì„ ê·¸ë¦¬ì§€ ì•Šê³  ì´ë™í•œë‹¤.
+movmem	memory.h	void movmem(void* src, void* dest, unsinged length)	srcì—ì„œ destë¡œ lengthë§Œí¼ ë³µì‚¬ë¥¼ í•œë‹¤.
+norm	complex.h	double norm(complex x)	ë³µì†Œìˆ˜ì˜ ì ˆëŒ€ê°’ì„ êµ¬í•œ í›„ ì œê³±í•œ ê°’ì„ êµ¬í•œë‹¤.
+normvideo	conio.h	void normvideo(void)	í˜„ì¬ ë¬¸ìì˜ ì†ì„±ì„ í”„ë¡œê·¸ë¨ ì‹¤í–‰ ì´ì „ì˜ ë¬¸ìì†ì„±ìœ¼ë¡œ ë˜ëŒë¦°ë‹¤.
+nosound	dos.h	void nosound(void)	PC ìŠ¤í”¼ì»¤ì˜ ì†Œë¦¬ë¥¼ ëˆë‹¤.
+_open	io.h	int _open(const char* filename, int oflags)	í•¸ë“¤í˜• íŒŒì¼ ì…ì¶œë ¥ì„ ìœ„í•´ íŒŒì¼ì„ ê°œë°©í•œë‹¤.
+open	io.h	open(const char* path, int access [, unsigned model])	pathë¡œ ì§€ì •ëœ íŒŒì¼ì„ ì—°ë‹¤.
+outport	dos.h	void outport(int portid, int value)	portid í¬íŠ¸ë¡œ 2ë°”ì´íŠ¸ë¥¼ ì¶œë ¥í•œë‹¤.
+outportb	dos.h	void outport(int portid, unsigned char value)	portid í¬íŠ¸ë¡œ 1ë°”ì´íŠ¸ë¥¼ ì¶œë ¥í•œë‹¤.
+outtext	graphics.h	void outtext(char* textstring)	ê·¸ë˜í”½ ëª¨ë“œì—ì„œ ë¬¸ìì—´ì„ ì¶œë ¥í•  ë•Œ ì“°ì¸ë‹¤.
+outtextxy	graphics.h	void outtextxy(int x, int y, char* textstring)	ê·¸ë˜í”½ ëª¨ë“œì—ì„œ ë¬¸ìì—´ì„ ì¶œë ¥í•œë‹¤.
+parsfnm	dos.h	char* parsfnm(const char* cmdline, struct* fcb, int opt)	ì¸ìˆ˜ë¡œ ì£¼ì–´ì§„ cmdlineì— ìˆëŠ” íŒŒì¼ ì´ë¦„ì„ ë¶„ì„í•˜ì—¬ FCBì— ë“œë¼ì´ë¸Œëª…, íŒŒì¼ëª…, í™•ì¥ëª…ì„ ê¸°ì…í•œë‹¤.
+peek	dos.h	int peek(unsigned segment, unsigned offset)	segment, offsetì´ ì§€ì •í•˜ëŠ” ë²ˆì§€ì˜ ê°’ì„ ì¡°ì‚¬í•œë‹¤.
+peekb	dos.h	int peekb(unsinged segment, unsinged offset)	segment, offsetì´ ì§€ì •í•˜ëŠ” ë²ˆì§€ì˜ ê°’ì„ ì¡°ì‚¬í•œë‹¤. ì´ë•Œ ì¡°ì‚¬ë˜ëŠ” ê°’ì€ 8ë¹„íŠ¸ ì¦‰ ë¬¸ìê°’ì´ë‹¤.
+perror	stdio.h	void perror(const char* s)	ì‹œìŠ¤í…œ ì—ëŸ¬ ë©”ì‹œì§€ë¥¼ stderrìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+pieslice	graphics.h	void pieslice(int x, int y, int stangle, int endangle, int radius)	ì¤‘ì‹¬(x, y)ì—ì„œ ì‹œì‘ê°(stangle), ëê°(endangle)ì„ ì§€ì •í•˜ì—¬ ë°˜ì§€ë¦„ì˜ ì›í˜¸ë¥¼ ê·¸ë¦¬ê³  ì›í˜¸ì˜ ì–‘ëì ê³¼ ì¤‘ì‹¬ì„ ì—°ê²°í•´ ë‚´ë¶€ë¥¼ ì±„ìƒ‰í•œë‹¤.
+poke	dos.h	void poke(unsinged segment, unsigned offset, int value)	segment, offsetì´ ì§€ì •í•˜ëŠ” ë©”ëª¨ë¦¬ ë²ˆì§€ì— 16ë¹„íŠ¸ì˜ ì •ìˆ˜ê°’ì„ ê¸°ì…í•´ ë„£ëŠ”ë‹¤.
+pokeb	dos.h	void pokeb(unsinged segment, unsigned offset, char value)	segment, offsetì´ ì§€ì •í•˜ëŠ” ë©”ëª¨ë¦¬ ë²ˆì§€ì— 8ë¹„íŠ¸ì˜ ë¬¸ìê°’ì„ ê¸°ì…í•´ ë„£ëŠ”ë‹¤.
+polar	complex.h	complex polar(double mag, double angle)	ì£¼ì–´ì§„ í¬ê¸°ì™€ ê°ë„ë¥¼ ê°€ì§„ ë³µì†Œìˆ˜ë¥¼ ë§Œë“ ë‹¤.
+poly	math.h	double poly(double x, int degree, double coeffs[]	ë‹¤í•­ì‹ì„ ê³„ì‚°í•œë‹¤.
+pow	math.h	double pow(double x, double y)	xì˜ yìŠ¹, ì¦‰ xyì„ ê³„ì‚°í•œë‹¤.
+pow10	math.h	double pow10(int p)	10pì„ êµ¬í•œë‹¤.
+printf	stdio.h	int printf(const char* format, [argument, â€¦])	stdoutì— í˜•ì‹í™”ëœ ì¶œë ¥ì„ í•œë‹¤.
+putc	stdio.h	int putc(int c, FILE* stream)	ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ë¬¸ì cë¥¼ ì¶œë ¥í•œë‹¤.
+putch	conio.h	int putch(int c)	í™”ë©´ì— ë¬¸ì cë¥¼ ì¶œë ¥í•œë‹¤.
+putchar	stdio.h	int putchar(int c)	í™”ë©´ì— ë¬¸ì cë¥¼ ì¶œë ¥í•œë‹¤.
+putenv	stdlib.h	int putenv(const char* path)	ë„ìŠ¤ì˜ í™˜ê²½ ë³€ìˆ˜ ì˜ì—­ì— ìƒˆë¡œìš´ í™˜ê²½ ë³€ìˆ˜ë¥¼ ì²¨ê°€í•œë‹¤.
+putimage	graphics.h	void putimage(int left, int top, void* bitmap, int op)	í™”ë©´ì— ì´ë¯¸ì§€ë¥¼ ì¶œë ¥í•œë‹¤.
+putpixel	graphics.h	void putpixel(int x, int y, int color)	(x, y) ì¢Œí‘œì— colorìƒ‰ìƒìœ¼ë¡œ ì ì„ ì°ëŠ”ë‹¤.
+puts	stdio.h	int puts(const char* s)	ë¬¸ìì—´ì„ í™”ë©´ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+puttext	conio.h	int puttext(int left, int top, int right, int bottom, void* source)	sourceê°€ í¬ì¸íŠ¸í•˜ëŠ” ë©”ëª¨ë¦¬ ì˜ì—­ì— ì €ì¥ë˜ì–´ ìˆëŠ” ë¬¸ìë“¤ì„ ì§€ì‹œí•˜ëŠ” í™”ë©´ìƒì˜ ì‚¬ê° ì˜ì—­ì— ì¶œë ¥í•œë‹¤.
+putw	stdio.h	int putw(int w, FILE* stream)	ìŠ¤íŠ¸ë¦¼ì— ì •ìˆ˜ wë¥¼ ì¶œë ¥í•œë‹¤.
+qsort	stdlib.h	void qsort(void* base, size_t nelem, size_t width, int (*fcmp)(const void*, const void*))	ì„¸ ê°œì˜ ê°’ ì¤‘ ì¤‘ì•™ê°’ì„ ì°¾ëŠ” quick sort ì•¨ê±°ë¦¬ë“¬ì„ ì‚¬ìš©í•˜ì—¬ ì •ë ¬ì„ ìˆ˜í–‰í•œë‹¤.
+raise	signal.h	int raise(int sig)	í”„ë¡œê·¸ë¨ìœ¼ë¡œ ì‹ í˜¸ë¥¼ ê°•ì œì ìœ¼ë¡œ ë³´ë‚¸ë‹¤.
+rand	stdlib.h	int rand(void)	ì˜ˆì¸¡í•  ìˆ˜ ì—†ëŠ” í•˜ë‚˜ì˜ ìˆ˜ë¥¼ ë§Œë“¤ì–´ ë‚¸ë‹¤.
+randbrd	dos.h	int randbrd(struct fcb* fcb, int rcnt)	FCBë¥¼ ì‚¬ìš©í•˜ì—¬ í˜„ì¬ ë””ìŠ¤í¬ì˜ DTA ì˜ì—­ìœ¼ë¡œ recordë¥¼ ì¸ìˆ˜ rcntê°€ ì§€ì •í•˜ëŠ” ê°œìˆ˜ë§Œí¼ ì½ì–´ë“¤ì¸ë‹¤.
+randbwr	dos.h	int randbwr(struct fcb* fcb, int rcnt)	FCBë¥¼ ì‚¬ìš©í•˜ì—¬ ë””ìŠ¤í¬ ìƒì— ì¸ìˆ˜ rcntê°€ ì§€ì •í•˜ëŠ” ê°œìˆ˜ë§Œí¼ì˜ recordë¥¼ ê¸°ë¡í•œë‹¤.
+random	stdlib.h	int random(int num)	0~num-1ì‚¬ì´ì˜ ì •ìˆ˜ ë‚œìˆ˜ë¥¼ ë°œìƒì‹œí‚¨ë‹¤.
+randomize	stdlib.h, time.h	void randomize(void)	ë‚œìˆ˜ ë°œìƒê¸°ì˜ ì‹œì‘ì ì„ ì´ˆê¸°í™”ì‹œì¼œ ì¤€ë‹¤.
+real	complex.h	double real(double x)	ë³µì†Œìˆ˜ì˜ ì‹¤ìˆ˜ë¶€ë§Œì„ êµ¬í•œë‹¤.
+realloc	alloc.h	void* realloc(void* block, size_t size)	ì´ë¯¸ í• ë‹¹ë˜ì–´ ìˆëŠ” ë©”ëª¨ë¦¬ì˜ í¬ê¸°ë¥¼ ì¶•ì†Œì‹œí‚¤ê±°ë‚˜ í™•ì¥ì‹œí‚¨ë‹¤.
+rectangle	graphics.h	void rectangle(int left, int top, int right, int bottom)	ì‚¬ê°í˜•ì„ ê·¸ë¦°ë‹¤.
+registerbgidriver	graphics.h	int registerbgidriver(void(*driver)(void))	BGIë“œë¼ì´ë²„ íŒŒì¼ì„ ì½ì–´ì™€ì„œ ë“±ë¡ì‹œí‚¨ë‹¤.
+registerbgifont	graphics.h	int registerbgifont(void(*font)(void))	BGI í°íŠ¸ë¥¼ ì½ì–´ì™€ì„œ ë“±ë¡ì‹œí‚¨ë‹¤.
+remove	stdio.h	int remove(const char* filename)	íŒŒì¼ì„ ì‚­ì œí•œë‹¤.
+rename	stdio.h	int rename(const char* oldname, const char* newname)	íŒŒì¼ì˜ ì´ë¦„ì„ ë°”ê¾¼ë‹¤.
+restorecrtmode	graphics.h	void restorecrtmode(void)	initgraph í˜¸ì¶œ ì „ì˜ ë¹„ë””ì˜¤ ëª¨ë“œ, ì¦‰ í…ìŠ¤íŠ¸ ëª¨ë“œë¡œ ë³µê·€í•œë‹¤.
+rewind	stdio.h	void rewind(FILE* stream)	ìŠ¤íŠ¸ë¦¼ì˜ íŒŒì¼ í¬ì¸í„°(FP)ë¥¼ íŒŒì¼ì˜ ì‹œì‘ì ìœ¼ë¡œ ì˜®ê¸´ë‹¤.
+rmdir	dir.h	int rmdir(const char* path)	path ì¸ìˆ˜ê°€ ì§€ì •í•˜ëŠ” ë””ë ‰í† ë¦¬ë¥¼ ì œê±°í•œë‹¤.
+sbrk	alloc.h	void* sbrk(int incr)	ì´ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•œ í”„ë¡œê·¸ë¨ì˜ heapí¬ê¸°ë¥¼ ë°”ê¾¼ë‹¤.
+scanf	stdio.h	int scanf(const char* format [, address â€¦])	í˜•ì‹í™”ëœ ì…ë ¥ì„ í‚¤ë³´ë“œë¡œë¶€í„° ë°›ëŠ”ë‹¤.
+searchpath	dir.h	char* searchpath(const char* file)	ì¸ìˆ˜ë¡œ ì£¼ì–´ì§„ fileì´ ìˆëŠ” ë””ë ‰í† ë¦¬ë¥¼ ì¡°ì‚¬í•´ì¤€ë‹¤.
+sector	graphics.h	void sector(int x, int y, int stangle, int endangle, int xradius, int yradius)	ì¤‘ì‹¬(x, y)ì—ì„œ ì‹œì‘ê°(stangle), ëê°(endangle)ì„ ì§€ì •í•˜ì—¬ ë°˜ì§€ë¦„ì˜ íƒ€ì›í˜¸ë¥¼ ê·¸ë¦°ë‹¤.
+segread	dos.h	void segread(struct SREGS* segp)	ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ì˜ í˜„ì¬ê°’ì„ ì¡°ì‚¬í•˜ì—¬ segp êµ¬ì¡°ì²´ì— ì €ì¥í•œë‹¤.
+setactivepage	graphics.h	void setactivepage(int page)	active pageë¥¼ ì„¤ì •í•œë‹¤.
+setallpalette	graphics.h	void setallpalette(struct palettetype *palette)	setallpaletteëŠ” íŒ”ë ˆíŠ¸ í¬ì¸í„°ê°€ ê°€ë¦¬í‚¤ëŠ” palettetypeì˜ êµ¬ì¡°ì²´ì— ë“¤ì–´ ìˆëŠ” ê°’ìœ¼ë¡œ í˜„ì¬ íŒ”ë ˆíŠ¸ë¥¼ ë³€ê²½í•œë‹¤
+setaspectratio	graphics.h	void setaspectratio(int xasp, int yasp)	ê·¸ë˜í”½ ì‹œìŠ¤í…œì˜ ì›ì¢…íš¡ë¹„(aspect ratio)ë¥¼ ë§ì¶”ì–´ ì¤€ë‹¤.
+setbkcolor	graphics.h	void setbkcolor(int color)	í˜„ì¬ì˜ ë°°ê²½ìƒ‰ì„ colorë¡œ ì„¤ì •í•œë‹¤. ColorëŠ” ë‹¤ìŒ í‘œì—ì„œì™€ ê°™ì€ ìƒ‰ìƒì„ ì˜ë¯¸í•œë‹¤.
+setblock	dos.h	int setblock(unsigned segx, unsigned newsize)	ì´ì „ì— í• ë‹¹ëœ ë¸”ë¡ì˜ í¬ê¸°ë¥¼ ë³€ê²½ì‹œí‚¨ë‹¤.
+setbuf	stdio.h	void setbuf(FILE *stream, char *buf)	ìŠ¤íŠ¸ë¦¼ì´ ì˜¤í”ˆë  ë•Œ ë²„í¼ê°€ ìë™ìœ¼ë¡œ 512ë°”ì´íŠ¸ í¬ê¸°ë¡œ í• ë‹¹ë˜ë©° close í•  ë•Œ í• ë‹¹ëœ ë²„í¼ëŠ” ìë™ìœ¼ë¡œ í•´ì œëœë‹¤.
+setcbrk	dos.h	int setcbrk(int cbrkvalue)	Crtl-Breakì— ëŒ€í•œ ì²´í¬ ìƒíƒœë¥¼ ì„¤ì •í•œë‹¤.
+setcolor	graphics.h	void setcolor(int color)	í˜„ì¬ì˜ ì „ê²½ìƒ‰ì„ ì§€ì •í•œë‹¤. ì§€ì • ê°€ëŠ¥í•œ ìƒ‰ìƒì˜ ìˆ˜ëŠ” 0~getmaxcolor() ì‚¬ì´ì˜ ì •ìˆ˜ì´ë‹¤.
+_setcursortype	conio.h	void_setcursortype(int cur_t)	ì»¤ì„œì˜ ëª¨ì–‘ì„ ë°”ê¾¼ë‹¤.
+setdate	dos.h	void setdate(struct date *datep)	datep êµ¬ì¡°ì²´ë¥¼ ì°¸ì¡°í•´ ì‹œìŠ¤í…œì˜ ë‚ ì§œë¥¼ ì„¸íŒ…í•œë‹¤.
+setdisk	dir.h	int setdish(int drive)	ë“œë¼ì´ë¸Œë¥¼ ë³€ê²½ì‹œí‚¨ë‹¤.
+setdta	dos.h	void setdta(char *dta)	ì¸ìˆ˜ë¡œ ì£¼ì–´ì§„ dtaë¡œ í˜„ì¬ ë””ìŠ¤í¬ ì „ì†¡ ì£¼ì†Œë¥¼ ë³€ê²½ì‹œí‚¨ë‹¤.
+setfillpattern	graphics.h	void setfillpattern(char *upattern, int color)	ì‚¬ìš©ìê°€ ì§€ì •í•œ ë¬´ëŠ¬ì™€ ìƒ‰ìƒìœ¼ë¡œ ì±„ì›€ ë¬´ëŠ¬ë¥¼ ì„¤ì •í•œë‹¤.
+setfillstyle	graphics.h	void setfillstyle(int parttern, int color)	ì±„ìƒ‰ ë¬´ëŠ¬ì™€ ìƒ‰ìƒì„ ì§€ì •í•œë‹¤.
+setftime	io.h	int setftime(int handle, struct ftime *ftimep)	ì˜¤í”ˆëœ íŒŒì¼ì˜ ì‹œê°„ê³¼ ë‚ ì§œë¥¼ ftimeí˜• êµ¬ì¡°ì²´ê°€ ê°€ë¦¬í‚¤ëŠ” ì‹œê°„ê³¼ ë‚ ì§œë¡œ ì„¤ì •í•œë‹¤.
+setgraphbufsize	graphics.h	unsigned setgraphbufsize(unsigned bufsize)	initgraphê°€ ê·¸ë˜í”½ ì‹œìŠ¤í…œì„ ì´ˆê¸°í™”í• ë•Œ ì–¼ë§ˆê°„ì˜ ë²„í¼ë¥¼ í• ë‹¹í•´ ë‘ê³  closegraphëŠ” ì´ ë²„í¼ë¥¼ í• ë‹¹í•´ì œí•œë‹¤.
+setgraphmode	graphics.h	void setgraphmode(int mode)	ê·¸ë˜í”½ ëª¨ë“œë¥¼ ì„¤ì •í•œë‹¤.
+setjmp	setjmp.h	int setjmp(jmp_bufjmpb)	ë¹„ì§€ì—­ì  jumpë¥¼ ìœ„í•œ ì¤€ë¹„ë¥¼ í•˜ë©° í˜„ì¬ì˜ ëª¨ë“  ì‘ì—… ìƒíƒœë¥¼ jmpbì— ì €ì¥í•´ ë‘” í›„ 0ì„ ë¦¬í„´í•œë‹¤.
+setlinestyle	graphics.h	void setlinestyle(int linestyle, unsigned upattern, int thickness)	ì„ ì˜ êµµê¸°ì™€ ëª¨ì–‘ì„ ì§€ì •í•œë‹¤.
+setlocale	locale.h	char *setlocale(int category, char *locale)	êµ­ê°€ë§ˆë‹¤ ë‹¤ë¥¸ í™”íê¸°í˜¸ë‚˜ ë‚ ì§œ í˜•ì‹ì„ ì§€ì •í•˜ëŠ” locale êµ¬ì¡°ì²´ë¥¼ ì„¤ì •í•œë‹¤.
+setmem	mem.h	void setmem(void *dest, unsigned length, char value)	destì—ì„œ ì‹œì‘ë˜ê³  lengthì˜ ê¸¸ì´ë¥¼ ê°€ì§€ëŠ” ë©”ëª¨ë¦¬ì˜ ì¼ì •ì˜ì—­ì„ value ê°’ìœ¼ë¡œ ëª¨ë‘ ì±„ìš´ë‹¤.
+setmode	io.h	int setmode(int handle, int amode)	ì˜¤í”ˆëœ íŒŒì¼ì˜ ì•¡ì„¸ìŠ¤ ëª¨ë“œë¥¼ ì„¤ì •í•œë‹¤.
+setpalette	graphics.h	void setpalette(int colornum, int color)	colornumì´ ì§€ì •í•˜ëŠ” íŒ”ë ˆíŠ¸ì˜ ìƒ‰ìƒì„ colorë¡œ ë°”ê¾¼ë‹¤.
+setrgbpalette	graphics.h	void setrgbpalette(int colornum, int red, int green, int blue)	IBM 8514ë“œë¼ì´ë²„ì™€ VGAì—ì„œ ì‚¬ìš©í•˜ëŠ” íŒ”ë ˆíŠ¸ setting í•¨ìˆ˜ë¡œ RGB ì‚¼ì›ìƒ‰ì˜ ì¡°í•©ìœ¼ë¡œ ìƒ‰ìƒì„ ì§€ì •í•  ìˆ˜ ìˆë‹¤.
+settextjustify	graphics.h	void settextjustify(int horiz, int vert)	outtext, outtextxy ë“±ì—ì„œ ì¶œë ¥í•˜ëŠ” ë¬¸ìì—´ì˜ ì¢Œí‘œ ì •ë ¬ ë°©ì‹ì„ ì§€ì •í•œë‹¤.
+settextstyle	graphics.h	void settextstyle(int font, int dirction, int charsize)	outtext, outtextxy í•¨ìˆ˜ì—ì„œ ë¬¸ìì—´ ì¶œë ¥ì— ì‚¬ìš©í•  í°íŠ¸, í¬ê¸° ë° ë°©í–¥ì„ ì§€ì •í•œë‹¤.
+settime	dos.h	void settime(struct time *timep)	timepí˜• êµ¬ì¡°ì²´ì— ì§€ì •ë˜ì–´ ìˆëŠ” ì‹œê°„ ì •ë³´ë¡œ ì‹œìŠ¤í…œì˜ ì‹œê°„ì„ ì„¤ì •í•œë‹¤.
+setusercharsize	graphics.h	void setusercharsized(int multx, int divx, int multy, int divy)	ê¸€ì í¬ê¸°ë¥¼ ì‚¬ìš©ì ì„ì˜ì˜ í¬ê¸°ë¡œ ë§Œë“ ë‹¤.
+setvbuf	stdio.h	int setvbuf(FILE *stream, char *buf, int type, size_t size)	ìŠ¤íŠ¸ë¦¼ì´ ì˜¤í”ˆë  ë•Œ ë²„í¼ëŠ” ìë™ìœ¼ë¡œ 512ë°”ì´íŠ¸ì˜ í¬ê¸°ë¡œ í• ë‹¹ë˜ì–´ì§€ë©° closeë  ë•Œ í• ë‹¹ëœ ë²„í¼ëŠ” ìë™ìœ¼ë¡œ í•´ì œëœë‹¤.
+setvect	dos.h	void setvect(int interruptno, void interrupt(*isr))	interruptnoê°€ ì§€ì •í•˜ëŠ” ì¸í„°ëŸ½íŠ¸ì˜ ì‹œì‘ ë²ˆì§€ë¥¼ ë‘ ë²ˆì§¸ ì¸ìˆ˜ isrì˜ ë²ˆì§€ë¡œ ì„¤ì •í•œë‹¤.
+setverify	dos.h	void setverify(int value)	ë„ìŠ¤ì˜ verify flag ìƒíƒœë¥¼ ì„¤ì •í•œë‹¤.
+setviewport	graphics.h	void setviewport(int left, int top, int right, int bottom, int clip)	ìƒˆë¡œìš´ ë·°í¬íŠ¸ë¥¼ ì§€ì •í•œë‹¤.
+setvisualpage	graphics.h	void setvisualpage(int page)	ë¹„ì£¼ì–¼ í˜ì´ì§€ë¥¼ ì„¤ì •í•œë‹¤.
+setwritemode	graphics.h	void setwritemode(int mode)	ê·¸ë˜í”½ ì¶œë ¥ í•¨ìˆ˜ê°€ í™”ë©´ì— ì‘ë„ë¥¼ í•˜ëŠ” ë°©ë²•ì„ ì„¤ì •í•œë‹¤.
+signal	signal.h	void (*signal(int sig, void (*func)(int sig [, int subcode])))(int)	signalì´ë€ ì˜ˆì™¸ ìƒí™©ì´ ë°œìƒí•˜ê±°ë‚˜ raise í•¨ìˆ˜ê°€ í˜¸ì¶œë  ë•Œ í”„ë¡œê·¸ë¨ìœ¼ë¡œ ë³´ë‚´ì§€ëŠ” ì‹ í˜¸ë¥¼ ë§í•œë‹¤.
+sin	math.h	double sin(double x)	ì‚¼ê° í•¨ìˆ˜ sinì„ ê³„ì‚°í•œë‹¤.
+sinh	math.h	double sinh(double x)	ìŒê³¡ì„  sinh í•¨ìˆ˜ê°’ì„ ê³„ì‚°í•œë‹¤.
+sleep	dos.h	void sleep(unsigned seconds)	second ì¸ìˆ˜ê°€ ì§€ì •í•˜ëŠ” ë§Œí¼ ì´ˆë‹¨ìœ„ë¡œ ì§€ì—°ì´ ë˜ë©° ì§€ì—°ì‹œê°„ì€ ì•„ì£¼ ì •í™•í•˜ë‹¤.
+sopen	io.h	int sopen(char *path, int access, int shflags, int mode)	pathê°€ ì§€ì •í•˜ëŠ” íŒŒì¼ì„ ì˜¤í”ˆí•˜ë©° ê³µìœ  íŒŒì¼ì„ ì½ê³  ì“¸ ì¤€ë¹„ë¥¼ í•œë‹¤.
+sound	dos.h	void sound(unsigned frequency)	ì¸ìˆ˜ frequencyë¡œ ì£¼ì–´ì§„ ì£¼íŒŒìˆ˜ë¡œ pcì˜ ìŠ¤í”¼ì»¤ë¥¼ ì‘ë™ì‹œí‚¨ë‹¤.
+spawn	process.h	int spownl(int mode, char *path, char *arg0, â€¦ , NULL)	ëª¨ í”„ë¡œê·¸ë¨ì„ ëë‚´ì§€ ì•Šê³  child í”„ë¡œê·¸ë¨ì„ ì‹¤í–‰ì‹œí‚¨ë‹¤.
+sprintf	stdio.h	int sprintf(char *buffer, const char *format, [,argument,â€¦])	printfë¬¸ê³¼ ë§ˆì°¬ê°€ì§€ë¡œ í˜•ì‹í™”ëœ ì¶œë ¥ì„ í•œë‹¤.
+sqrt	math.h	double sqrt(double x)	xì˜ ì–‘ì˜ ì œê³±ê·¼ì„ ê³„ì‚°í•œë‹¤.
+srand	stdlib.h	void srand(unsigned seed)	ë‚œìˆ˜ ë°œìƒê¸°ëŠ” ì˜ˆì¸¡í•  ìˆ˜ ì—†ëŠ” ìˆ˜ë¥¼ ë°œìƒì‹œí‚¤ê¸°ëŠ” í•˜ë‚˜ í•­ìƒ ë°œìƒë˜ëŠ” ìˆ˜ê°€ ì¼ì •í•˜ë‹¤.
+sscanf	stdio.h	int sscanf(const char *buffer, const char *format, [,addressâ€¦])	scanfì˜ ê¸°ëŠ¥ê³¼ ìœ ì‚¬í•˜ë˜ ì…ë ¥ì„ stdinë¡œë¶€í„° ì§ì ‘ ë°›ì§€ ì•Šê³  ë¬¸ìì—´ì—ì„œ ë°›ëŠ”ë‹¤.
+stat	sys\stat.h	int stat (char *path, struct stat, *statbuf)	pathê°€ ì§€ì •í•˜ëŠ” íŒŒì¼ì— ê´€í•œ ì •ë³´ë¥¼ ì¡°ì‚¬í•˜ì—¬ statbufì— ì €ì¥í•œë‹¤.
+stime	time.h	int stime(time_t *tp)	ì‹œìŠ¤í…œì˜ ì‹œê°„ê³¼ ë‚ ì§œë¥¼ í•œêº¼ë²ˆì— ë°”ê¾¸ì–´ ì¤€ë‹¤.
+stpcpy	string.h	char *stpcpy(char *dest, const char *src)	ë¬¸ìì—´ srcë¥¼ ë¬¸ìë°°ì—´ destë¡œ ë³µì‚¬í•œë‹¤.
+strcat	string.h	char *strcat(char *dest, const char *src)	ë¬¸ìì—´ë¼ë¦¬ ì—°ê²°í•œë‹¤.
+strchr	string.h	char *strchar(const *s, int c)	ë¬¸ì ë°°ì—´ së‚´ì— ë¬¸ì cê°€ ìˆëŠ”ì§€ ê²€ì‚¬í•˜ê³  ìˆì„ ê²½ìš° ë¬¸ì cê°€ ìˆëŠ” ë²ˆì§€ë¥¼ ë¦¬í„´í•œë‹¤.
+strcmp	string.h	int strcmp(const char *s1 , const char *s2)	ë‘ ê°œì˜ ë¬¸ìì—´ì„ ëŒ€ì†Œ ë¹„êµí•œë‹¤.
+strcmpi	string.h	int strcmpi(const char *s1, const char *s2)	ë‘ ê°œì˜ ë¬¸ìì—´ì„ ëŒ€ì†Œ ë¹„êµí•œë‹¤. StrcmpiëŠ” ëŒ€ë¬¸ìì™€ ì†Œë¬¸ìë¥¼ êµ¬ë¶„í•˜ì§€ ì•ŠëŠ”ë‹¤.
+strcoll	string.h	int strcoll(char *s1, char *s2)	setlocale í•¨ìˆ˜ì— ì˜í•´ ì§€ì •ëœ ë¹„êµë°©ì‹ì— ë”°ë¼ ë‘ê°œì˜ ë¬¸ìì—´ì„ ë¹„êµ í•œë‹¤.
+strcpy	string.h	char *strcpy(char *dest, const char *src)	ë¬¸ìì—´ srcë¥¼ ë¬¸ì ë°°ì—´ destë¡œ ë³µì‚¬í•œë‹¤.
+strcspn	string.h	size_t strcspn(const char *s1, const char *s2)	ë¬¸ìì—´ s1 ì¤‘ì— ë¬¸ìì—´ s2ì— ë“¤ì–´ ìˆì§€ ì•Šì€ ë¬¸ìë“¤ì´ ì—°ì†í•´ ìˆëŠ” ê¸¸ì´ë¥¼ êµ¬í•œë‹¤.
+strdup	string.h	char *strdup(const char*s)	ìƒˆë¡œìš´ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•˜ê³  ë¬¸ìì—´ së¥¼ ë³µì‚¬í•œ í›„ ê·¸ í¬ì¸í„°ë¥¼ ë¦¬í„´í•œë‹¤.
+strerror	stdio.h	char *strerror(int errnum)	errnumì— í•´ë‹¹í•˜ëŠ” ì—ëŸ¬ ë©”ì‹œì§€ ë¬¸ìì—´ì„ ë§Œë“ ë‹¤.
+stricmp	string.h	int stricmp(const char *s1, const char *s2)	ë‘ ê°œì˜ ë¬¸ìì—´ì„ ëŒ€ì†Œ ë¹„êµí•œë‹¤.
+strlen	string.h	size_t strlen(const char*s)	ë¬¸ìì—´ sì˜ ê¸¸ì´ë¥¼ ê³„ì‚°í•œë‹¤.
+strlwr	string.h	char *strlwr(char*s)	ë¬¸ìì—´ së‚´ì— ëŒ€ë¬¸ì (A~Z)ë¥¼ ì†Œë¬¸ì (a~z)ë¡œ ë³€ê²½í•œë‹¤.
+strncat	string.h	char *strncat(char *dest, const char*src, size_t maxlen)	ë¬¸ìì—´ë¼ë¦¬ ì§€ì •í•œ ê¸¸ì´ë§Œí¼ ë§ë¶™ì¸ë‹¤.
+strncmp	string.h	int strncmpi(const char *s1, const char*s2, size_t maxlen)	ë‘ ê°œì˜ ë¬¸ìì—´ì„ ëŒ€ì†Œ ë¹„êµí•œë‹¤.
+strncmpi	string.h	int strncmpi(const char *s1, const char *s2, size_t maxlen)	ë‘ ê°œì˜ ë¬¸ì
+strncpy	string.h	char *strncpy(char*dest, char*src, size_t maxlen)	ë¬¸ìì—´ì„ ì •í•´ì§„ ê¸¸ì´ë§Œí¼ ë³µì‚¬í•œë‹¤.
+strnicmp	string.h	int strnicmp(const char*s1, const char*s2, size_t maxlen)	ë‘ ê°œì˜ ë¬¸ìì—´ì„ ëŒ€ì†Œ ë¹„êµí•œë‹¤.
+strset	string.h	char*strset(char *s, int ch)	ë¬¸ìì—´ì„ íŠ¹ì • ë¬¸ìë¡œ ì±„ìš´ë‹¤.
+strpbrk	string.h	char *strpbrk(const char*s1, const char*s2)	ë¬¸ìì—´ s1ë‚´ì— ë¬¸ìì—´ s2ì— ìˆëŠ” ë¬¸ì ì¤‘ì˜ í•˜ë‚˜ë¼ë„ ìˆëŠ”ì§€ ê²€ì‚¬í•˜ê³  ìˆì„ ê²½ìš° ê·¸ í¬ì¸í„°ë¥¼ ë¦¬í„´í•œë‹¤.
+strrchr	string.h	char *strrchr(const char*s, int c)	ë¬¸ì ë°°ì—´ së‚´ì— ë¬¸ì cê°€ ìˆëŠ”ì§€ ê²€ì‚¬í•˜ê³  ìˆì„ ê²½ìš° ë¬¸ì cê°€ ìˆëŠ” ë²ˆì§€ë¥¼ ë¦¬í„´í•œë‹¤.
+strrev	string.h	char *strrev(char *s)	ë¬¸ìì—´ì˜ ìˆœì„œë¥¼ ë°”ê¾¼ë‹¤.
+strspn	string.h	size_t strspn(const char *s1, const *s2)	ë¬¸ìì—´ s1 ì¤‘ì—ì„œ ë¬¸ìì—´ s2ì— ìˆëŠ” ë¬¸ìë“¤ì´ ì—°ì†í•´ ìˆëŠ” ê¸¸ì´ë¥¼ êµ¬í•œë‹¤.
+strstr	string.h	char *strstr(const char *s1, const char *s2)	ë¬¸ìì—´ s1 ë‚´ì—ì„œ ë¬¸ìì—´ s2ê°€ í¬í•¨ë˜ì–´ ìˆëŠ”ì§€ ê²€ì‚¬í•˜ê³  ë§Œì•½ ìˆë‹¤ë©´ ë¶€ë¶„ ë¬¸ìì—´(substring)ì˜ í¬ì¸í„°ë¥¼ ë¦¬í„´í•œë‹¤.
+strtod	stdlib.h	double strtod(const char *s, char ** endptr)	ë¬¸ìì—´ì„ doubleí˜• ë¶€ë™ ì†Œìˆ˜ì ìœ¼ë¡œ ë°”ê¾¼ë‹¤.
+strtok	string.h	char *strtok(char *s1, char *s2)	ë¬¸ìì—´ì—ì„œ tokenì„ ì°¾ì•„ë‚¸ë‹¤.
+strtol	stdlib.h	longstrtol(const char *s, char **endptr, int radix)	ë¬¸ìì—´ì„ longí˜• ì •ìˆ˜ë¡œ ë³€í™˜í•œë‹¤.
+strtoul	string.h	unsigned long strtoul(const char *s, char **endptr, int radix)	ë¬¸ìì—´ì„ ë¶€í˜¸ì—†ëŠ” long í˜• ì •ìˆ˜ë¡œ ë°”ê¾¼ë‹¤.
+strupr	string.h	char *strupr(char*s)	ë¬¸ìì—´ së‚´ì˜ ì†Œë¬¸ì (a~z)ë¥¼ ëŒ€ë¬¸ì (A~Z)ë¡œ ë³€ê²½í•œë‹¤.
+swab	stdlib.h	void swab (char *from, char *to, int nbytes)	ë‘ ê°œì˜ stringë¼ë¦¬ ë³µì‚¬ë¥¼ í•˜ë˜ ì´ë•Œ from ì— ìˆëŠ” ë¬¸ìì—´ì˜ ìƒ, í•˜ìœ„ ë°”ì´íŠ¸ë¥¼ ì„œë¡œ êµì²´í•˜ì—¬ to ë¬¸ìì—´ë¡œ ë³µì‚¬í•œë‹¤.
+system	process.h	int system(const char *command)	ë„ìŠ¤ì˜ í”„ë¡¬í”„íŠ¸ìƒì—ì„œ ì‹¤í–‰í•  ìˆ˜ ìˆëŠ” ë„ìŠ¤ ëª…ë ¹(dir, copy ë“±ì˜ ë‚´ë¶€ ëª…ë ¹), batch íŒŒì¼, ê·¸ì™¸ ì‹¤í–‰ íŒŒì¼ë“¤ì€ ë„ìŠ¤ ëª…ë ¹ í•´ì„ê¸°ë¥¼ ì½ì–´ ì™€ì„œ ì‹¤í–‰ì‹œí‚¨ë‹¤.
+tan	math.h	double tan (double x)	ì‚¼ê°í•¨ìˆ˜ tangentë¥¼ ê³„ì‚°í•œë‹¤.
+tanh	math.h	double tanh(double x)	ìŒê³¡ì„  tanh í•¨ìˆ˜ê°’ì„ ê³„ì‚°í•œë‹¤.
+tell	io.h	long tell(int handle)	í˜„ì¬ íŒŒì¼ í¬ì¸í„°ë¥¼ ì¡°ì‚¬í•œë‹¤.
+textattr	conio.h	void textattr(int newattr)	ì¶œë ¥í•œ ë¬¸ìì˜ ì†ì„±ì„ ì„¤ì •í•œë‹¤.
+textbackground	conio.h	void textbackground(int newcolor)	ë¬¸ìì˜ ë°°ê²½ìƒ‰ì„ ì§€ì •í•œë‹¤.
+textcolor	conio.h	void textcolor(int newcolor)	í…ìŠ¤íŠ¸ ëª¨ë“œì— ì „ê²½ìƒ, ì¦‰ ë¬¸ìì˜ ìƒìƒì„ ë³€ê²½ì‹œí‚¨ë‹¤.
+textheight	graphics.h	int textheight(char *textstring)	ë¬¸ìì—´ì˜ ë†’ì´ë¥¼ êµ¬í•œë‹¤.
+textmode	conio.h	void textmode(int newmode)	í…ìŠ¤íŠ¸ ëª¨ë“œë¥¼ ë‹¤ë¥¸ ëª¨ë“œë¡œ ë°”ê¾¼ë‹¤.
+textwidth	graphics.h	int textwidth(char far *string)	string ì˜ ë„“ì´ë¥¼ í”½ì…€ ë‹¨ìœ„ë¡œ ê³„ì‚°í•œë‹¤.
+time	time.h	time_t time(time_t *timer)	í˜„ì¬ ì‹œê°„ì„ ì¡°ì‚¬í•œë‹¤.
+tmpfile	stdio.h	FILE *tmpfile(void)	ì„ì‹œ íŒŒì¼ë¡œ ì‚¬ìš©ë  íŒŒì¼ì„ ë§Œë“œëŠ”ë° ì„ì‹œ íŒŒì¼ì˜ ì„±ê²©ìƒ ì´ì§„ íŒŒì¼ ëª¨ë“œì™€ ì“°ê¸° ëª¨ë“œë¡œ íŒŒì¼ì„ ë§Œë“ ë‹¤.
+tmpnam	stdio.h	char *tmpnam(char *sptr)	ì„ì‹œ íŒŒì¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” íŒŒì¼ ì´ë¦„ì„ ë§Œë“ ë‹¤.
+toascii	ctype.h	int toascii(int c)	cì˜ ì œ7ë¹„íŠ¸ë¥¼ 0ìœ¼ë¡œ ë§Œë“¤ì–´ ì•„ìŠ¤í‚¤ ë¬¸ìë¡œ ë°”ê¾¸ì–´ ì¤€ë‹¤.
+tolower	ctype.h	int tolower(int ch)	ë¬¸ì chê°€ A~Zì‚¬ì´ì˜ ë¬¸ìì¼ ê²½ìš° ì†Œë¬¸ì a~zë¡œ ë°”ê¾¸ì–´ ì¤€ë‹¤.
+toupper	ctype.h	int toupper(int ch)	ë¬¸ì chê°€ a~zì‚¬ì´ì˜ ë¬¸ìì¼ ê²½ìš° ëŒ€ë¬¸ì A~Zë¡œ ë°”ê¾¸ì–´ ì¤€ë‹¤.
+tzset	time.h	void tzset(void)	í™˜ê²½ ë³€ìˆ˜ TZì— ê¸°ë¡ë˜ì–´ ìˆëŠ” ì „ì—­ ë³€ìˆ˜ timezone, daylight, tzname ì„ ìƒˆë¡œìš´ ê°’ìœ¼ë¡œ ì„¤ì •í•œë‹¤.
+ultoa	stdlib.h	char *ultoa(unsigned long value, char *string, int radix)	ë¶€í˜¸ì—†ëŠ” longí˜• ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¾¼ë‹¤.
+ungetc	stdio.h	int ungetc(int c, FILE *stream)	ë¬¸ì cë¥¼ ì…ë ¥ ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ë‹¤ì‹œ pushí•œë‹¤.
+ungetch	conio.h	int ungetch(int ch)	ë¬¸ì chë¥¼ í‚¤ë³´ë“œ ë²„í¼ë¡œ pushí•œë‹¤.
+unixtodos	dos.h	void unixtodos(long time, struct date *d, struct dostime *t)	ìœ ë‹‰ìŠ¤í˜•ì˜ ë‚ ì§œ, ì‹œê°„ì„ ë„ìŠ¤í˜•ìœ¼ë¡œ ë°”ê¾¸ì–´ ë‘ êµ¬ì¡°ì²´ì— ì„¸íŠ¸í•œë‹¤.
+unlink	io.h	int unlink(const char* filename)	íŒŒì¼ì„ ì‚­ì œí•œë‹¤.
+unlock	io.h	int unlock(int handle, long offset, long length)	lock í•¨ìˆ˜ì— ì˜í•´ ì„¤ì •ëœ lockì„ ì œê±°í•œë‹¤.
+wherex	conio.h	int wherex(void)	ì»¤ì„œì˜ ìˆ˜í‰ìœ„ì¹˜ë¥¼ ì¡°ì‚¬í•œë‹¤.
+wherey	conio.h	int wherey(void)	ì»¤ì„œì˜ ìˆ˜ì§ ìœ„ì¹˜ë¥¼ ì¡°ì‚¬í•œë‹¤.
+window	conio.h	void window(int left, int top, int right, int bottom)	í…ìŠ¤íŠ¸ ëª¨ë“œì˜ ìœˆë„ìš° ì˜ì—­ì„ ì •ì˜í•œë‹¤.
+write	io.h	int write(int handle, void *buf, unsigned len)	bufì— ìˆëŠ” ë°ì´í„°ë¥¼ handle ì´ ì§€ì •í•˜ëŠ” íŒŒì¼ë¡œ ì¶œë ¥í•œë‹¤.
