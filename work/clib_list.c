@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <memory.h>
@@ -80,7 +80,7 @@ int size(List* plist) {
 void display(List* plist) {
 	Node* cur = plist->head;
 	while (cur != NULL) {
-		printf("ÇÔ¼ö¸í : %s\n", cur->data.name);
+		printf("í•¨ìˆ˜ëª… : %s\n", cur->data.name);
 		cur = cur->next;
 	}
 }

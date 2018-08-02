@@ -1,4 +1,4 @@
-#ifndef __D_TRIE_H__
+﻿#ifndef __D_TRIE_H__
 
 #define __D_TRIE_H__
 #define TRUE    1
